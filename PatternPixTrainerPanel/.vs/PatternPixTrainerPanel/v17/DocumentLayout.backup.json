@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\PatternPixTrainerPanel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\source\\repos\\patternpixtrainerpanel\\patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\source\\repos\\patternpixtrainerpanel\\patternpixtrainerpanel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,6 +27,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\PatternPixTrainerPanel\\PatternPixTrainerPanel\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\PatternPixTrainerPanel\\PatternPixTrainerPanel\\MainWindow.xaml",
+              "RelativeToolTip": "PatternPixTrainerPanel\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-14T08:07:19.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\PatternPixTrainerPanel\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml.cs",

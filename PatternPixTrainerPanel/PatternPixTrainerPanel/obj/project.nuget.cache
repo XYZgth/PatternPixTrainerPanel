@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "grfbXMgJeQY=",
+  "dgSpecHash": "BT/f9UHwJTs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\source\\repos\\PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\prism.events\\9.0.537\\prism.events.9.0.537.nupkg.sha512"
+  ],
   "logs": []
 }
