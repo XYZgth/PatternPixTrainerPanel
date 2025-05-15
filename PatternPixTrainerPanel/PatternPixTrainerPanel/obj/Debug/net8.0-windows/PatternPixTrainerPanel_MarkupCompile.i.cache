@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\andre\OneDrive\Documents\GitHub\PatternPixTrainerPanel\PatternPixTrainerPanel\PatternPixTrainerPanel\App.xaml
-11407045341
+4-2089637044
 
-9250592764
-200-649513828
-MainWindow.xaml;
+231379337748
+234-1150178974
+MainWindow.xaml;View\ChildDetailView.xaml;View\ChildrenListView.xaml;View\MainView.xaml;
 
 False
 

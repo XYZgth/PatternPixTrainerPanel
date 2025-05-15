@@ -1,24 +1,48 @@
-﻿using System.Text;
-using System.Windows;
+﻿using System.Windows;
+using PatternPixTrainerPanel.ViewModel;
+using PatternPixTrainerPanel.View;
+using PatternPixTrainerPanel.Converter;
+using Prism.Events;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PatternPixTrainerPanel
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly MainWindowViewModel _mainViewModel;
+        private readonly IEventAggregator _eventAggregator;
+
         public MainWindow()
         {
             InitializeComponent();
+
+           
+            _eventAggregator = new EventAggregator();
+
+          
+            _mainViewModel = new MainWindowViewModel(_eventAggregator);
+
+          
+            DataContext = _mainViewModel;
+
+      
+      
+            RegisterViews();
+        }
+
+        private void RegisterViews()
+        {
+            
+            var mainView = new MainView();
+            mainView.DataContext = new ChildrenListViewModel(_eventAggregator);
+            _mainViewModel.RegisterView("MainView", mainView);
+
+
+            var childDetailView = new ChildDetailView();
+            childDetailView.DataContext = new ChildDetailViewModel(_eventAggregator);
+            _mainViewModel.RegisterView("ChildDetailView", childDetailView);
+
+
         }
     }
 }

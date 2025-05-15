@@ -3,10 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PatternPixTrainerPanel"
+        xmlns:local="clr-namespace:PatternPixTrainerPanel.View"
+        xmlns:viewmodel="clr-namespace:PatternPixTrainerPanel.ViewModel"
+        xmlns:converter="clr-namespace:PatternPixTrainerPanel.Converter"
+        xmlns:prism="http://prismlibrary.com/"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Pattern Pix Trainer Panel" Height="450" Width="800">
 
-    </Grid>
+    <Window.Resources>
+        <converter:NullToBoolConverter x:Key="NullToBoolConverter"/>
+    </Window.Resources>
+
+    <!-- The ContentControl will display the current view -->
+    <ContentControl Content="{Binding CurrentView}" />
 </Window>

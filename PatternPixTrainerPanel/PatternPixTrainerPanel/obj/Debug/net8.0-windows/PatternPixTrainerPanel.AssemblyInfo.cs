@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PatternPixTrainerPanel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7abcb9d927c6d6c7851f8e370456bb16b26cef8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e1df2d9d71a19ff9d3b4eafc4e2ae315decb935")]
 [assembly: System.Reflection.AssemblyProductAttribute("PatternPixTrainerPanel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PatternPixTrainerPanel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
