@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 0,
+    "FirstName": "Emma",
+    "LastName": "Jonas",
+    "DateOfBirth": "2018-05-12T00:00:00",
+    "Age": 7,
+    "FullName": "Emma Jonas",
+    "Trainings": [],
+    "LastTrainingDate": null
+  },
+  {
+    "Id": 0,
+    "FirstName": "Noah",
+    "LastName": "Binder",
+    "DateOfBirth": "2017-08-23T00:00:00",
+    "Age": 7,
+    "FullName": "Noah Binder",
+    "Trainings": [],
+    "LastTrainingDate": null
+  },
+  {
+    "Id": 0,
+    "FirstName": "Olivia",
+    "LastName": "Klein",
+    "DateOfBirth": "2016-02-03T00:00:00",
+    "Age": 9,
+    "FullName": "Olivia Klein",
+    "Trainings": [],
+    "LastTrainingDate": null
+  },
+  {
+    "Id": 0,
+    "FirstName": "Linus",
+    "LastName": "Braun",
+    "DateOfBirth": "2017-11-18T00:00:00",
+    "Age": 7,
+    "FullName": "Linus Braun",
+    "Trainings": [],
+    "LastTrainingDate": null
+  },
+  {
+    "Id": 0,
+    "FirstName": "Eva",
+    "LastName": "Gartner",
+    "DateOfBirth": "2018-09-07T00:00:00",
+    "Age": 6,
+    "FullName": "Eva Gartner",
+    "Trainings": [],
+    "LastTrainingDate": null
+  }
+]
