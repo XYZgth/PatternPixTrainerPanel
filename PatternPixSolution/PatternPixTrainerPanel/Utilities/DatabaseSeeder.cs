@@ -7,18 +7,30 @@ using System.Text.Json;
 
 namespace PatternPixTrainerPanel.Utilities
 {
+    /**
+     * \brief Dienstklasse zur Initialisierung und Befüllung der Datenbank mit Testdaten.
+     */
     public static class DatabaseSeeder
     {
+        /**
+         * \brief Führt das Seeding der Datenbank durch.
+         * 
+         * Erstellt die Datenbank, falls sie noch nicht existiert, und fügt Testdaten
+         * für Kinder und zugehörige Trainingseinheiten hinzu.
+         * 
+         * Wenn bereits Kinder vorhanden sind, wird der Vorgang übersprungen.
+         */
         public static void SeedDatabase()
         {
             using (var context = new PatternPixDbContext())
             {
-
+                // Erstellt die Datenbankstruktur, falls noch nicht vorhanden
                 context.Database.EnsureCreated();
-                
+
+                // Nur fortfahren, wenn noch keine Kinder in der Datenbank vorhanden sind
                 if (!context.Children.Any())
                 {
-                    // Add sample children
+                    // Beispielkinder anlegen
                     var emma = new Child
                     {
                         FirstName = "Emma",
@@ -56,21 +68,22 @@ namespace PatternPixTrainerPanel.Utilities
 
                     var children = new List<Child> { emma, noah, olivia, linus, eva };
 
-                    // In JSON-Datei speichern
+                    // Kinder zusätzlich in JSON-Datei speichern
                     var fileRepo = new FileChildRepository();
                     fileRepo.SaveChildren(children);
 
-
+                    // Kinder in Datenbank speichern
                     context.Children.Add(emma);
                     context.Children.Add(noah);
                     context.Children.Add(olivia);
                     context.Children.Add(linus);
                     context.Children.Add(eva);
 
-                   
                     context.SaveChanges();
 
-                
+                    // Trainingsdaten zuweisen
+
+                    // Trainings für Emma
                     context.Trainings.Add(new Training
                     {
                         ChildId = emma.Id,
@@ -101,7 +114,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 38
                     });
 
-                   
+                    // Trainings für Noah
                     context.Trainings.Add(new Training
                     {
                         ChildId = noah.Id,
@@ -122,7 +135,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 90
                     });
 
-                    // Add sample training sessions for Olivia
+                    // Trainings für Olivia
                     context.Trainings.Add(new Training
                     {
                         ChildId = olivia.Id,
@@ -143,7 +156,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 58
                     });
 
-                    // Add sample training sessions for Liam
+                    // Trainings für Linus
                     context.Trainings.Add(new Training
                     {
                         ChildId = linus.Id,
@@ -174,7 +187,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 75
                     });
 
-                    // Add sample training sessions for Ava
+                    // Trainings für Eva
                     context.Trainings.Add(new Training
                     {
                         ChildId = eva.Id,
@@ -185,7 +198,6 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 48
                     });
 
-                
                     context.SaveChanges();
 
                     Console.WriteLine("Database seeded successfully!");

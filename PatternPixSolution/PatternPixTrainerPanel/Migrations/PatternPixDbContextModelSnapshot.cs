@@ -9,82 +9,99 @@ using PatternPixTrainerPanel.Data;
 
 namespace PatternPixTrainerPanel.Migrations
 {
+    /**
+     * \brief Snapshot des Datenbankmodells für PatternPixDbContext.
+     * 
+     * Diese Klasse wird von EF Core automatisch generiert und beschreibt das aktuelle Datenbankschema,
+     * um Migrationen zu ermöglichen und zu verwalten.
+     */
     [DbContext(typeof(PatternPixDbContext))]
     partial class PatternPixDbContextModelSnapshot : ModelSnapshot
     {
+        /**
+         * \brief Baut das Datenmodell mit allen Entitäten und deren Konfigurationen.
+         * 
+         * Definiert die Tabellen, Spalten, Schlüssel, Beziehungen und Indizes für das EF Core Model.
+         * 
+         * \param modelBuilder Der ModelBuilder zum Konfigurieren des Datenmodells.
+         */
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.0");
 
+            // Entity für Child
             modelBuilder.Entity("PatternPixTrainerPanel.Model.Child", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("TEXT");
+                b.Property<DateTime>("DateOfBirth")
+                    .HasColumnType("TEXT");
 
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                b.Property<string>("FirstName")
+                    .IsRequired()
+                    .HasColumnType("TEXT");
 
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                b.Property<string>("LastName")
+                    .IsRequired()
+                    .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("Children");
-                });
+                b.ToTable("Children");
+            });
 
+            // Entity für Training
             modelBuilder.Entity("PatternPixTrainerPanel.Model.Training", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("INTEGER");
 
-                    b.Property<int>("ChildId")
-                        .HasColumnType("INTEGER");
+                b.Property<int>("ChildId")
+                    .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
+                b.Property<DateTime>("Date")
+                    .HasColumnType("TEXT");
 
-                    b.Property<int>("Errors")
-                        .HasColumnType("INTEGER");
+                b.Property<int>("Errors")
+                    .HasColumnType("INTEGER");
 
-                    b.Property<char>("Symmetry")
-                        .HasColumnType("TEXT");
+                b.Property<char>("Symmetry")
+                    .HasColumnType("TEXT");
 
-                    b.Property<int>("TimeNeeded")
-                        .HasColumnType("INTEGER");
+                b.Property<int>("TimeNeeded")
+                    .HasColumnType("INTEGER");
 
-                    b.Property<long>("TimeOfDay")
-                        .HasColumnType("INTEGER");
+                b.Property<long>("TimeOfDay")
+                    .HasColumnType("INTEGER");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("ChildId");
+                b.HasIndex("ChildId");
 
-                    b.ToTable("Trainings");
-                });
+                b.ToTable("Trainings");
+            });
 
+            // Beziehung Training -> Child
             modelBuilder.Entity("PatternPixTrainerPanel.Model.Training", b =>
-                {
-                    b.HasOne("PatternPixTrainerPanel.Model.Child", "Child")
-                        .WithMany("Trainings")
-                        .HasForeignKey("ChildId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+            {
+                b.HasOne("PatternPixTrainerPanel.Model.Child", "Child")
+                    .WithMany("Trainings")
+                    .HasForeignKey("ChildId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
 
-                    b.Navigation("Child");
-                });
+                b.Navigation("Child");
+            });
 
+            // Navigation Child -> Trainings
             modelBuilder.Entity("PatternPixTrainerPanel.Model.Child", b =>
-                {
-                    b.Navigation("Trainings");
-                });
+            {
+                b.Navigation("Trainings");
+            });
 #pragma warning restore 612, 618
         }
     }

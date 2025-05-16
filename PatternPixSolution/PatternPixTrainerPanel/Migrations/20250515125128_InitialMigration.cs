@@ -5,10 +5,18 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PatternPixTrainerPanel.Migrations
 {
-    /// <inheritdoc />
+    /**
+     * \brief Initiale Migration zum Erstellen der Datenbanktabellen für Children und Trainings.
+     */
     public partial class InitialMigration : Migration
     {
-        /// <inheritdoc />
+        /**
+         * \brief Führt die Migration durch und erstellt die Tabellen.
+         * 
+         * Erstellt die Tabellen "Children" und "Trainings" mit ihren jeweiligen Spalten und Beziehungen.
+         * 
+         * \param migrationBuilder Der MigrationBuilder zum Aufbau der Datenbankstruktur.
+         */
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -56,7 +64,13 @@ namespace PatternPixTrainerPanel.Migrations
                 column: "ChildId");
         }
 
-        /// <inheritdoc />
+        /**
+         * \brief Macht die Migration rückgängig, entfernt die erstellten Tabellen.
+         * 
+         * Entfernt die Tabellen "Trainings" und "Children" aus der Datenbank.
+         * 
+         * \param migrationBuilder Der MigrationBuilder zur Rückgängigmachung der Datenbankänderungen.
+         */
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
