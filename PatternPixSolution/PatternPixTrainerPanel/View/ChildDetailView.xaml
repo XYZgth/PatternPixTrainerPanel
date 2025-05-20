@@ -6,64 +6,9 @@
              xmlns:local="clr-namespace:PatternPixTrainerPanel.View"
              xmlns:vm="clr-namespace:PatternPixTrainerPanel.ViewModel"
              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-             xmlns:converters="clr-namespace:PatternPixTrainerPanel.Converter"
+
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800">
-
-    <UserControl.Resources>
-        <converters:MaxValueConverter x:Key="MaxValueConverter" />
-
-        <Style x:Key="BackButtonStyle" TargetType="Button">
-            <Setter Property="Padding" Value="10,5" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Opacity" Value="0.8" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
-        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#4A76A8" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Padding" Value="15,8" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="4">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#3A5F8A" />
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#2E4C70" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </UserControl.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -110,6 +55,8 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+
+
 
                 <!-- Child Information -->
                 <StackPanel Grid.Column="1" VerticalAlignment="Center">
@@ -210,87 +157,54 @@
                         </Style>
                     </DataGrid.Resources>
                 </DataGrid>
-
-                <syncfusion:SfChart Grid.Row="2" Margin="0,10,0,10">
+                <syncfusion:SfChart Grid.Row="2" Margin="0,0,0,10">
                     <!-- Primary Axis (X-Axis: Date) -->
                     <syncfusion:SfChart.PrimaryAxis>
-                        <syncfusion:DateTimeAxis 
-            Header="Date and Time"
-            LabelFormat="dd.MM.yyyy HH:mm"
-            IntervalType="Auto"
+                        <syncfusion:CategoryAxis 
+            Header="Date"
             LabelRotationAngle="45"
-            EdgeLabelsDrawingMode="Shift"
-            ShowGridLines="True">
-                        </syncfusion:DateTimeAxis>
+            LabelPlacement="OnTicks"
+            Interval="1"
+            >
+                        </syncfusion:CategoryAxis>
                     </syncfusion:SfChart.PrimaryAxis>
 
-                    <!-- Secondary Axis (Y-Axis: Time Needed) -->
+                    <!-- Secondary Axis (Y-Axis: Numeric values) -->
                     <syncfusion:SfChart.SecondaryAxis>
                         <syncfusion:NumericalAxis 
-            Header="Time Needed (seconds)"
+            Header="Value"
             Minimum="0"
-            Maximum="{Binding MaxTimeNeeded, Converter={StaticResource MaxValueConverter}}"
-            Interval="30"
-            OpposedPosition="False">
-                        </syncfusion:NumericalAxis>
+            Interval="1"
+            />
                     </syncfusion:SfChart.SecondaryAxis>
 
-                    <!-- Line series for TimeNeeded (using the primary Y-axis) -->
+                    <!-- Line series for Errors -->
                     <syncfusion:LineSeries 
         ItemsSource="{Binding Trainings}" 
-        XBindingPath="DateTimeWithTime" 
+        XBindingPath="FormattedDateTime" 
+        YBindingPath="ErrorsScaled" 
+        Label="Errors"
+        Interior="#E74C3C"
+        ShowTooltip="True"></syncfusion:LineSeries>
+
+                        <!-- Line series for TimeNeeded -->
+                    <syncfusion:LineSeries 
+        ItemsSource="{Binding Trainings}" 
+        XBindingPath="FormattedDateTime" 
         YBindingPath="TimeNeeded" 
         Label="Time Needed (s)"
         Interior="#3498DB"
-        StrokeThickness="2"
         ShowTooltip="True">
-                        <syncfusion:LineSeries.AdornmentsInfo>
-                            <syncfusion:ChartAdornmentInfo 
-                ShowMarker="True"
-                SymbolHeight="8"
-                SymbolWidth="8"
-                SymbolInterior="#3498DB"/>
-                        </syncfusion:LineSeries.AdornmentsInfo>
+
                     </syncfusion:LineSeries>
 
-                    <!-- Line series for Errors (using a custom Y-axis) -->
-                    <syncfusion:LineSeries 
-        ItemsSource="{Binding Trainings}" 
-        XBindingPath="DateTimeWithTime" 
-        YBindingPath="Errors" 
-        Label="Errors"
-        Interior="#E74C3C"
-        StrokeThickness="2"
-        ShowTooltip="True">
-                        <syncfusion:LineSeries.YAxis>
-                            <syncfusion:NumericalAxis 
-                OpposedPosition="True"
-                Minimum="0"
-                Maximum="{Binding MaxErrors, Converter={StaticResource MaxValueConverter}}"
-                Interval="1"
-                Header="Errors">
-                            </syncfusion:NumericalAxis>
-                        </syncfusion:LineSeries.YAxis>
-                        <syncfusion:LineSeries.AdornmentsInfo>
-                            <syncfusion:ChartAdornmentInfo 
-                ShowMarker="True"
-                SymbolHeight="8"
-                SymbolWidth="8"
-                SymbolInterior="#E74C3C"/>
-                        </syncfusion:LineSeries.AdornmentsInfo>
-                    </syncfusion:LineSeries>
 
-                    <!-- Chart legend -->
+                    <!-- Optional chart legend -->
                     <syncfusion:SfChart.Legend>
-                        <syncfusion:ChartLegend 
-            DockPosition="Bottom" 
-            IconHeight="12"
-            IconWidth="12"
-            IconVisibility="Visible"
-            Margin="0,10,0,0">
-                        </syncfusion:ChartLegend>
+                        <syncfusion:ChartLegend />
                     </syncfusion:SfChart.Legend>
                 </syncfusion:SfChart>
+
 
             </Grid>
         </Border>
@@ -307,4 +221,58 @@
             </StackPanel>
         </Border>
     </Grid>
+
+    <!-- Resources -->
+    <UserControl.Resources>
+        <Style x:Key="BackButtonStyle" TargetType="Button">
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" Value="0.8" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#4A76A8" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="15,8" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#3A5F8A" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#2E4C70" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
 </UserControl>

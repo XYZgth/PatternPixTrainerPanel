@@ -60,13 +60,9 @@ namespace PatternPixTrainerPanel.Model
         public virtual Child Child { get; set; }
 
 
-        public DateTime DateTimeWithTime
-        {
-            get
-            {
-                return Date.Date.Add(TimeOfDay);
-            }
-        }
+        public string FormattedDateTime => $"{Date:dd.MM.yy} {TimeOfDay:hh\\:mm}";
+        public int ErrorsScaled => Errors * 10;
+
 
     }
 }
