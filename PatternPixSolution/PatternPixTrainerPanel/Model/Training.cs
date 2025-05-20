@@ -12,7 +12,7 @@ namespace PatternPixTrainerPanel.Model
      * Diese Klasse enthält Informationen über ein einzelnes Training,
      * wie Datum, Uhrzeit, Art der Symmetrieübung, Fehleranzahl und benötigte Zeit.
      */
-    public class Training
+    public class Training 
     {
         /**
          * \brief Eindeutige ID der Trainingseinheit.
@@ -58,5 +58,15 @@ namespace PatternPixTrainerPanel.Model
          */
         [ForeignKey("ChildId")]
         public virtual Child Child { get; set; }
+
+
+        public DateTime DateTimeWithTime
+        {
+            get
+            {
+                return Date.Date.Add(TimeOfDay);
+            }
+        }
+
     }
 }

@@ -27,6 +27,10 @@ namespace PatternPixTrainerPanel.ViewModel
         /// \brief Instanz des EventAggregators zur Eventkommunikation.
         private readonly IEventAggregator _eventAggregator;
 
+
+        public double MaxTimeNeeded { get; private set; }
+        public double MaxErrors { get; private set; }
+
         /**
          * \brief Konstruktor für das ChildDetailViewModel.
          * 
@@ -130,6 +134,20 @@ namespace PatternPixTrainerPanel.ViewModel
                 System.Diagnostics.Debug.WriteLine($"Error loading trainings: {ex.Message}");
                 Trainings = new ObservableCollection<Training>();
             }
+
+
+            if (Trainings != null && Trainings.Count > 0)
+            {
+                MaxTimeNeeded = Trainings.Max(t => t.TimeNeeded);
+                MaxErrors = Trainings.Max(t => t.Errors);
+            }
+            else
+            {
+                // Default values if no data
+                MaxTimeNeeded = 100;
+                MaxErrors = 5;
+            }
+
         }
 
         /// \brief Befehl zur Navigation zurück zur Hauptansicht.

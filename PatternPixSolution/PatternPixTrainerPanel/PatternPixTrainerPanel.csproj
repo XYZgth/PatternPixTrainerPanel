@@ -17,6 +17,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Prism.Events" Version="9.0.537" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="29.2.4" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="29.2.4" />
   </ItemGroup>
 
   <ItemGroup>
