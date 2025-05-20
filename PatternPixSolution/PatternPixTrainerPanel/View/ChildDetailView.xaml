@@ -185,9 +185,10 @@
         YBindingPath="ErrorsScaled" 
         Label="Errors"
         Interior="#E74C3C"
-        ShowTooltip="True"></syncfusion:LineSeries>
+        ShowTooltip="True"/>
 
-                        <!-- Line series for TimeNeeded -->
+
+                    <!-- Line series for TimeNeeded -->
                     <syncfusion:LineSeries 
         ItemsSource="{Binding Trainings}" 
         XBindingPath="FormattedDateTime" 

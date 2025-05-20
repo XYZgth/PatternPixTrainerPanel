@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -24,10 +28,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B64B97FC-29CB-4835-863D-6A9C275D5E0B}|Common\\Common.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\common\\command\\actioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -140,7 +140,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -149,31 +149,17 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Training.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Training.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Training.cs",
-              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Training.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Model\\Training.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAowD8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T09:29:07.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ChildDetailView.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-15T12:24:08.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T12:24:08.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ChildDetailView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
@@ -181,12 +167,11 @@
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T12:26:41.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T12:26:41.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Style.cs",
               "DocumentMoniker": "C:\\Users\\andre\\AppData\\Local\\Temp\\.vsdbgsrc\\df7a1efe9c49140dca37f201f7d60fbefdc373cefb229a7a7a294e6d0f81c086\\Style.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\df7a1efe9c49140dca37f201f7d60fbefdc373cefb229a7a7a294e6d0f81c086\\Style.cs",
@@ -199,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ChildDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
@@ -207,12 +192,11 @@
               "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAADwv4kAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:29:20.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T11:29:20.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Child.cs",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Child.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Child.cs",
@@ -224,15 +208,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "DatabaseSeeder.cs",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAQwKYAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs*",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs*",
+              "ViewState": "AgIAAMYAAAAAAAAAAADwv84AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:57:41.607Z"
+              "WhenOpened": "2025-05-15T12:57:41.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Training.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Training.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Training.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Training.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Model\\Training.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswEEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:29:07.306Z"
             },
             {
               "$type": "Document",
@@ -480,8 +477,7 @@
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-16T11:07:46.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T11:07:46.279Z"
             },
             {
               "$type": "Document",

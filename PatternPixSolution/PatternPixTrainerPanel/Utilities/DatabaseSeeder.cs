@@ -198,6 +198,36 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 48
                     });
 
+
+                    var random = new Random();
+                    var symmetries = new[] { 'V', 'H', 'B', 'R', '?' };
+
+                    foreach (var child in children)
+                    {
+                        for (int i = 0; i < 10; i++)
+                        {
+                            var date = DateTime.Today.AddDays(-random.Next(1, 30));
+                            var time = new TimeSpan(random.Next(8, 17), random.Next(0, 60), 0); // zwischen 08:00 und 16:59
+                            var symmetry = symmetries[random.Next(symmetries.Length)];
+                            var errors = random.Next(0, 7); // 0–6 Fehler
+                            var timeNeeded = random.Next(40, 121); // 40–120 Sekunden
+
+                            context.Trainings.Add(new Training
+                            {
+                                ChildId = child.Id,
+                                Date = date,
+                                TimeOfDay = time,
+                                Symmetry = symmetry,
+                                Errors = errors,
+                                TimeNeeded = timeNeeded
+                            });
+                        }
+                    }
+
+                    context.SaveChanges();
+                    Console.WriteLine("Zusätzliche Trainingsdaten wurden hinzugefügt.");
+
+
                     context.SaveChanges();
 
                     Console.WriteLine("Database seeded successfully!");
