@@ -52,7 +52,7 @@
                             <TextBlock Text="{Binding FullName, StringFormat=Child: {0}}" FontWeight="Bold"/>
                             <TextBlock Text="{Binding DateOfBirth, StringFormat=Birth Date: {0:dd.MM.yyyy}}"/>
                             <TextBlock Text="{Binding LastTrainingDate, StringFormat=Last Training: {0:dd.MM.yyyy}}"/>
-                            <TextBlock Text="{Binding Trainings.Count, StringFormat=Total Training Sessions: {0}}"/>
+                            <TextBlock Text="{Binding Trainings.Count, StringFormat=Total Trainings: {0}}"/>
                         </StackPanel>
                     </Border>
                 </DataTemplate>

@@ -56,8 +56,6 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-
-
                 <!-- Child Information -->
                 <StackPanel Grid.Column="1" VerticalAlignment="Center">
                     <TextBlock Text="{Binding FullName}" 
@@ -71,6 +69,8 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
+                            
+                           
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
@@ -93,9 +93,9 @@
 
                         <TextBlock Grid.Row="0" Grid.Column="3" 
                                    Text="{Binding Age}" 
-                                   Margin="0,0,0,5"/>
+                                   Margin="0,0,20,5"/>
 
-                        <!-- Additional information fields can be added here -->
+                       
                     </Grid>
                 </StackPanel>
             </Grid>
@@ -116,47 +116,114 @@
                            FontWeight="SemiBold" 
                            Margin="0,0,0,10"/>
 
-                <DataGrid Grid.Row="1" 
-                          ItemsSource="{Binding Trainings}" 
-                          AutoGenerateColumns="False" 
-                          GridLinesVisibility="Horizontal"
-                          HeadersVisibility="Column"
-                          IsReadOnly="True"
-                          BorderThickness="1"
-                          BorderBrush="#E0E5EB"
-                          Background="White"
-                          RowBackground="White"
-                          AlternatingRowBackground="#F9FAFC">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Date" 
-                                            Binding="{Binding Date, StringFormat='{}{0:dd.MM.yyyy}'}" 
-                                            Width="120"/>
+                <!-- Enhanced Training List with Time Grouping -->
+                <ScrollViewer Grid.Row="1" 
+                              VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                    <ItemsControl ItemsSource="{Binding GroupedTrainingsByTime}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <!-- Date Group -->
+                                <Expander IsExpanded="True" Margin="0,5,0,10">
+                                    <Expander.Header>
+                                        <Border Background="#DCE6F1" 
+                                                Padding="10,8" 
+                                                CornerRadius="4">
+                                            <TextBlock Text="{Binding DateDisplay}" 
+                                                       FontWeight="Bold" 
+                                                       FontSize="16"/>
+                                        </Border>
+                                    </Expander.Header>
 
-                        <DataGridTextColumn Header="Time" 
-                                            Binding="{Binding TimeOfDay, StringFormat='{}{0:hh\\:mm}'}" 
-                                            Width="100"/>
+                                    <ItemsControl ItemsSource="{Binding TimeGroups}" Margin="20,10,0,0">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <!-- Time Group -->
+                                                <Border BorderBrush="#E0E5EB" 
+                                                        BorderThickness="1" 
+                                                        CornerRadius="4" 
+                                                        Margin="0,5,0,10">
+                                                    <StackPanel>
+                                                        <!-- Time Range Header -->
+                                                        <Border Background="#F8F9FA" 
+                                                                Padding="10,5" 
+                                                                CornerRadius="4,4,0,0">
+                                                            <TextBlock Text="{Binding TimeRangeDisplay}" 
+                                                                       FontStyle="Italic" 
+                                                                       FontWeight="SemiBold"
+                                                                       Foreground="#6C757D"/>
+                                                        </Border>
 
-                        <DataGridTextColumn Header="Time Needed" 
-                                            Binding="{Binding TimeNeeded, StringFormat='{}{0} sec'}" 
-                                            Width="100"/>
+                                                        <!-- Training Items -->
+                                                        <ItemsControl ItemsSource="{Binding Trainings}">
+                                                            <ItemsControl.ItemTemplate>
+                                                                <DataTemplate>
+                                                                    <Border BorderBrush="#F1F3F4" 
+                                                                            BorderThickness="0,1,0,0" 
+                                                                            Padding="15,8">
+                                                                        <Grid>
+                                                                            <Grid.ColumnDefinitions>
+                                                                                <ColumnDefinition Width="100"/>
+                                                                                <ColumnDefinition Width="100"/>
+                                                                                <ColumnDefinition Width="80"/>
+                                                                                <ColumnDefinition Width="80"/>
+                                                                                <ColumnDefinition Width="80"/>
+                                                                            </Grid.ColumnDefinitions>
 
-                        <DataGridTextColumn Header="Symmetry" 
-                                            Binding="{Binding Symmetry}" 
-                                            Width="80"/>
+                                                                            <TextBlock Grid.Column="0" 
+                                                                                       Text="{Binding Date, StringFormat='{}{0:dd.MM.yyyy}'}" 
+                                                                                       FontSize="12"
+                                                                                       VerticalAlignment="Center"/>
 
-                        <DataGridTextColumn Header="Errors" 
-                                            Binding="{Binding Errors}" 
-                                            Width="80"/>
-                    </DataGrid.Columns>
+                                                                            <TextBlock Grid.Column="1" 
+                                                                                       Text="{Binding TimeOfDay, StringFormat='{}{0:hh\\:mm}'}" 
+                                                                                       FontSize="12"
+                                                                                       VerticalAlignment="Center"/>
 
-                    <DataGrid.Resources>
-                        <Style TargetType="DataGridColumnHeader">
-                            <Setter Property="Background" Value="#F0F2F5" />
-                            <Setter Property="Padding" Value="10,8" />
-                            <Setter Property="FontWeight" Value="SemiBold" />
-                        </Style>
-                    </DataGrid.Resources>
-                </DataGrid>
+                                                                            <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                                                                <TextBlock Text="{Binding TimeNeeded}" 
+                                                                                           FontSize="12"
+                                                                                           VerticalAlignment="Center"/>
+                                                                                <TextBlock Text=" sec" 
+                                                                                           FontSize="10"
+                                                                                           Foreground="Gray"
+                                                                                           VerticalAlignment="Center"/>
+                                                                            </StackPanel>
+
+                                                                            <TextBlock Grid.Column="3" 
+                                                                                       Text="{Binding Errors}" 
+                                                                                       FontSize="12"
+                                                                                       VerticalAlignment="Center"
+                                                                                       HorizontalAlignment="Center"/>
+
+                                                                            <StackPanel Grid.Column="4" 
+                                                                                        Orientation="Horizontal" 
+                                                                                        HorizontalAlignment="Right">
+                                                                                <TextBlock Text="Symmetry: " 
+                                                                                           FontSize="11" 
+                                                                                           Foreground="Gray"
+                                                                                           VerticalAlignment="Center"/>
+                                                                                <TextBlock Text="{Binding Symmetry}" 
+                                                                                           FontSize="11"
+                                                                                           VerticalAlignment="Center"/>
+                                                                            </StackPanel>
+                                                                        </Grid>
+                                                                    </Border>
+                                                                </DataTemplate>
+                                                            </ItemsControl.ItemTemplate>
+                                                        </ItemsControl>
+                                                    </StackPanel>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Expander>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+
+                <!-- Chart remains the same -->
                 <syncfusion:SfChart Grid.Row="2" Margin="0,0,0,10">
                     <!-- Chart Resources -->
                     <syncfusion:SfChart.Resources>
@@ -240,8 +307,6 @@
                               Margin="0,10,0,0" />
                     </syncfusion:SfChart.Legend>
                 </syncfusion:SfChart>
-
-
             </Grid>
         </Border>
 
@@ -260,6 +325,13 @@
 
     <!-- Resources -->
     <UserControl.Resources>
+        <CollectionViewSource x:Key="GroupedTrainings"
+                          Source="{Binding Trainings}">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="DateString" />
+            </CollectionViewSource.GroupDescriptions>
+        </CollectionViewSource>
+
         <Style x:Key="BackButtonStyle" TargetType="Button">
             <Setter Property="Padding" Value="10,5" />
             <Setter Property="Cursor" Value="Hand" />

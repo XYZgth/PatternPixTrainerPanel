@@ -97,8 +97,8 @@ namespace PatternPixTrainerPanel.Utilities
                     context.Trainings.Add(new Training
                     {
                         ChildId = emma.Id,
-                        Date = DateTime.Today.AddDays(-5),
-                        TimeOfDay = new TimeSpan(10, 15, 0),
+                        Date = DateTime.Today.AddDays(-10),
+                        TimeOfDay = new TimeSpan(9, 35, 0),
                         Symmetry = 'V',
                         Errors = 2,
                         TimeNeeded = 40
@@ -107,8 +107,8 @@ namespace PatternPixTrainerPanel.Utilities
                     context.Trainings.Add(new Training
                     {
                         ChildId = emma.Id,
-                        Date = DateTime.Today.AddDays(-2),
-                        TimeOfDay = new TimeSpan(14, 0, 0),
+                        Date = DateTime.Today.AddDays(-10),
+                        TimeOfDay = new TimeSpan(9, 40, 0),
                         Symmetry = 'R',
                         Errors = 1,
                         TimeNeeded = 38

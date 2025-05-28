@@ -63,7 +63,13 @@ namespace PatternPixTrainerPanel.Model
         public string FormattedDateTime => $"{Date:dd.MM.yy} {TimeOfDay:hh\\:mm}";
         public double ErrorsScaled => Errors * 10;
 
-       
+        public string DateString => Date.ToString("dd.MM.yyyy");
+
+        public DateTime Timestamp
+        {
+            get { return Date.Date + TimeOfDay; }
+        }
+
 
 
     }
