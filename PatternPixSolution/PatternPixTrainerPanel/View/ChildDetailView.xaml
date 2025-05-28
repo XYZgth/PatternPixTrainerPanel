@@ -158,51 +158,86 @@
                     </DataGrid.Resources>
                 </DataGrid>
                 <syncfusion:SfChart Grid.Row="2" Margin="0,0,0,10">
+                    <!-- Chart Resources -->
+                    <syncfusion:SfChart.Resources>
+                        <DataTemplate x:Key="ErrorLabelTemplate">
+                            <TextBlock Text="{Binding Item.Errors}" 
+                       Foreground="#E74C3C" 
+                       FontSize="10" 
+                       FontWeight="Bold"/>
+                        </DataTemplate>
+
+                        <DataTemplate x:Key="ErrorTooltipTemplate">
+                            <Border Background="White" 
+                    BorderBrush="#E74C3C" 
+                    BorderThickness="1" 
+                    CornerRadius="3" 
+                    Padding="5">
+                                <TextBlock>
+                    <Run Text="Errors: "/>
+                    <Run Text="{Binding Item.Errors}" FontWeight="Bold"/>
+                                </TextBlock>
+                            </Border>
+                        </DataTemplate>
+                    </syncfusion:SfChart.Resources>
                     <!-- Primary Axis (X-Axis: Date) -->
                     <syncfusion:SfChart.PrimaryAxis>
                         <syncfusion:CategoryAxis 
-            Header="Date"
+            Header="Training Sessions"
             LabelRotationAngle="45"
             LabelPlacement="OnTicks"
-            Interval="1"
-            >
-                        </syncfusion:CategoryAxis>
+            ShowGridLines="True" />
                     </syncfusion:SfChart.PrimaryAxis>
 
-                    <!-- Secondary Axis (Y-Axis: Numeric values) -->
+                    <!-- Primary Y-Axis for Time -->
                     <syncfusion:SfChart.SecondaryAxis>
                         <syncfusion:NumericalAxis 
-            Header="Value"
+            Header="Time (seconds)"
             Minimum="0"
-            Interval="1"
-            />
+            ShowGridLines="True" />
                     </syncfusion:SfChart.SecondaryAxis>
 
-                    <!-- Line series for Errors -->
-                    <syncfusion:LineSeries 
-        ItemsSource="{Binding Trainings}" 
-        XBindingPath="FormattedDateTime" 
-        YBindingPath="ErrorsScaled" 
-        Label="Errors"
-        Interior="#E74C3C"
-        ShowTooltip="True"/>
-
-
-                    <!-- Line series for TimeNeeded -->
+                    <!-- Line series for Time Needed -->
                     <syncfusion:LineSeries 
         ItemsSource="{Binding Trainings}" 
         XBindingPath="FormattedDateTime" 
         YBindingPath="TimeNeeded" 
         Label="Time Needed (s)"
         Interior="#3498DB"
+        StrokeThickness="2"
         ShowTooltip="True">
-
+                        <syncfusion:LineSeries.AdornmentsInfo>
+                            <syncfusion:ChartAdornmentInfo ShowMarker="True" 
+                                         Symbol="Ellipse" 
+                                         SymbolInterior="#3498DB" 
+                                         SymbolHeight="6" 
+                                         SymbolWidth="6"/>
+                        </syncfusion:LineSeries.AdornmentsInfo>
                     </syncfusion:LineSeries>
 
+                    <!-- Line series for Errors (scaled to fit with time values) -->
+                    <syncfusion:LineSeries 
+        ItemsSource="{Binding Trainings}" 
+        XBindingPath="FormattedDateTime" 
+        YBindingPath="ErrorsScaled" 
+        Label="Errors"
+        Interior="#E74C3C"
+        StrokeThickness="2"
+        ShowTooltip="True"
+        TooltipTemplate="{StaticResource ErrorTooltipTemplate}">
+                        <syncfusion:LineSeries.AdornmentsInfo>
+                            <syncfusion:ChartAdornmentInfo ShowMarker="True" 
+                                         Symbol="Diamond" 
+                                         SymbolInterior="#E74C3C" 
+                                         SymbolHeight="6" 
+                                         SymbolWidth="6"/>
+                        </syncfusion:LineSeries.AdornmentsInfo>
+                    </syncfusion:LineSeries>
 
-                    <!-- Optional chart legend -->
+                    <!-- Legend -->
                     <syncfusion:SfChart.Legend>
-                        <syncfusion:ChartLegend />
+                        <syncfusion:ChartLegend DockPosition="Bottom"
+                              Margin="0,10,0,0" />
                     </syncfusion:SfChart.Legend>
                 </syncfusion:SfChart>
 

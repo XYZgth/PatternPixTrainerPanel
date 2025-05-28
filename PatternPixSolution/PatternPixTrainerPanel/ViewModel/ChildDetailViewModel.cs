@@ -27,9 +27,6 @@ namespace PatternPixTrainerPanel.ViewModel
         /// \brief Instanz des EventAggregators zur Eventkommunikation.
         private readonly IEventAggregator _eventAggregator;
 
-
-        
-
         /**
          * \brief Konstruktor für das ChildDetailViewModel.
          * 
@@ -121,8 +118,8 @@ namespace PatternPixTrainerPanel.ViewModel
                 {
                     var trainings = context.Trainings
                         .Where(t => t.ChildId == SelectedChild.Id)
-                        .OrderByDescending(t => t.Date)
-                        .ThenByDescending(t => t.TimeOfDay)
+                        .OrderBy(t => t.Date) // Chronologisch sortieren für bessere Visualisierung
+                        .ThenBy(t => t.TimeOfDay)
                         .ToList();
 
                     Trainings = new ObservableCollection<Training>(trainings);
@@ -133,10 +130,6 @@ namespace PatternPixTrainerPanel.ViewModel
                 System.Diagnostics.Debug.WriteLine($"Error loading trainings: {ex.Message}");
                 Trainings = new ObservableCollection<Training>();
             }
-
-
-           
-
         }
 
         /// \brief Befehl zur Navigation zurück zur Hauptansicht.
