@@ -89,7 +89,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = emma.Id,
                         Date = DateTime.Today.AddDays(-10),
                         TimeOfDay = new TimeSpan(9, 30, 0),
-                        Symmetry = 'H',
+                        Symmetry = "H",
                         Errors = 3,
                         TimeNeeded = 45
                     });
@@ -99,7 +99,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = emma.Id,
                         Date = DateTime.Today.AddDays(-10),
                         TimeOfDay = new TimeSpan(9, 35, 0),
-                        Symmetry = 'V',
+                        Symmetry = "V",
                         Errors = 2,
                         TimeNeeded = 40
                     });
@@ -109,7 +109,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = emma.Id,
                         Date = DateTime.Today.AddDays(-10),
                         TimeOfDay = new TimeSpan(9, 40, 0),
-                        Symmetry = 'R',
+                        Symmetry = "R",
                         Errors = 1,
                         TimeNeeded = 38
                     });
@@ -120,7 +120,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = noah.Id,
                         Date = DateTime.Today.AddDays(-7),
                         TimeOfDay = new TimeSpan(11, 0, 0),
-                        Symmetry = 'H',
+                        Symmetry = "H",
                         Errors = 4,
                         TimeNeeded = 105
                     });
@@ -130,7 +130,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = noah.Id,
                         Date = DateTime.Today.AddDays(-3),
                         TimeOfDay = new TimeSpan(13, 45, 0),
-                        Symmetry = 'V',
+                        Symmetry = "V",
                         Errors = 3,
                         TimeNeeded = 90
                     });
@@ -141,7 +141,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = olivia.Id,
                         Date = DateTime.Today.AddDays(-12),
                         TimeOfDay = new TimeSpan(9, 0, 0),
-                        Symmetry = 'B',
+                        Symmetry = "B",
                         Errors = 5,
                         TimeNeeded = 60
                     });
@@ -151,7 +151,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = olivia.Id,
                         Date = DateTime.Today.AddDays(-6),
                         TimeOfDay = new TimeSpan(10, 30, 0),
-                        Symmetry = 'H',
+                        Symmetry = "H",
                         Errors = 4,
                         TimeNeeded = 58
                     });
@@ -162,7 +162,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = linus.Id,
                         Date = DateTime.Today.AddDays(-15),
                         TimeOfDay = new TimeSpan(15, 0, 0),
-                        Symmetry = 'V',
+                        Symmetry = "V",
                         Errors = 2,
                         TimeNeeded = 42
                     });
@@ -172,7 +172,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = linus.Id,
                         Date = DateTime.Today.AddDays(-8),
                         TimeOfDay = new TimeSpan(16, 15, 0),
-                        Symmetry = 'R',
+                        Symmetry = "R",
                         Errors = 1,
                         TimeNeeded = 97
                     });
@@ -182,7 +182,7 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = linus.Id,
                         Date = DateTime.Today.AddDays(-1),
                         TimeOfDay = new TimeSpan(14, 30, 0),
-                        Symmetry = 'H',
+                        Symmetry = "H",
                         Errors = 0,
                         TimeNeeded = 75
                     });
@@ -193,14 +193,14 @@ namespace PatternPixTrainerPanel.Utilities
                         ChildId = eva.Id,
                         Date = DateTime.Today.AddDays(-9),
                         TimeOfDay = new TimeSpan(11, 45, 0),
-                        Symmetry = 'V',
+                        Symmetry = "V",
                         Errors = 3,
                         TimeNeeded = 48
                     });
 
 
                     var random = new Random();
-                    var symmetries = new[] { 'V', 'H', 'B', 'R', '?' };
+                    var symmetries = new[] { "V", "H", "B", "R", "?" };
 
                     foreach (var child in children)
                     {

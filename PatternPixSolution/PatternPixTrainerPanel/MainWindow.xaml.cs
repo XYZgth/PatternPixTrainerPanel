@@ -6,6 +6,7 @@ using Prism.Events;
 using System.Windows.Controls;
 using PatternPixTrainerPanel.Data;
 using PatternPixTrainerPanel.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace PatternPixTrainerPanel
 {
@@ -22,6 +23,8 @@ namespace PatternPixTrainerPanel
         /// \brief EventAggregator von Prism zur Kommunikation zwischen ViewModels.
         private readonly IEventAggregator _eventAggregator;
 
+       
+
         /**
          * \brief Konstruktor des Hauptfensters.
          *
@@ -37,6 +40,7 @@ namespace PatternPixTrainerPanel
             _eventAggregator = new EventAggregator();
 
             _mainViewModel = new MainWindowViewModel(_eventAggregator);
+         
 
             DataContext = _mainViewModel;
 
@@ -62,6 +66,10 @@ namespace PatternPixTrainerPanel
             var childAddView = new ChildAddView();
             childAddView.DataContext = new ChildAddViewModel(_eventAggregator);
             _mainViewModel.RegisterView("ChildAddView", childAddView);
+
+            var analysisView = new AnalysisView();
+            analysisView.DataContext = new AnalysisViewModel(_eventAggregator);
+            _mainViewModel.RegisterView("AnalysisView", analysisView);
         }
     }
 }

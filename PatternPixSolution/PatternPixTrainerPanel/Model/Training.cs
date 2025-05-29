@@ -41,7 +41,7 @@ namespace PatternPixTrainerPanel.Model
         /**
          * \brief Art der geübten Symmetrie (z. B. 'H' für horizontal, 'V' für vertikal).
          */
-        public char Symmetry { get; set; }
+        public string Symmetry { get; set; }
 
         /**
          * \brief Anzahl der Fehler während des Trainings.

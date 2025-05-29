@@ -66,6 +66,7 @@
                     Command="{Binding ViewDetailsCommand}"
                     IsEnabled="{Binding SelectedChild, Converter={StaticResource NullToBoolConverter}}"/>
             <Button Content="Add New" Command="{Binding ViewAddCommand}" Width="80" Margin="5"/>
+            <Button Content="Analysis" Command="{Binding AnalysisViewCommand}" Width="80" Margin="5"/>
         </StackPanel>
     </Grid>
 </UserControl>

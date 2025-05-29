@@ -158,5 +158,19 @@ namespace PatternPixTrainerPanel.ViewModel
                 return _viewaddcommand;
             }
         }
+        private ICommand _analysisCommand;
+        public ICommand AnalysisViewCommand
+        {
+            get
+            {
+                if (_analysisCommand == null)
+                {
+                    _analysisCommand = new ActionCommand(
+                        param => _eventAggregator.GetEvent<NavigationEvent>().Publish("AnalysisView"),
+                        param => true);
+                }
+                return _analysisCommand;
+            }
+        }
     }
 }
