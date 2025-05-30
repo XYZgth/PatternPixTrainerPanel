@@ -29,16 +29,16 @@ namespace PatternPixTrainerPanel.ViewModel
             ToTime = new TimeSpan(23, 59, 59);
 
             Children = new ObservableCollection<string>();
-            SymmetryOptions = new ObservableCollection<string> { "Alle", "H", "V", "B", "R", "?" };
-            ChartTypes = new ObservableCollection<string> { "Fehler/Zeit", "Nur Fehler", "Nur Zeit" };
+            SymmetryOptions = new ObservableCollection<string> { "All", "H", "V", "B", "R", "?" };
+            ChartTypes = new ObservableCollection<string> { "Errors/Time", "Errors Only", "Time Only" };
 
             ChartData = new ObservableCollection<SessionDataPoint>();
 
             SymmetryStatsData = new ObservableCollection<SymmetryStats>();
 
             SelectedChild = string.Empty;
-            SelectedSymmetry = "Alle";
-            SelectedChartType = "Fehler/Zeit";
+            SelectedSymmetry = "All";
+            SelectedChartType = "Errors/Time";
 
             // Asynchron initialisieren
             _ = InitializeAsync();
@@ -289,7 +289,7 @@ namespace PatternPixTrainerPanel.ViewModel
                 }
 
                 // Filter nach Symmetrie anwenden
-                if (SelectedSymmetry != "Alle")
+                if (SelectedSymmetry != "All")
                 {
                     query = query.Where(t => t.Symmetry == SelectedSymmetry);
                 }
@@ -364,14 +364,14 @@ namespace PatternPixTrainerPanel.ViewModel
         {
             get => _timeRanges ??= new ObservableCollection<string>
     {
-        "Ganzer Tag",
-        "Vormittag (6:00-12:00)",
-        "Nachmittag (12:00-18:00)",
-        "Abend (18:00-24:00)"
+        "Entire Day",
+        "Morning (6:00-12:00)",
+        "Afternoon (12:00-18:00)",
+        "Evening (18:00-24:00)"
     };
         }
 
-        private string _selectedTimeRange = "Ganzer Tag";
+        private string _selectedTimeRange = "Entire Day";
         public string SelectedTimeRange
         {
             get => _selectedTimeRange;
@@ -404,8 +404,8 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 return SelectedChartType switch
                 {
-                    "Nur Fehler" => "Error Analysis",
-                    "Nur Zeit" => "Time Analysis",
+                    "Errors Only" => "Error Analysis",
+                    "Time Only" => "Time Analysis",
                     _ => "Training Performance Analysis"
                 };
             }
@@ -417,8 +417,8 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 return SelectedChartType switch
                 {
-                    "Nur Fehler" => "Errors",
-                    "Nur Zeit" => "Time (seconds)",
+                    "Errors Only" => "Errors",
+                    "Time Only" => "Time (seconds)",
                     _ => "Performance Metrics"
                 };
             }
@@ -430,8 +430,8 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 return SelectedChartType switch
                 {
-                    "Nur Fehler" => "Errors",
-                    "Nur Zeit" => "TimeNeeded",
+                    "Errors Only" => "Errors",
+                    "Time Only" => "TimeNeeded",
                     _ => "TimeNeeded"
                 };
             }
@@ -443,7 +443,7 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 return SelectedChartType switch
                 {
-                    "Fehler/Zeit" => "Errors",
+                    "Errors/Time" => "Errors",
                     _ => null
                 };
             }
@@ -455,8 +455,8 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 return SelectedChartType switch
                 {
-                    "Nur Fehler" => "Errors",
-                    "Nur Zeit" => "Time",
+                    "Errors Only" => "Errors",
+                    "Time Only" => "Time",
                     _ => "Time"
                 };
             }
@@ -468,7 +468,7 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 return SelectedChartType switch
                 {
-                    "Fehler/Zeit" => "Errors",
+                    "Errors/Time" => "Errors",
                     _ => ""
                 };
             }
@@ -476,7 +476,7 @@ namespace PatternPixTrainerPanel.ViewModel
 
         public Visibility ShowSecondarySeriesVisibility
         {
-            get => SelectedChartType == "Fehler/Zeit" ? Visibility.Visible : Visibility.Collapsed;
+            get => SelectedChartType == "Errors/Time" ? Visibility.Visible : Visibility.Collapsed;
         }
 
         // Statistics properties that match XAML bindings
@@ -497,19 +497,19 @@ namespace PatternPixTrainerPanel.ViewModel
         {
             switch (timeRange)
             {
-                case "Vormittag (6:00-12:00)":
+                case "Morning (6:00-12:00)":
                     FromTime = new TimeSpan(6, 0, 0);
                     ToTime = new TimeSpan(12, 0, 0);
                     break;
-                case "Nachmittag (12:00-18:00)":
+                case "Afternoon (12:00-18:00)":
                     FromTime = new TimeSpan(12, 0, 0);
                     ToTime = new TimeSpan(18, 0, 0);
                     break;
-                case "Abend (18:00-24:00)":
+                case "Evening (18:00-24:00)":
                     FromTime = new TimeSpan(18, 0, 0);
                     ToTime = new TimeSpan(23, 59, 59);
                     break;
-                default: // "Ganzer Tag"
+                default: // "Entire Day"
                     FromTime = TimeSpan.Zero;
                     ToTime = new TimeSpan(23, 59, 59);
                     break;
