@@ -15,14 +15,13 @@ using PatternPixTrainerPanel.Events;
 
 namespace PatternPixTrainerPanel.ViewModel
 {
+    
+  
     public class AnalysisViewModel : BaseViewModel
     {
-
         public AnalysisViewModel(IEventAggregator eventAggregator)
             : base(eventAggregator)
         {
-
-
             FromDate = DateTime.Today.AddDays(-30);
             ToDate = DateTime.Today;
             FromTime = TimeSpan.Zero;
@@ -33,8 +32,11 @@ namespace PatternPixTrainerPanel.ViewModel
             ChartTypes = new ObservableCollection<string> { "Errors/Time", "Errors Only", "Time Only" };
 
             Trainings = new ObservableCollection<Training>();
-
             SymmetryStatsData = new ObservableCollection<SymmetryStats>();
+
+           
+            PeerComparisonData = new ObservableCollection<PeerComparisonData>();
+            PeerSymmetryComparison = new ObservableCollection<PeerSymmetryComparison>();
 
             SelectedChild = string.Empty;
             SelectedSymmetry = "All";
@@ -69,11 +71,11 @@ namespace PatternPixTrainerPanel.ViewModel
             }
             catch (Exception ex)
             {
-                // Logging oder Error Handling hier
                 Console.WriteLine($"Fehler beim Laden der Kinder: {ex.Message}");
             }
         }
 
+        
         private string _selectedChild;
         public string SelectedChild
         {
@@ -113,7 +115,6 @@ namespace PatternPixTrainerPanel.ViewModel
                 if (_selectedChartType != value)
                 {
                     _selectedChartType = value;
-                    OnPropertyChanged(nameof(SelectedChartType));
                     OnPropertyChanged(nameof(SelectedChartType));
 
                     // Chart-spezifische Properties benachrichtigen
@@ -188,12 +189,17 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
+        // Collections
         public ObservableCollection<string> Children { get; }
         public ObservableCollection<string> SymmetryOptions { get; }
         public ObservableCollection<string> ChartTypes { get; }
-
         public ObservableCollection<SymmetryStats> SymmetryStatsData { get; }
+        public ObservableCollection<Training> Trainings { get; }
 
+        public ObservableCollection<PeerComparisonData> PeerComparisonData { get; }
+        public ObservableCollection<PeerSymmetryComparison> PeerSymmetryComparison { get; }
+
+        
         private int _totalSessions;
         public int TotalSessions
         {
@@ -250,9 +256,76 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
+        // Peer statistics properties
+        private double _peerAverageTime;
+        public double PeerAverageTime
+        {
+            get => _peerAverageTime;
+            set
+            {
+                if (_peerAverageTime != value)
+                {
+                    _peerAverageTime = value;
+                    OnPropertyChanged(nameof(PeerAverageTime));
+                }
+            }
+        }
 
+        private double _peerAverageErrors;
+        public double PeerAverageErrors
+        {
+            get => _peerAverageErrors;
+            set
+            {
+                if (_peerAverageErrors != value)
+                {
+                    _peerAverageErrors = value;
+                    OnPropertyChanged(nameof(PeerAverageErrors));
+                }
+            }
+        }
 
+        private int _peerTotalSessions;
+        public int PeerTotalSessions
+        {
+            get => _peerTotalSessions;
+            set
+            {
+                if (_peerTotalSessions != value)
+                {
+                    _peerTotalSessions = value;
+                    OnPropertyChanged(nameof(PeerTotalSessions));
+                }
+            }
+        }
 
+        private double _averageSessionsPerPeer;
+        public double AverageSessionsPerPeer
+        {
+            get => _averageSessionsPerPeer;
+            set
+            {
+                if (_averageSessionsPerPeer != value)
+                {
+                    _averageSessionsPerPeer = value;
+                    OnPropertyChanged(nameof(AverageSessionsPerPeer));
+                }
+            }
+        }
+
+        private int _peerCount;
+        public int PeerCount
+        {
+            get => _peerCount;
+            set
+            {
+                if (_peerCount != value)
+                {
+                    _peerCount = value;
+                    OnPropertyChanged(nameof(PeerCount));
+                }
+            }
+        }
 
         private bool _isLoading;
         public bool IsLoading
@@ -309,10 +382,11 @@ namespace PatternPixTrainerPanel.ViewModel
                 await UpdateSymmetryStatsAsync(filteredData);
                 await UpdateMovingAverageAsync(filteredData);
 
+             
+                await UpdatePeerComparisonAsync();
             }
             catch (Exception ex)
             {
-                // Logging oder Error Handling hier
                 Console.WriteLine($"Fehler beim Anwenden der Filter: {ex.Message}");
             }
             finally
@@ -329,12 +403,130 @@ namespace PatternPixTrainerPanel.ViewModel
                 AverageTime = data.Any() ? data.Average(x => x.TimeNeeded) : 0;
                 AverageErrors = data.Any() ? data.Average(x => x.Errors) : 0;
                 BestTime = data.Any() ? data.Min(x => x.TimeNeeded) : 0;
-
             });
         }
 
+       
+        private async Task UpdatePeerComparisonAsync()
+        {
+            if (string.IsNullOrEmpty(SelectedChild))
+                return;
 
+            try
+            {
+                using var context = new PatternPixDbContext();
 
+               
+                var selectedChildData = await context.Children
+                    .Where(c => (c.FirstName + " " + c.LastName) == SelectedChild)
+                    .FirstOrDefaultAsync();
+
+                if (selectedChildData == null)
+                    return;
+
+                int selectedChildBirthYear = selectedChildData.DateOfBirth.Year;
+
+               
+                var peerQuery = context.Trainings
+                    .Include(t => t.Child)
+                    .Where(t => (t.Child.FirstName + " " + t.Child.LastName) != SelectedChild &&
+                               t.Child.DateOfBirth.Year == selectedChildBirthYear);
+
+              
+                if (SelectedSymmetry != "All")
+                {
+                    peerQuery = peerQuery.Where(t => t.Symmetry == SelectedSymmetry);
+                }
+
+                peerQuery = peerQuery.Where(t =>
+                    t.Date.Date >= FromDate.Date &&
+                    t.Date.Date <= ToDate.Date &&
+                    t.TimeOfDay >= FromTime &&
+                    t.TimeOfDay <= ToTime);
+
+                var peerData = await peerQuery.ToListAsync();
+
+                await Task.Run(() =>
+                {
+                    
+                    var peerChildren = peerData.Select(t => t.Child.FirstName + " " + t.Child.LastName).Distinct().ToList();
+                    var peerSessionsPerChild = peerChildren.Select(peerName =>
+                        peerData.Count(t => (t.Child.FirstName + " " + t.Child.LastName) == peerName)).ToList();
+
+                  
+                    PeerCount = peerChildren.Count;
+                    AverageSessionsPerPeer = peerSessionsPerChild.Any() ? peerSessionsPerChild.Average() : 0;
+                    PeerTotalSessions = peerData.Count; 
+                    PeerAverageTime = peerData.Any() ? peerData.Average(x => x.TimeNeeded) : 0;
+                    PeerAverageErrors = peerData.Any() ? peerData.Average(x => x.Errors) : 0;
+
+                   
+                    var comparisonData = new List<PeerComparisonData>
+                    {
+                        new PeerComparisonData
+                        {
+                            Metric = "Average Time",
+                            ChildValue = AverageTime,
+                            PeerAverage = PeerAverageTime,
+                            ChildName = SelectedChild
+                        },
+                        new PeerComparisonData
+                        {
+                            Metric = "Average Errors",
+                            ChildValue = AverageErrors,
+                            PeerAverage = PeerAverageErrors,
+                            ChildName = SelectedChild
+                        },
+                        new PeerComparisonData
+                        {
+                            Metric = "Sessions",
+                            ChildValue = TotalSessions,
+                            PeerAverage = AverageSessionsPerPeer, 
+                            ChildName = SelectedChild
+                        }
+                    };
+
+                   
+                    var peerSymmetryStats = peerData.GroupBy(x => x.Symmetry)
+                        .Select(g => new { Symmetry = g.Key, AvgTime = g.Average(x => x.TimeNeeded), AvgErrors = g.Average(x => x.Errors) })
+                        .ToDictionary(x => x.Symmetry, x => new { x.AvgTime, x.AvgErrors });
+
+                    var symmetryComparison = SymmetryStatsData.Select(childStat => new PeerSymmetryComparison
+                    {
+                        Symmetry = childStat.Symmetry,
+                        AvgTime = childStat.AvgTime,
+                        AvgErrors = childStat.AvgErrors,
+                        PeerAvgTime = peerSymmetryStats.ContainsKey(childStat.Symmetry) ?
+                            peerSymmetryStats[childStat.Symmetry].AvgTime : 0,
+                        PeerAvgErrors = peerSymmetryStats.ContainsKey(childStat.Symmetry) ?
+                            peerSymmetryStats[childStat.Symmetry].AvgErrors : 0
+                    }).ToList();
+
+                 
+                    App.Current.Dispatcher.Invoke(() =>
+                    {
+                        PeerComparisonData.Clear();
+                        foreach (var comparison in comparisonData)
+                        {
+                            PeerComparisonData.Add(comparison);
+                        }
+
+                        PeerSymmetryComparison.Clear();
+                        foreach (var comparison in symmetryComparison)
+                        {
+                            PeerSymmetryComparison.Add(comparison);
+                        }
+
+                        OnPropertyChanged(nameof(PeerComparisonData));
+                        OnPropertyChanged(nameof(PeerSymmetryComparison));
+                    });
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error calculating peer comparison: {ex.Message}");
+            }
+        }
 
         // Für manuelle Aktualisierung
         public async Task RefreshDataAsync()
@@ -342,7 +534,6 @@ namespace PatternPixTrainerPanel.ViewModel
             await LoadChildrenAsync();
             await ApplyFilterAsync();
         }
-
 
         public DateTime StartDate
         {
@@ -361,12 +552,12 @@ namespace PatternPixTrainerPanel.ViewModel
         public ObservableCollection<string> TimeRanges
         {
             get => _timeRanges ??= new ObservableCollection<string>
-    {
-        "Entire Day",
-        "Morning (6:00-12:00)",
-        "Afternoon (12:00-18:00)",
-        "Evening (18:00-24:00)"
-    };
+            {
+                "Entire Day",
+                "Morning (6:00-12:00)",
+                "Afternoon (12:00-18:00)",
+                "Evening (18:00-24:00)"
+            };
         }
 
         private string _selectedTimeRange = "Entire Day";
@@ -384,8 +575,6 @@ namespace PatternPixTrainerPanel.ViewModel
                 }
             }
         }
-
-        public ObservableCollection<Training> Trainings { get; }
 
         public ObservableCollection<Training> FilteredTrainings => Trainings;
 
@@ -471,7 +660,7 @@ namespace PatternPixTrainerPanel.ViewModel
             get => SelectedChartType == "Errors/Time" ? Visibility.Visible : Visibility.Collapsed;
         }
 
-        // Statistics properties that match XAML bindings
+     
         public ObservableCollection<SymmetryStats> SymmetryStats =>
             new ObservableCollection<SymmetryStats>(SymmetryStatsData.Select(s => new SymmetryStats
             {
@@ -480,10 +669,8 @@ namespace PatternPixTrainerPanel.ViewModel
                 AvgErrors = s.AvgErrors
             }));
 
-        // Moving average data for trend chart
+        
         public ObservableCollection<MovingAveragePoint> MovingAverageData { get; } = new();
-
-
 
         private void UpdateTimeRangeFilter(string timeRange)
         {
@@ -508,7 +695,7 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
-        // Update existing methods to notify property changes for chart bindings
+      
         private async Task UpdateChartDataAsync(List<Training> data)
         {
             await Task.Run(() =>
@@ -521,10 +708,9 @@ namespace PatternPixTrainerPanel.ViewModel
                         Trainings.Add(training);
                     }
 
-                    // Notify the binding property
+               
                     OnPropertyChanged(nameof(SymmetryStats));
 
-                    // Notify chart-related properties
                     OnPropertyChanged(nameof(Trainings));
                     OnPropertyChanged(nameof(FilteredTrainings));
                     OnPropertyChanged(nameof(PrimaryChartTitle));
@@ -534,13 +720,11 @@ namespace PatternPixTrainerPanel.ViewModel
                     OnPropertyChanged(nameof(PrimarySeriesLabel));
                     OnPropertyChanged(nameof(SecondarySeriesLabel));
                     OnPropertyChanged(nameof(ShowSecondarySeriesVisibility));
-
                 });
             });
         }
 
-
-        // Update the moving average method to use the new data structure
+        
         private async Task UpdateMovingAverageAsync(List<Training> data)
         {
             await Task.Run(() =>
@@ -571,7 +755,7 @@ namespace PatternPixTrainerPanel.ViewModel
             });
         }
 
-        // Update SymmetryStats method to notify the binding
+      
         private async Task UpdateSymmetryStatsAsync(List<Training> data)
         {
             await Task.Run(() =>
@@ -593,11 +777,12 @@ namespace PatternPixTrainerPanel.ViewModel
                         SymmetryStatsData.Add(stat);
                     }
 
-                    // Notify the binding property
+                  
                     OnPropertyChanged(nameof(SymmetryStats));
                 });
             });
         }
+
         /// \brief Befehl zum Zurücknavigieren zur Hauptansicht.
         private ICommand _backCommand;
 
@@ -623,12 +808,3 @@ namespace PatternPixTrainerPanel.ViewModel
         }
     }
 }
-
-
-
-
-
-
-
-
-

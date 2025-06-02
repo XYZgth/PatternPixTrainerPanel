@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:PatternPixTrainerPanel.View"
              xmlns:vm="clr-namespace:PatternPixTrainerPanel.ViewModel"
              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="1200">
 
@@ -14,6 +15,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+        
         </Grid.RowDefinitions>
 
         <!-- Header -->
@@ -321,7 +323,10 @@
                         </syncfusion:SfChart>
                     </Grid>
                 </Border>
+                
+
             </Grid>
+            
 
             <!-- Statistics Panel -->
             <Border Grid.Column="2" 
@@ -329,7 +334,7 @@
                     BorderThickness="1" 
                     CornerRadius="6"
                     Background="White">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Height="507" VerticalAlignment="Top">
                     <StackPanel Margin="15">
                         <TextBlock Text="Analysis Summary" 
                                    FontSize="16" 
@@ -482,10 +487,69 @@
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
+                        <StackPanel>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Header -->
+                                <TextBlock Grid.Row="0" Text="Peer Comparison" 
+FontSize="18" FontWeight="Bold" 
+Margin="0,0,0,10"/>
+
+                                <!-- Overall Performance Comparison Chart -->
+                                <syncfusion:SfChart Grid.Row="1" Header="Child vs Peers" 
+         Margin="5">
+                                    <syncfusion:SfChart.PrimaryAxis>
+                                        <syncfusion:CategoryAxis Header="Metrics" />
+                                    </syncfusion:SfChart.PrimaryAxis>
+                                    <syncfusion:SfChart.SecondaryAxis>
+                                        <syncfusion:NumericalAxis Header="Values" />
+                                    </syncfusion:SfChart.SecondaryAxis>
+
+                                    <!-- Child's Performance Series -->
+                                    <syncfusion:ColumnSeries ItemsSource="{Binding PeerComparisonData}" 
+                  XBindingPath="Metric" 
+                  YBindingPath="ChildValue"
+                  Label="Selected Child"
+                  Interior="LightBlue">
+                                        <syncfusion:ColumnSeries.AdornmentsInfo>
+                                            <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer"/>
+                                        </syncfusion:ColumnSeries.AdornmentsInfo>
+                                    </syncfusion:ColumnSeries>
+
+                                    <!-- Peer Average Series -->
+                                    <syncfusion:ColumnSeries ItemsSource="{Binding PeerComparisonData}" 
+                  XBindingPath="Metric" 
+                  YBindingPath="PeerAverage"
+                  Label="Peer Average"
+                  Interior="LightCoral">
+                                        <syncfusion:ColumnSeries.AdornmentsInfo>
+                                            <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer"/>
+                                        </syncfusion:ColumnSeries.AdornmentsInfo>
+                                    </syncfusion:ColumnSeries>
+
+                                    <syncfusion:SfChart.Legend>
+                                        <syncfusion:ChartLegend DockPosition="Bottom"/>
+                                    </syncfusion:SfChart.Legend>
+                                </syncfusion:SfChart>
+
+                               
+                                    
+                               
+                            </Grid>
+                        </StackPanel>
                     </StackPanel>
+                    
+                   
                 </ScrollViewer>
             </Border>
+            
         </Grid>
+        
     </Grid>
 
     <!-- Resources -->
