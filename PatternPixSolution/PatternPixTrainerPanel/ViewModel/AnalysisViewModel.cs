@@ -32,7 +32,7 @@ namespace PatternPixTrainerPanel.ViewModel
             SymmetryOptions = new ObservableCollection<string> { "All", "H", "V", "B", "R", "?" };
             ChartTypes = new ObservableCollection<string> { "Errors/Time", "Errors Only", "Time Only" };
 
-            ChartData = new ObservableCollection<SessionDataPoint>();
+            Trainings = new ObservableCollection<Training>();
 
             SymmetryStatsData = new ObservableCollection<SymmetryStats>();
 
@@ -191,8 +191,6 @@ namespace PatternPixTrainerPanel.ViewModel
         public ObservableCollection<string> Children { get; }
         public ObservableCollection<string> SymmetryOptions { get; }
         public ObservableCollection<string> ChartTypes { get; }
-
-        public ObservableCollection<SessionDataPoint> ChartData { get; }
 
         public ObservableCollection<SymmetryStats> SymmetryStatsData { get; }
 
@@ -387,13 +385,7 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
-        public ObservableCollection<Training> Trainings => new ObservableCollection<Training>(ChartData.Select(cd => new Training
-        {
-            Date = DateTime.Parse(cd.Label + DateTime.Now.Year),
-            Errors = cd.Errors,
-            TimeNeeded = cd.TimeNeeded,
-
-        }).ToList());
+        public ObservableCollection<Training> Trainings { get; }
 
         public ObservableCollection<Training> FilteredTrainings => Trainings;
 
@@ -521,22 +513,13 @@ namespace PatternPixTrainerPanel.ViewModel
         {
             await Task.Run(() =>
             {
-                var chartPoints = data.Select(d => new SessionDataPoint
-                {
-                    Label = d.Date.ToString("dd.MM."),
-                    Errors = d.Errors,
-                    TimeNeeded = d.TimeNeeded
-                }).ToList();
-
-                // UI Update im UI-Thread
                 App.Current.Dispatcher.Invoke(() =>
                 {
-                    ChartData.Clear();
-                    foreach (var point in chartPoints)
+                    Trainings.Clear();
+                    foreach (var training in data.OrderBy(t => t.Date).ThenBy(t => t.TimeOfDay))
                     {
-                        ChartData.Add(point);
+                        Trainings.Add(training);
                     }
-
 
                     // Notify the binding property
                     OnPropertyChanged(nameof(SymmetryStats));
