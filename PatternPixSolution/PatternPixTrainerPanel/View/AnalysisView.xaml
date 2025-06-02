@@ -449,7 +449,7 @@
                                             </Grid.RowDefinitions>
 
                                             <TextBlock Grid.Row="0" 
-                                                       Text="{Binding SymmetryType}" 
+                                                       Text="{Binding Symmetry}" 
                                                        FontWeight="SemiBold" 
                                                        FontSize="12"/>
 
@@ -463,7 +463,7 @@
                                                     <TextBlock Text="Avg Time:" 
                                                                FontSize="10" 
                                                                Foreground="#6C757D"/>
-                                                    <TextBlock Text="{Binding AverageTime, StringFormat='{}{0:F1}s'}" 
+                                                    <TextBlock Text="{Binding AvgTime, StringFormat='{}{0:F1}s'}" 
                                                                FontSize="11" 
                                                                FontWeight="SemiBold"/>
                                                 </StackPanel>
@@ -472,7 +472,7 @@
                                                     <TextBlock Text="Avg Errors:" 
                                                                FontSize="10" 
                                                                Foreground="#6C757D"/>
-                                                    <TextBlock Text="{Binding AverageErrors, StringFormat='{}{0:F1}'}" 
+                                                    <TextBlock Text="{Binding AvgErrors, StringFormat='{}{0:F1}'}" 
                                                                FontSize="11" 
                                                                FontWeight="SemiBold"/>
                                                 </StackPanel>
