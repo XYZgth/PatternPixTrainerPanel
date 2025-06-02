@@ -480,12 +480,12 @@ namespace PatternPixTrainerPanel.ViewModel
         }
 
         // Statistics properties that match XAML bindings
-        public ObservableCollection<SymmetryStatistic> SymmetryStats =>
-            new ObservableCollection<SymmetryStatistic>(SymmetryStatsData.Select(s => new SymmetryStatistic
+        public ObservableCollection<SymmetryStats> SymmetryStats =>
+            new ObservableCollection<SymmetryStats>(SymmetryStatsData.Select(s => new SymmetryStats
             {
-                SymmetryType = s.Symmetry,
-                AverageTime = s.AvgTime,
-                AverageErrors = s.AvgErrors
+                Symmetry = s.Symmetry,
+                AvgTime = s.AvgTime,
+                AvgErrors = s.AvgErrors
             }));
 
         // Moving average data for trend chart
@@ -644,18 +644,8 @@ namespace PatternPixTrainerPanel.ViewModel
 
 
 
-public class SymmetryStatistic
-{
-    public string SymmetryType { get; set; }
-    public double AverageTime { get; set; }
-    public double AverageErrors { get; set; }
-}
 
-public class MovingAveragePoint
-{
-    public int SessionNumber { get; set; }
-    public double AverageTime { get; set; }
-    public double AverageErrors { get; set; }
-}
+
+
 
 
