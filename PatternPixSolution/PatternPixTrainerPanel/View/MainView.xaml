@@ -24,6 +24,8 @@
         <StackPanel Grid.Row="0" Margin="10">
             <TextBlock Text="Training Data" FontSize="20" FontWeight="Bold"/>
             <TextBlock Text="Pattern Pix Concentration Training" FontStyle="Italic" Margin="0,5,0,0"/>
+            <TextBlock Text="Database - JSON:" Margin="0,0,0,5"/>
+            <Slider HorizontalAlignment="Left" Name="StorageSlider" Minimum="0" Maximum="1" TickFrequency="1" IsSnapToTickEnabled="True" Width="100" />
         </StackPanel>
 
         <!-- Children DataGrid -->

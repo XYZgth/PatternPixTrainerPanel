@@ -4,6 +4,7 @@ using System;
 using System.Linq;
 using System.IO;
 using System.Text.Json;
+using PatternPixTrainerPanel.Repositories;
 
 namespace PatternPixTrainerPanel.Utilities
 {
@@ -20,7 +21,7 @@ namespace PatternPixTrainerPanel.Utilities
          * 
          * Wenn bereits Kinder vorhanden sind, wird der Vorgang übersprungen.
          */
-        public static void SeedDatabase()
+        public static void SeedDatabase(IChildRepository childRepository)
         {
             using (var context = new PatternPixDbContext())
             {
@@ -68,23 +69,17 @@ namespace PatternPixTrainerPanel.Utilities
 
                     var children = new List<Child> { emma, noah, olivia, linus, eva };
 
-                    // Kinder zusätzlich in JSON-Datei speichern
-                    var fileRepo = new FileChildRepository();
-                    fileRepo.SaveChildren(children);
+                    // Dependency Injection Kinder speichern
+                    childRepository.SaveChildren(children);
 
-                    // Kinder in Datenbank speichern
-                    context.Children.Add(emma);
-                    context.Children.Add(noah);
-                    context.Children.Add(olivia);
-                    context.Children.Add(linus);
-                    context.Children.Add(eva);
 
-                    context.SaveChanges();
 
                     // Trainingsdaten zuweisen
 
+                    var trainings = new List<Training>();
+
                     // Trainings für Emma
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = emma.Id,
                         Date = DateTime.Today.AddDays(-10),
@@ -94,7 +89,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 45
                     });
 
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = emma.Id,
                         Date = DateTime.Today.AddDays(-10),
@@ -104,7 +99,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 40
                     });
 
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = emma.Id,
                         Date = DateTime.Today.AddDays(-10),
@@ -115,7 +110,7 @@ namespace PatternPixTrainerPanel.Utilities
                     });
 
                     // Trainings für Noah
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = noah.Id,
                         Date = DateTime.Today.AddDays(-7),
@@ -125,7 +120,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 105
                     });
 
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = noah.Id,
                         Date = DateTime.Today.AddDays(-3),
@@ -136,7 +131,7 @@ namespace PatternPixTrainerPanel.Utilities
                     });
 
                     // Trainings für Olivia
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = olivia.Id,
                         Date = DateTime.Today.AddDays(-12),
@@ -146,7 +141,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 60
                     });
 
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = olivia.Id,
                         Date = DateTime.Today.AddDays(-6),
@@ -157,7 +152,7 @@ namespace PatternPixTrainerPanel.Utilities
                     });
 
                     // Trainings für Linus
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = linus.Id,
                         Date = DateTime.Today.AddDays(-15),
@@ -167,7 +162,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 42
                     });
 
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = linus.Id,
                         Date = DateTime.Today.AddDays(-8),
@@ -177,7 +172,7 @@ namespace PatternPixTrainerPanel.Utilities
                         TimeNeeded = 97
                     });
 
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = linus.Id,
                         Date = DateTime.Today.AddDays(-1),
@@ -188,7 +183,7 @@ namespace PatternPixTrainerPanel.Utilities
                     });
 
                     // Trainings für Eva
-                    context.Trainings.Add(new Training
+                    trainings.Add(new Training
                     {
                         ChildId = eva.Id,
                         Date = DateTime.Today.AddDays(-9),
@@ -212,7 +207,7 @@ namespace PatternPixTrainerPanel.Utilities
                             var errors = random.Next(0, 7); // 0–6 Fehler
                             var timeNeeded = random.Next(40, 121); // 40–120 Sekunden
 
-                            context.Trainings.Add(new Training
+                            trainings.Add(new Training
                             {
                                 ChildId = child.Id,
                                 Date = date,
@@ -224,13 +219,10 @@ namespace PatternPixTrainerPanel.Utilities
                         }
                     }
 
-                    context.SaveChanges();
-                    Console.WriteLine("Zusätzliche Trainingsdaten wurden hinzugefügt.");
+                    // Dependency Injection Trainings speichern
+                    childRepository.SaveTrainings(trainings);
 
-
-                    context.SaveChanges();
-
-                    Console.WriteLine("Database seeded successfully!");
+                    //Success
                 }
                 else
                 {

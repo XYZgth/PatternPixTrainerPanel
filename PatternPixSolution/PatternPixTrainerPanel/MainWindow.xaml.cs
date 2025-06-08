@@ -35,7 +35,7 @@ namespace PatternPixTrainerPanel
         {
             InitializeComponent();
 
-            var fileRepo = new FileChildRepository();
+            //var fileRepo = new FileJSONRepository();
 
             _eventAggregator = new EventAggregator();
 
