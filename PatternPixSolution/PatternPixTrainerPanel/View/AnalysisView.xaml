@@ -517,7 +517,7 @@ Margin="0,0,0,10"/>
                   Label="Selected Child"
                   Interior="LightBlue">
                                         <syncfusion:ColumnSeries.AdornmentsInfo>
-                                            <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer"/>
+                                            <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
                                         </syncfusion:ColumnSeries.AdornmentsInfo>
                                     </syncfusion:ColumnSeries>
 
@@ -528,7 +528,7 @@ Margin="0,0,0,10"/>
                   Label="Peer Average"
                   Interior="LightCoral">
                                         <syncfusion:ColumnSeries.AdornmentsInfo>
-                                            <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer"/>
+                                            <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
                                         </syncfusion:ColumnSeries.AdornmentsInfo>
                                     </syncfusion:ColumnSeries>
 
