@@ -34,6 +34,7 @@ namespace PatternPixTrainerPanel.ViewModel
          */
         public ChildAddViewModel(IEventAggregator eventAggregator) : base(eventAggregator)
         {
+            DateOfBirth = DateTime.Now.AddYears(-10);
             _eventAggregator = eventAggregator;
         }
 
@@ -129,7 +130,7 @@ namespace PatternPixTrainerPanel.ViewModel
                             // Feld clear
                             ChildName = string.Empty;
                             LastName = string.Empty;
-                            DateOfBirth = DateTime.MinValue;
+                            DateOfBirth = DateTime.Now.AddYears(-10);
                         },
                         param => true
                     );
@@ -150,7 +151,7 @@ namespace PatternPixTrainerPanel.ViewModel
                         {
                             ChildName = string.Empty;
                             LastName = string.Empty;
-                            DateOfBirth = DateTime.MinValue;
+                            DateOfBirth = DateTime.Now.AddYears(-10);
                         },
                         param => true
                     );

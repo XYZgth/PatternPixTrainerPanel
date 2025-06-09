@@ -113,8 +113,8 @@ namespace PatternPixTrainerPanel.Utilities
                     trainings.Add(new Training
                     {
                         ChildId = noah.Id,
-                        Date = DateTime.Today.AddDays(-7),
-                        TimeOfDay = new TimeSpan(11, 0, 0),
+                        Date = DateTime.Today.AddDays(-3),
+                        TimeOfDay = new TimeSpan(13, 40, 0),
                         Symmetry = "H",
                         Errors = 4,
                         TimeNeeded = 105
@@ -135,7 +135,7 @@ namespace PatternPixTrainerPanel.Utilities
                     {
                         ChildId = olivia.Id,
                         Date = DateTime.Today.AddDays(-12),
-                        TimeOfDay = new TimeSpan(9, 0, 0),
+                        TimeOfDay = new TimeSpan(10, 25, 0),
                         Symmetry = "B",
                         Errors = 5,
                         TimeNeeded = 60
@@ -144,7 +144,7 @@ namespace PatternPixTrainerPanel.Utilities
                     trainings.Add(new Training
                     {
                         ChildId = olivia.Id,
-                        Date = DateTime.Today.AddDays(-6),
+                        Date = DateTime.Today.AddDays(-12),
                         TimeOfDay = new TimeSpan(10, 30, 0),
                         Symmetry = "H",
                         Errors = 4,
@@ -155,8 +155,8 @@ namespace PatternPixTrainerPanel.Utilities
                     trainings.Add(new Training
                     {
                         ChildId = linus.Id,
-                        Date = DateTime.Today.AddDays(-15),
-                        TimeOfDay = new TimeSpan(15, 0, 0),
+                        Date = DateTime.Today.AddDays(-8),
+                        TimeOfDay = new TimeSpan(16, 10, 0),
                         Symmetry = "V",
                         Errors = 2,
                         TimeNeeded = 42
@@ -175,8 +175,8 @@ namespace PatternPixTrainerPanel.Utilities
                     trainings.Add(new Training
                     {
                         ChildId = linus.Id,
-                        Date = DateTime.Today.AddDays(-1),
-                        TimeOfDay = new TimeSpan(14, 30, 0),
+                        Date = DateTime.Today.AddDays(-8),
+                        TimeOfDay = new TimeSpan(16, 20, 0),
                         Symmetry = "H",
                         Errors = 0,
                         TimeNeeded = 75
@@ -199,9 +199,9 @@ namespace PatternPixTrainerPanel.Utilities
 
                     foreach (var child in children)
                     {
-                        for (int i = 0; i < 10; i++)
+                        for (int i = 0; i < 30; i++)
                         {
-                            var date = DateTime.Today.AddDays(-random.Next(1, 30));
+                            var date = DateTime.Today.AddDays(-random.Next(1, 60));
                             var time = new TimeSpan(random.Next(8, 17), random.Next(0, 60), 0); // zwischen 08:00 und 16:59
                             var symmetry = symmetries[random.Next(symmetries.Length)];
                             var errors = random.Next(0, 7); // 0–6 Fehler
