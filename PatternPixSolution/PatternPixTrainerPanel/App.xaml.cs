@@ -16,9 +16,17 @@ namespace PatternPixTrainerPanel
             PatternPixDbContext dbContext = new PatternPixDbContext();
             try
             {
+                SetRepositoryMode(1);
+
+                // Seed the database with test data
+                if (ChildRepository != null)
+                {
+                    DatabaseSeeder.SeedDatabase(ChildRepository);
+                }
+
                 MainView view = new MainView();
                 int mode = view.GetSelectedRepositoryMode();
-                //int mode = 1;
+                
 
                 SetRepositoryMode(mode);
                 
