@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\viewmodel\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\peercomparisondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\peercomparisondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,11 +51,15 @@
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\viewmodel\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\data\\patternpixdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\data\\patternpixdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\data\\patternpixdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -111,11 +131,15 @@
       "RelativeMoniker": "D:0:0:{B64B97FC-29CB-4835-863D-6A9C275D5E0B}|Common\\Common.csproj|solutionrelative:common\\command\\actioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+=======
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -131,11 +155,15 @@
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\peersymmetrycomparison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\peercomparisondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\peercomparisondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\movingaveragepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\movingaveragepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\movingaveragepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -183,10 +211,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 4,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
@@ -223,6 +256,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\App.xaml.cs",
@@ -235,6 +271,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "DatabaseSeeder.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
@@ -249,6 +286,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "ChildAddViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
@@ -257,10 +297,98 @@
               "ViewState": "AgIAAJQAAAAAAAAAAAAgwJ8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T11:07:30.996Z"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PeerComparisonData.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\PeerComparisonData.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\PeerComparisonData.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\PeerComparisonData.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Model\\PeerComparisonData.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T19:33:16.653Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnalysisView.xaml",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\AnalysisView.xaml",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml",
+              "RelativeToolTip": "PatternPixTrainerPanel\\View\\AnalysisView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-29T16:56:44.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnalysisViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "ViewState": "AgIAAMMCAAAAAAAAAADgv8wCAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T17:02:07.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatabaseSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAIwGkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:57:41.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileJSONRepository.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:25:03.811Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv0YAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T08:07:15.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\MainView.xaml",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
+              "RelativeToolTip": "PatternPixTrainerPanel\\View\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T11:34:11.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
@@ -272,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AnalysisView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\AnalysisView.xaml.cs",
@@ -284,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ChildAddView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildAddView.xaml",
@@ -296,6 +424,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
+<<<<<<< Updated upstream
               "Title": "AnalysisViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
@@ -308,6 +437,8 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+=======
+>>>>>>> Stashed changes
               "Title": "ChildrenListViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
@@ -319,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml",
@@ -330,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
@@ -342,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PatternPixDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
@@ -354,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Child.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Child.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Child.cs",
@@ -366,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ChildAddView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
@@ -378,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ChildDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
@@ -390,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ChildDetailView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
@@ -402,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\MainView.xaml.cs",
@@ -414,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "DBChildRepository.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
@@ -426,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Training.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Training.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Training.cs",
@@ -438,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "20250515125128_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\20250515125128_InitialMigration.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Migrations\\20250515125128_InitialMigration.cs",
@@ -450,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "NotifyPropertyChanged.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\Common\\NotifyPropertyChanged.cs",
               "RelativeDocumentMoniker": "Common\\NotifyPropertyChanged.cs",
@@ -462,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "PatternPixDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
@@ -474,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "FileChildRepository.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
@@ -486,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "IChildRepository.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
@@ -498,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ActionCommand.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\Common\\Command\\ActionCommand.cs",
               "RelativeDocumentMoniker": "Common\\Command\\ActionCommand.cs",
@@ -510,6 +641,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 27,
               "Title": "AnalysisView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml",
@@ -522,6 +654,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 28,
+=======
+              "DocumentIndex": 29,
+>>>>>>> Stashed changes
               "Title": "ChildDetailView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
@@ -532,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ChildrenListView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildrenListView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildrenListView.xaml",
@@ -543,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "SymmetryStats.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\SymmetryStats.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\SymmetryStats.cs",
@@ -555,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "PeerSymmetryComparison.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\PeerSymmetryComparison.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\PeerSymmetryComparison.cs",
@@ -579,6 +714,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 32,
               "Title": "PeerComparisonData.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\PeerComparisonData.cs",
@@ -591,6 +727,8 @@
             },
             {
               "$type": "Document",
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 34,
               "Title": "ChildrenListView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildrenListView.xaml.cs",
@@ -610,7 +748,8 @@
               "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-16T11:07:46.279Z"
+              "WhenOpened": "2025-05-16T11:07:46.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
