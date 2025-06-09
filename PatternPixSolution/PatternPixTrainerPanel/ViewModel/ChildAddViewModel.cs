@@ -96,7 +96,8 @@ namespace PatternPixTrainerPanel.ViewModel
                 return _backCommand;
             }
         }
-        private IChildRepository _childRepository = PatternPixTrainerPanel.App.ChildRepository;
+
+        
 
         public ICommand AddCommand
         {
@@ -120,7 +121,8 @@ namespace PatternPixTrainerPanel.ViewModel
                                 LastName = this.LastName,
                                 DateOfBirth = this.DateOfBirth
                             };
-
+                            IChildRepository _childRepository = PatternPixTrainerPanel.App.ChildRepository;
+                            
                             // Speichern
                             _childRepository.SaveChildren(new List<Child> { newChild });
 

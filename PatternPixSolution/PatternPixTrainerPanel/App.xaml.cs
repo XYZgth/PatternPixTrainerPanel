@@ -18,20 +18,9 @@ namespace PatternPixTrainerPanel
             {
                 MainView view = new MainView();
                 int mode = view.GetSelectedRepositoryMode();
+                //int mode = 1;
 
-                if (mode == 0)
-                {
-                    ChildRepository = new DBChildRepository(dbContext);
-                }
-                else if (mode == 1)
-                {
-                    ChildRepository = new FileChildRepository();
-                }
-                else
-                {
-                    MessageBox.Show("Not Selected");
-                }
-
+                SetRepositoryMode(mode);
                 
                 // Seed the database with test data
                 if (ChildRepository != null)
@@ -44,6 +33,19 @@ namespace PatternPixTrainerPanel
             {
                 MessageBox.Show($"Error seeding database: {ex.Message}", "Database Error",
                     MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        public static void SetRepositoryMode(int mode)
+        {
+            PatternPixDbContext dbContext = new PatternPixDbContext();
+
+            if (mode == 0)
+            {
+                ChildRepository = new DBChildRepository(dbContext);
+            }
+            else
+            {
+                ChildRepository = new FileChildRepository();
             }
         }
     }

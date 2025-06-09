@@ -8,6 +8,8 @@ using System.Windows.Input;
 using Microsoft.EntityFrameworkCore;
 using Common.Command;
 using Prism.Events;
+using PatternPixTrainerPanel.Repositories;
+using System.Windows;
 
 namespace PatternPixTrainerPanel.ViewModel
 {
@@ -23,6 +25,8 @@ namespace PatternPixTrainerPanel.ViewModel
 
         /// \brief Aktuell ausgewähltes Kind.
         private Child _selectedChild;
+
+        private int _selectedRepositoryMode;
 
         /// \brief EventAggregator zur Kommunikation zwischen Komponenten.
         private readonly IEventAggregator _eventAggregator;
@@ -170,6 +174,21 @@ namespace PatternPixTrainerPanel.ViewModel
                         param => true);
                 }
                 return _analysisCommand;
+            }
+        }
+
+        //
+        public int SelectedRepositoryMode
+        {
+            get => _selectedRepositoryMode;
+            set
+            {
+                if (_selectedRepositoryMode != value)
+                {
+                    _selectedRepositoryMode = value;
+
+                    App.SetRepositoryMode(_selectedRepositoryMode);
+                }
             }
         }
     }
