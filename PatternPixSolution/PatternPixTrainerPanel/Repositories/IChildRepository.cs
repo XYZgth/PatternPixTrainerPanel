@@ -12,6 +12,8 @@ namespace PatternPixTrainerPanel.Repositories
         void SaveChildren(List<Child> children);
 
         void SaveTrainings(List<Training> trainings);
+
+        List<Child> LoadChildren();
     }
 
 }

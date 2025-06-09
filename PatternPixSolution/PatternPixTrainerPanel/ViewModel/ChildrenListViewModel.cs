@@ -82,14 +82,8 @@ namespace PatternPixTrainerPanel.ViewModel
         {
             try
             {
-                using (var context = new PatternPixDbContext())
-                {
-                    var childrenList = context.Children
-                        .Include(c => c.Trainings)
-                        .ToList();
-
-                    Children = new ObservableCollection<Child>(childrenList);
-                }
+                var children = App.ChildRepository?.LoadChildren() ?? new List<Child>();
+                Children = new ObservableCollection<Child>(children);
             }
             catch (Exception ex)
             {
@@ -188,6 +182,7 @@ namespace PatternPixTrainerPanel.ViewModel
                     _selectedRepositoryMode = value;
 
                     App.SetRepositoryMode(_selectedRepositoryMode);
+                    LoadChildren();
                 }
             }
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using PatternPixTrainerPanel.Data;
 using PatternPixTrainerPanel.Model;
 
@@ -28,5 +29,12 @@ namespace PatternPixTrainerPanel.Repositories
             _context.Trainings.AddRange(trainings);
             _context.SaveChanges();
         }
+        public List<Child> LoadChildren()
+        {
+            return _context.Children
+                .Include(c => c.Trainings)
+                .ToList();
+        }
+
     }
 }

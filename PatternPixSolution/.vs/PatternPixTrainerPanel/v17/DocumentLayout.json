@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\repositories\\filechildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\repositories\\filechildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\repositories\\dbchildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\repositories\\dbchildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\childaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\viewmodel\\childaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\data\\filejsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\data\\filejsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\childrenlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\viewmodel\\analysisviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\data\\patternpixdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\data\\patternpixdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,6 +47,10 @@
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\viewmodel\\childaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\viewmodel\\childaddviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childaddview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childaddview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,8 +67,32 @@
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\repositories\\dbchildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\repositories\\dbchildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\utilities\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\data\\filejsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\data\\filejsonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\migrations\\patternpixdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\migrations\\patternpixdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\repositories\\ichildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\repositories\\ichildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B64B97FC-29CB-4835-863D-6A9C275D5E0B}|Common\\Common.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\common\\notifypropertychanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,20 +103,8 @@
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\migrations\\20250515125128_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\migrations\\patternpixdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\migrations\\patternpixdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\model\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\model\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\repositories\\filechildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\repositories\\filechildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\repositories\\ichildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\repositories\\ichildrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B64B97FC-29CB-4835-863D-6A9C275D5E0B}|Common\\Common.csproj|c:\\users\\domi\\desktop\\gh_patternpixtrainerpanel\\patternpixtrainerpanel\\patternpixsolution\\common\\command\\actioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -188,91 +188,96 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "PatternPixDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA/wCEAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:59:22.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Child.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Child.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Child.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Child.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Model\\Child.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAcwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:27:44.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\MainView.xaml",
               "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\MainView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-15T11:34:11.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAADwv0YAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T08:07:15.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FileJSONRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T15:25:03.811Z"
+              "WhenOpened": "2025-05-15T11:34:11.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\App.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBgAAAARAAAAAAAAAA==",
+              "Title": "FileChildRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:55:45.819Z",
+              "WhenOpened": "2025-06-08T15:06:04.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AnalysisViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
+              "ViewState": "AgIAAGABAAAAAAAAAAAIwGoBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T17:02:07.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChildrenListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAiwLcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T10:14:21.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DatabaseSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAIwGkAAAAVAAAAAAAAAA==",
+              "Title": "DBChildRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA0wB8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:57:41.607Z",
+              "WhenOpened": "2025-06-08T15:06:25.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChildAddViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAgwJ8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T11:07:30.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv00AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:32:50.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "AnalysisView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\AnalysisView.xaml.cs",
@@ -280,11 +285,180 @@
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\AnalysisView.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAIwBkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T19:01:17.531Z"
+              "WhenOpened": "2025-05-29T19:01:17.531Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAywBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T11:18:44.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\MainWindowViewModel.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAADwv00AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:32:50.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv0YAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T08:07:15.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChildAddViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildAddViewModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T11:07:30.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChildAddView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:16:49.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChildDetailViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAADwv0kAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:29:20.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChildDetailView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:26:41.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\MainView.xaml.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\View\\MainView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:40:11.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\App.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAIwCwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:55:45.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DatabaseSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Utilities\\DatabaseSeeder.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAIwOcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:57:41.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FileJSONRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Data\\FileJSONRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:25:03.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PatternPixDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T14:08:19.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IChildRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
+              "RelativeToolTip": "PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T14:56:09.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "ChildAddView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildAddView.xaml",
@@ -295,31 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AnalysisViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\AnalysisViewModel.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADwvzQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T17:02:07.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChildrenListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildrenListViewModel.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAAALwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T10:14:21.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml",
@@ -330,103 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\BaseViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAywBwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T11:18:44.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PatternPixDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Data\\PatternPixDbContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA/wBwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:59:22.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Child.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Child.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Child.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Child.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Model\\Child.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDYAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T09:27:44.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ChildAddView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildAddView.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T12:16:49.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ChildDetailViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\ViewModel\\ChildDetailViewModel.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAADwv0kAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:29:20.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ChildDetailView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T12:26:41.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\MainView.xaml.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\View\\MainView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T11:40:11.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DBChildRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Repositories\\DBChildRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAIwBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:06:25.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Training.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Model\\Training.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Model\\Training.cs",
@@ -438,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "20250515125128_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\20250515125128_InitialMigration.cs",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Migrations\\20250515125128_InitialMigration.cs",
@@ -450,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "NotifyPropertyChanged.cs",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\Common\\NotifyPropertyChanged.cs",
               "RelativeDocumentMoniker": "Common\\NotifyPropertyChanged.cs",
@@ -459,42 +513,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T09:09:41.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PatternPixDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Migrations\\PatternPixDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T14:08:19.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FileChildRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Repositories\\FileChildRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwCYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:06:04.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IChildRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
-              "RelativeToolTip": "PatternPixTrainerPanel\\Repositories\\IChildRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T14:56:09.734Z"
             },
             {
               "$type": "Document",
@@ -539,7 +557,8 @@
               "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildrenListView.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildrenListView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-14T09:45:14.061Z"
+              "WhenOpened": "2025-05-14T09:45:14.061Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -610,7 +629,8 @@
               "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\App.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-16T11:07:46.279Z"
+              "WhenOpened": "2025-05-16T11:07:46.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

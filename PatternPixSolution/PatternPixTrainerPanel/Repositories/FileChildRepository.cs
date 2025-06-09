@@ -61,5 +61,21 @@ namespace PatternPixTrainerPanel.Repositories
             // Gesamte Trainings speichern
             _trainingRepo.Save(existingTraining);
         }
+        public List<Child> LoadChildren()
+        {
+            var children = _childRepo.Load<Child>();
+            var trainings = _trainingRepo.Load<Training>();
+
+            // Trainings zu den jeweiligen Kindern zuordnen
+            foreach (var child in children)
+            {
+                child.Trainings = trainings
+                    .Where(t => t.ChildId == child.Id)
+                    .ToList();
+            }
+
+            return children;
+        }
+
     }
 }
