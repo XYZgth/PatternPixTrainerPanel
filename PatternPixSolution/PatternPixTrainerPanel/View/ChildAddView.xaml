@@ -52,22 +52,22 @@
 
                 <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,5">
                     <Label Width="80">First Name:</Label>
-                    <TextBox Name="FirstNameTextBox" Width="180"/>
+                    <TextBox Text="{Binding ChildName}" Name="FirstNameTextBox" Width="180"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,5">
                     <Label Width="80">Last Name:</Label>
-                    <TextBox Name="LastNameTextBox" Width="180"/>
+                    <TextBox Text="{Binding LastName}" Name="LastNameTextBox" Width="180"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,10">
                     <Label Width="80">Date of Birth:</Label>
-                    <TextBox Name="DateOfBirthPicker" Width="180"/>
+                    <DatePicker Grid.Column="4" SelectedDate="{Binding DateOfBirth}" VerticalAlignment="Center"/>
                 </StackPanel>
 
                 <StackPanel Margin="80 0" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="left">
-                    <Button Content="Save" Width="80" Margin="5" />
-                    <Button Content="Cancel" Width="80" Margin="5" />
+                    <Button Content="Save" Command="{Binding AddCommand}" Width="80" Margin="5" />
+                    <Button Content="Cancel" Command="{Binding CancelCommand}" Width="80" Margin="5" />
                 </StackPanel>
             </Grid>
         </Border>

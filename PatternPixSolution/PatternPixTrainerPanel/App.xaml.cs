@@ -9,23 +9,23 @@ namespace PatternPixTrainerPanel
 {
     public partial class App : Application
     {
+        public static IChildRepository ChildRepository { get; private set; }
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
             PatternPixDbContext dbContext = new PatternPixDbContext();
             try
             {
-                IChildRepository childRepository = null;
                 MainView view = new MainView();
                 int mode = view.GetSelectedRepositoryMode();
 
                 if (mode == 0)
                 {
-                    childRepository = new DBChildRepository(dbContext);
+                    ChildRepository = new DBChildRepository(dbContext);
                 }
                 else if (mode == 1)
                 {
-                    childRepository = new FileChildRepository();
+                    ChildRepository = new FileChildRepository();
                 }
                 else
                 {
@@ -34,9 +34,9 @@ namespace PatternPixTrainerPanel
 
                 
                 // Seed the database with test data
-                if (childRepository != null)
+                if (ChildRepository != null)
                 {
-                    DatabaseSeeder.SeedDatabase(childRepository);
+                    DatabaseSeeder.SeedDatabase(ChildRepository);
                 }
                 
             }
