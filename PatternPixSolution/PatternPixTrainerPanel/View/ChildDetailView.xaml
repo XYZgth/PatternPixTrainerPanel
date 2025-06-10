@@ -430,16 +430,15 @@
                     <syncfusion:SfChart>
                         <!-- Chart Resources -->
                         <syncfusion:SfChart.Resources>
-                            <DataTemplate x:Key="ErrorLabelTemplate">
-                                <TextBlock Text="{Binding Item.Errors}" 
+                                <DataTemplate x:Key="ErrorLabelTemplate">
+                                    <TextBlock Text="{Binding Item.Errors}" 
                                            Foreground="#E74C3C" 
                                            FontSize="10" 
                                            FontWeight="Bold"/>
-                            </DataTemplate>
-
-                            <DataTemplate x:Key="ErrorTooltipTemplate">
+                                </DataTemplate>
+                                <DataTemplate x:Key="ErrorTooltipTemplate">
                                 <Border Background="White" 
-                                        BorderBrush="#E74C3C" 
+                                        BorderBrush="#A23B72" 
                                         BorderThickness="1" 
                                         CornerRadius="3" 
                                         Padding="5">
@@ -492,14 +491,14 @@
                             XBindingPath="FormattedDateTime" 
                             YBindingPath="ErrorsScaled" 
                             Label="Errors Scaled"
-                            Interior="#E74C3C"
+                            Interior="#A23B72"
                             StrokeThickness="3"
                             ShowTooltip="True"
                             TooltipTemplate="{StaticResource ErrorTooltipTemplate}">
                             <syncfusion:LineSeries.AdornmentsInfo>
                                 <syncfusion:ChartAdornmentInfo ShowMarker="True" 
                                                              Symbol="Diamond" 
-                                                             SymbolInterior="#E74C3C" 
+                                                             SymbolInterior="#A23B72" 
                                                              SymbolHeight="8" 
                                                              SymbolWidth="8"/>
                             </syncfusion:LineSeries.AdornmentsInfo>
