@@ -1,0 +1,82 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+Model.\+Training Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training}\index{PatternPixTrainerPanel.Model.Training@{PatternPixTrainerPanel.Model.Training}}
+
+
+Repräsentiert eine Trainingseinheit eines Kindes.  
+
+
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a543fe2a97a51331d696c08729f597e09}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a543fe2a97a51331d696c08729f597e09} 
+int {\bfseries Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Eindeutige ID der Trainingseinheit. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ab9ca5ce4a6d28d24a40468bddf7df8bf}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ab9ca5ce4a6d28d24a40468bddf7df8bf} 
+int {\bfseries Child\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Fremdschlüssel zur ID des zugehörigen Kindes. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a2da568d4bb1115fdb2f098beb34f8211}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a2da568d4bb1115fdb2f098beb34f8211} 
+Date\+Time {\bfseries Date}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Datum, an dem das \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training} stattgefunden hat. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a96287119d7afca81e11d2fa30861ca07}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a96287119d7afca81e11d2fa30861ca07} 
+Time\+Span {\bfseries Time\+Of\+Day}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tageszeit (Uhrzeit) des Trainings. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a2abc1fdde684f72c668f6b19e1c08e5c}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a2abc1fdde684f72c668f6b19e1c08e5c} 
+string {\bfseries Symmetry}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Art der geübten Symmetrie (z.\+ B. \textquotesingle{}H\textquotesingle{} für horizontal, \textquotesingle{}V\textquotesingle{} für vertikal). \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_af22aba99827ae6f6c1a6482669e70f84}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_af22aba99827ae6f6c1a6482669e70f84} 
+int {\bfseries Errors}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Anzahl der Fehler während des Trainings. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ac41aab380a29811c292a49caf09d2490}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ac41aab380a29811c292a49caf09d2490} 
+int {\bfseries Time\+Needed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Benötigte Zeit für das \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training} (in Sekunden oder einer anderen Einheit). \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_af3bc91fed2222258c9dbc0e634e35973}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_af3bc91fed2222258c9dbc0e634e35973} 
+virtual \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} {\bfseries Child}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Navigationseigenschaft zum zugehörigen Kind. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training_acfe8dd49af32bb725e1ff2fc29f05e07}{Formatted\+Date\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt das kombinierte Datum und die Uhrzeit des Trainings formatiert zurück. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ab456b1bfcf83d825b980759763b1ca34}{Errors\+Scaled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Skaliert die Fehleranzahl (z.\+ B. für Auswertungszwecke). \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ae857e959172d2dd2f1879de396c128bf}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ae857e959172d2dd2f1879de396c128bf} 
+string {\bfseries Date\+String}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt das Datum als Zeichenkette im Format "{}dd.\+MM.\+yyyy"{} zurück. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a6150227cfd7e8bc69948e1f21e8ee019}\label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_a6150227cfd7e8bc69948e1f21e8ee019} 
+Date\+Time {\bfseries Timestamp}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt einen vollständigen Zeitstempel aus Datum und Tageszeit zurück. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repräsentiert eine Trainingseinheit eines Kindes. 
+
+Diese Klasse enthält Informationen über ein einzelnes \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}, wie Datum, Uhrzeit, Art der Symmetrieübung, Fehleranzahl und benötigte Zeit. 
+
+\label{doc-property-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ab456b1bfcf83d825b980759763b1ca34}\index{PatternPixTrainerPanel.Model.Training@{PatternPixTrainerPanel.Model.Training}!ErrorsScaled@{ErrorsScaled}}
+\index{ErrorsScaled@{ErrorsScaled}!PatternPixTrainerPanel.Model.Training@{PatternPixTrainerPanel.Model.Training}}
+\doxysubsubsection{\texorpdfstring{ErrorsScaled}{ErrorsScaled}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_ab456b1bfcf83d825b980759763b1ca34} 
+double Pattern\+Pix\+Trainer\+Panel.\+Model.\+Training.\+Errors\+Scaled\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skaliert die Fehleranzahl (z.\+ B. für Auswertungszwecke). 
+
+\begin{DoxyReturn}{Returns}
+Fehleranzahl multipliziert mit 10. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_model_1_1_training_acfe8dd49af32bb725e1ff2fc29f05e07}\index{PatternPixTrainerPanel.Model.Training@{PatternPixTrainerPanel.Model.Training}!FormattedDateTime@{FormattedDateTime}}
+\index{FormattedDateTime@{FormattedDateTime}!PatternPixTrainerPanel.Model.Training@{PatternPixTrainerPanel.Model.Training}}
+\doxysubsubsection{\texorpdfstring{FormattedDateTime}{FormattedDateTime}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_model_1_1_training_acfe8dd49af32bb725e1ff2fc29f05e07} 
+string Pattern\+Pix\+Trainer\+Panel.\+Model.\+Training.\+Formatted\+Date\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt das kombinierte Datum und die Uhrzeit des Trainings formatiert zurück. 
+
+Format\+: "{}dd.\+MM.\+yy hh\+:mm"{} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+Model/Training.\+cs\end{DoxyCompactItemize}

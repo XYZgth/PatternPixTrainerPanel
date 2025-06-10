@@ -13,24 +13,31 @@ using System.Windows.Data;
 
 namespace PatternPixTrainerPanel.ViewModel
 {
-    /// <summary>
-    /// Represents a group of trainings within a specific time window
-    /// </summary>
+    /**
+     * \brief Repräsentiert eine Gruppe von Trainings innerhalb eines bestimmten Zeitfensters.
+     */
     public class TrainingTimeGroup
     {
+        /// \brief Startzeit des Zeitfensters.
         public DateTime StartTime { get; set; }
+        /// \brief Endzeit des Zeitfensters.
         public DateTime EndTime { get; set; }
+        /// \brief Anzeigeformat für das Zeitfenster.
         public string TimeRangeDisplay => $"{StartTime:HH:mm} - {EndTime:HH:mm}";
+        /// \brief Liste der Trainings im Zeitfenster.
         public ObservableCollection<Training> Trainings { get; set; } = new ObservableCollection<Training>();
     }
 
-    /// <summary>
-    /// Represents a day with its training time groups
-    /// </summary>
+    /**
+     * \brief Repräsentiert einen Tag mit seinen Trainingszeitgruppen.
+     */
     public class TrainingDayGroup
     {
+        /// \brief Datum des Tages.
         public DateTime Date { get; set; }
+        /// \brief Anzeigeformat für das Datum.
         public string DateDisplay => Date.ToString("dd.MM.yyyy");
+        /// \brief Liste der Trainingsgruppen des Tages.
         public ObservableCollection<TrainingTimeGroup> TimeGroups { get; set; } = new ObservableCollection<TrainingTimeGroup>();
     }
 
@@ -137,11 +144,11 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
-        
-        
-
-        // Keep the original grouped trainings for backward compatibility
         private ListCollectionView _groupedTrainings;
+
+        /**
+        * \brief Property für die einfache Gruppierung der Trainings nach Datum.
+        */
         public ListCollectionView GroupedTrainings
         {
             get => _groupedTrainings;
@@ -152,6 +159,9 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
+        /**
+         * \brief Erstellt eine Gruppierung der Trainings nur nach Datum.
+         */
         private void UpdateGroupedTrainings()
         {
             if (_trainings == null)

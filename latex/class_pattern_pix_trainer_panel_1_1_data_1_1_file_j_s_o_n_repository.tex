@@ -1,0 +1,95 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+Data.\+File\+JSONRepository Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository}{}\label{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository}\index{PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}}
+
+
+Verwaltet das Laden und Speichern von Daten im JSON-\/\+Format.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_aab4e58510d7d3597c35e82013d4d88ab}{File\+JSONRepository}} (string type)
+\begin{DoxyCompactList}\small\item\em Initialisiert eine neue Instanz der File\+JSONRepository-\/\+Klasse. \end{DoxyCompactList}\item 
+List$<$ T $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_a2a7d7c9562cde66043b70f0fa015d891}{Load$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Lädt eine Liste von Objekten aus der zugewiesenen JSON-\/\+Datei. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_ac2d8e105633565334994b1bf41bab4da}{Save$<$ T $>$}} (List$<$ T $>$ items)
+\begin{DoxyCompactList}\small\item\em Speichert eine Liste von Objekten in der zugewiesenen JSON-\/\+Datei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Verwaltet das Laden und Speichern von Daten im JSON-\/\+Format. 
+
+Diese Klasse unterstützt generisches Laden und Speichern von Datenobjekten aus bzw. in eine JSON-\/\+Datei, abhängig vom angegebenen Typ. 
+
+\label{doc-constructors}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_aab4e58510d7d3597c35e82013d4d88ab}\index{PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}!FileJSONRepository@{FileJSONRepository}}
+\index{FileJSONRepository@{FileJSONRepository}!PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}}
+\doxysubsubsection{\texorpdfstring{FileJSONRepository()}{FileJSONRepository()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_aab4e58510d7d3597c35e82013d4d88ab} 
+Pattern\+Pix\+Trainer\+Panel.\+Data.\+File\+JSONRepository.\+File\+JSONRepository (\begin{DoxyParamCaption}\item[{string}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert eine neue Instanz der File\+JSONRepository-\/\+Klasse. 
+
+Je nach angegebenem Typ (z.\+ B. "{}children"{} oder "{}trainings"{}) wird der Pfad zur JSON-\/\+Datei gesetzt.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Der Datentyp, z.\+ B. "{}children"{} oder "{}trainings"{}, zur Auswahl des Dateipfads. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_a2a7d7c9562cde66043b70f0fa015d891}\index{PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}!Load$<$ T $>$@{Load$<$ T $>$}}
+\index{Load$<$ T $>$@{Load$<$ T $>$}!PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}}
+\doxysubsubsection{\texorpdfstring{Load$<$ T $>$()}{Load< T >()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_a2a7d7c9562cde66043b70f0fa015d891} 
+List$<$ T $>$ Pattern\+Pix\+Trainer\+Panel.\+Data.\+File\+JSONRepository.\+Load$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lädt eine Liste von Objekten aus der zugewiesenen JSON-\/\+Datei. 
+
+Wenn die Datei nicht existiert, wird eine leere Liste zurückgegeben. Die Methode ist generisch und unterstützt alle serialisierbaren Typen.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Der Typ der Objekte, die geladen werden sollen. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Eine Liste von deserialisierten Objekten des Typs T. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_ac2d8e105633565334994b1bf41bab4da}\index{PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}!Save$<$ T $>$@{Save$<$ T $>$}}
+\index{Save$<$ T $>$@{Save$<$ T $>$}!PatternPixTrainerPanel.Data.FileJSONRepository@{PatternPixTrainerPanel.Data.FileJSONRepository}}
+\doxysubsubsection{\texorpdfstring{Save$<$ T $>$()}{Save< T >()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_data_1_1_file_j_s_o_n_repository_ac2d8e105633565334994b1bf41bab4da} 
+void Pattern\+Pix\+Trainer\+Panel.\+Data.\+File\+JSONRepository.\+Save$<$ T $>$ (\begin{DoxyParamCaption}\item[{List$<$ T $>$}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Speichert eine Liste von Objekten in der zugewiesenen JSON-\/\+Datei. 
+
+Die Methode serialisiert die übergebenen Objekte im JSON-\/\+Format und schreibt die Ausgabe in die Zieldatei. Die Ausgabe ist eingerückt formatiert.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Der Typ der Objekte, die gespeichert werden sollen. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em items} & Die Liste von Objekten, die gespeichert werden sollen. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+Data/File\+JSONRepository.\+cs\end{DoxyCompactItemize}

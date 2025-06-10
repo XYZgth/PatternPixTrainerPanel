@@ -7,9 +7,23 @@ using System.Windows;
 
 namespace PatternPixTrainerPanel
 {
+    /**
+     * \brief Einstiegspunkt der Anwendung.
+     * 
+     * Initialisiert das Repository und startet die Hauptansicht.
+     */
     public partial class App : Application
     {
+        /// \brief Statisches Repository für Kind-Daten, wird je nach Modus gesetzt.
         public static IChildRepository ChildRepository { get; private set; }
+
+        /**
+         * \brief Wird beim Start der Anwendung aufgerufen.
+         * 
+         * Initialisiert das Repository, lädt Testdaten und startet die Hauptansicht.
+         * 
+         * \param e Startparameter der Anwendung.
+         */
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -43,6 +57,11 @@ namespace PatternPixTrainerPanel
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        /**
+         * \brief Setzt den Repository-Modus (Datenbank oder Datei).
+         * 
+         * \param mode 0 = Datenbank-Modus, 1 = Datei-Modus.
+         */
         public static void SetRepositoryMode(int mode)
         {
             PatternPixDbContext dbContext = new PatternPixDbContext();

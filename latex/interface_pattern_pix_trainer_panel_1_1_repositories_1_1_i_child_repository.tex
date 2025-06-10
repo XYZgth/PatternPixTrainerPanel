@@ -1,0 +1,74 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+Repositories.\+IChild\+Repository Interface Reference}
+\hypertarget{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository}{}\label{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository}\index{PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}}
+
+
+Schnittstelle zum Speichern und Laden von Kindern und Trainingsdaten.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_a7bf2cae52d35b995f1acad5b8d81b64e}{Save\+Children}} (List$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} $>$ children)
+\begin{DoxyCompactList}\small\item\em Speichert eine Liste von Kindern. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_af3df213e3f88b19d60ae39474d1b11df}{Save\+Trainings}} (List$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}} $>$ trainings)
+\begin{DoxyCompactList}\small\item\em Speichert eine Liste von Trainings. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} $>$ \mbox{\hyperlink{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_a834d57885b6e49855c8eb4eb9d36f96a}{Load\+Children}} ()
+\begin{DoxyCompactList}\small\item\em Lädt eine Liste gespeicherter Kinder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Schnittstelle zum Speichern und Laden von Kindern und Trainingsdaten. 
+
+Diese Schnittstelle definiert Methoden zur Persistierung und zum Abrufen von {\ttfamily \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} -\/ und {\ttfamily \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}} -\/Objekten aus einer Datei oder Datenbank. 
+
+\label{doc-func-members}
+\Hypertarget{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_a834d57885b6e49855c8eb4eb9d36f96a}\index{PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}!LoadChildren@{LoadChildren}}
+\index{LoadChildren@{LoadChildren}!PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}}
+\doxysubsubsection{\texorpdfstring{LoadChildren()}{LoadChildren()}}
+{\footnotesize\ttfamily \label{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_a834d57885b6e49855c8eb4eb9d36f96a} 
+List$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} $>$ Pattern\+Pix\+Trainer\+Panel.\+Repositories.\+IChild\+Repository.\+Load\+Children (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Lädt eine Liste gespeicherter Kinder. 
+
+\begin{DoxyReturn}{Returns}
+Eine Liste von {\ttfamily \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} -\/Objekten. 
+\end{DoxyReturn}
+\Hypertarget{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_a7bf2cae52d35b995f1acad5b8d81b64e}\index{PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}!SaveChildren@{SaveChildren}}
+\index{SaveChildren@{SaveChildren}!PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}}
+\doxysubsubsection{\texorpdfstring{SaveChildren()}{SaveChildren()}}
+{\footnotesize\ttfamily \label{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_a7bf2cae52d35b995f1acad5b8d81b64e} 
+void Pattern\+Pix\+Trainer\+Panel.\+Repositories.\+IChild\+Repository.\+Save\+Children (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} $>$}]{children}{}\end{DoxyParamCaption})}
+
+
+
+Speichert eine Liste von Kindern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em children} & Die zu speichernden Kind-\/\+Objekte. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_af3df213e3f88b19d60ae39474d1b11df}\index{PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}!SaveTrainings@{SaveTrainings}}
+\index{SaveTrainings@{SaveTrainings}!PatternPixTrainerPanel.Repositories.IChildRepository@{PatternPixTrainerPanel.Repositories.IChildRepository}}
+\doxysubsubsection{\texorpdfstring{SaveTrainings()}{SaveTrainings()}}
+{\footnotesize\ttfamily \label{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository_af3df213e3f88b19d60ae39474d1b11df} 
+void Pattern\+Pix\+Trainer\+Panel.\+Repositories.\+IChild\+Repository.\+Save\+Trainings (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}} $>$}]{trainings}{}\end{DoxyParamCaption})}
+
+
+
+Speichert eine Liste von Trainings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trainings} & Die zu speichernden Training-\/\+Objekte. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+Repositories/IChild\+Repository.\+cs\end{DoxyCompactItemize}

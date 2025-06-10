@@ -1,0 +1,78 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+Data.\+Pattern\+Pix\+Db\+Context Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context}{}\label{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context}\index{PatternPixTrainerPanel.Data.PatternPixDbContext@{PatternPixTrainerPanel.Data.PatternPixDbContext}}
+
+
+Datenbankkontext für die Pattern\+Pix-\/\+Anwendung.  
+
+
+Inheritance diagram for Pattern\+Pix\+Trainer\+Panel.\+Data.\+Pattern\+Pix\+Db\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_addd71ce5e93e5361738793331858ff5f}{On\+Configuring}} (Db\+Context\+Options\+Builder options\+Builder)
+\begin{DoxyCompactList}\small\item\em Konfiguriert die Datenbankverbindung. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_a741a854bf497e4e0e55924156e37622a}{On\+Model\+Creating}} (Model\+Builder model\+Builder)
+\begin{DoxyCompactList}\small\item\em Konfiguriert die Modellbeziehungen und weitere Einstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_a6de520fbe057ce2f0148e1b19fc2d64a}\label{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_a6de520fbe057ce2f0148e1b19fc2d64a} 
+Db\+Set$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} $>$ {\bfseries Children}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tabelle mit Kind-\/\+Entitäten. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_aa21f53013672de1396c77372d6fd9f97}\label{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_aa21f53013672de1396c77372d6fd9f97} 
+Db\+Set$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}} $>$ {\bfseries Trainings}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tabelle mit Training-\/\+Entitäten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Datenbankkontext für die Pattern\+Pix-\/\+Anwendung. 
+
+Stellt den Zugriff auf die Datenbanktabellen Children und Trainings bereit und konfiguriert die Datenbankverbindung sowie die Beziehungen zwischen Entitäten. 
+
+\label{doc-func-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_addd71ce5e93e5361738793331858ff5f}\index{PatternPixTrainerPanel.Data.PatternPixDbContext@{PatternPixTrainerPanel.Data.PatternPixDbContext}!OnConfiguring@{OnConfiguring}}
+\index{OnConfiguring@{OnConfiguring}!PatternPixTrainerPanel.Data.PatternPixDbContext@{PatternPixTrainerPanel.Data.PatternPixDbContext}}
+\doxysubsubsection{\texorpdfstring{OnConfiguring()}{OnConfiguring()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_addd71ce5e93e5361738793331858ff5f} 
+override void Pattern\+Pix\+Trainer\+Panel.\+Data.\+Pattern\+Pix\+Db\+Context.\+On\+Configuring (\begin{DoxyParamCaption}\item[{Db\+Context\+Options\+Builder}]{options\+Builder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Konfiguriert die Datenbankverbindung. 
+
+Setzt die SQLite-\/\+Datenbankdatei als Datenquelle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options\+Builder} & Builder zur Konfiguration der Db\+Context-\/\+Optionen. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_a741a854bf497e4e0e55924156e37622a}\index{PatternPixTrainerPanel.Data.PatternPixDbContext@{PatternPixTrainerPanel.Data.PatternPixDbContext}!OnModelCreating@{OnModelCreating}}
+\index{OnModelCreating@{OnModelCreating}!PatternPixTrainerPanel.Data.PatternPixDbContext@{PatternPixTrainerPanel.Data.PatternPixDbContext}}
+\doxysubsubsection{\texorpdfstring{OnModelCreating()}{OnModelCreating()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_data_1_1_pattern_pix_db_context_a741a854bf497e4e0e55924156e37622a} 
+override void Pattern\+Pix\+Trainer\+Panel.\+Data.\+Pattern\+Pix\+Db\+Context.\+On\+Model\+Creating (\begin{DoxyParamCaption}\item[{Model\+Builder}]{model\+Builder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Konfiguriert die Modellbeziehungen und weitere Einstellungen. 
+
+Definiert die Beziehung zwischen \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child} und \doxylink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training} sowie die Konvertierung des Time\+Of\+Day-\/\+Feldes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Builder} & Builder zum Konfigurieren des Datenmodells. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+Data/Pattern\+Pix\+Db\+Context.\+cs\end{DoxyCompactItemize}
