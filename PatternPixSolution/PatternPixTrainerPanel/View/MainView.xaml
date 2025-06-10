@@ -321,12 +321,27 @@
                            FontSize="18" 
                            FontWeight="SemiBold" 
                            Foreground="{StaticResource TextPrimaryBrush}"
-                           Margin="0,0,0,15" Grid.ColumnSpan="2"
+                           Margin="0,0,0,15" Grid.Column="0"
                            ToolTip="Recent Child training records"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1">
+                        <TextBlock
+           Text="Search child by name: " 
+           FontSize="14" 
+           FontWeight="SemiBold" 
+           Foreground="{StaticResource TextPrimaryBrush}"
+           Margin="0,0,0,15" />
 
-                <!-- Enhanced DataGrid -->
+
+                        <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" 
+           Width="200" Height="22" VerticalAlignment="Top"
+                             
+         x:Name="SearchBox"/>
+                    </StackPanel>
+
+
+                    <!-- Enhanced DataGrid -->
                 <DataGrid Grid.Row="1"
-                          ItemsSource="{Binding Children}" 
+                          ItemsSource="{Binding FilteredChildren}" 
                           SelectedItem="{Binding SelectedChild, Mode=TwoWay}"
                           AutoGenerateColumns="False"
                           CanUserAddRows="False"
@@ -438,6 +453,7 @@
         <!-- Modern Action Panel -->
         <Border Grid.Row="1" Style="{StaticResource CardStyle}" Margin="20,10,20,20">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                
                 <Button Content="🔄 Refresh" 
                         Command="{Binding RefreshCommand}" 
                         Style="{StaticResource SecondaryButtonStyle}"
@@ -464,6 +480,7 @@
                         Style="{StaticResource ModernButtonStyle}"
                         Background="{StaticResource SecondaryBrush}"
                         ToolTip="Open Analysis View"/>
+                
             </StackPanel>
         </Border>
     </Grid>

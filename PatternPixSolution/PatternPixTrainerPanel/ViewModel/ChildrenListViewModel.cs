@@ -23,6 +23,12 @@ namespace PatternPixTrainerPanel.ViewModel
         /// \brief Sammlung aller Kinder.
         private ObservableCollection<Child> _children;
 
+        /// \brief Gefilterte Sammlung der Kinder basierend auf Suchtext.
+        private ObservableCollection<Child> _filteredChildren;
+
+        /// \brief Suchtext für die Filterung der Kinderliste.
+        private string _searchText = string.Empty;
+
         /// \brief Aktuell ausgewähltes Kind.
         private Child _selectedChild;
 
@@ -39,6 +45,7 @@ namespace PatternPixTrainerPanel.ViewModel
         public ChildrenListViewModel(IEventAggregator eventAggregator) : base(eventAggregator)
         {
             _eventAggregator = eventAggregator;
+            _filteredChildren = new ObservableCollection<Child>();
             LoadChildren();
         }
 
@@ -52,6 +59,36 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 _children = value;
                 OnPropertyChanged("Children");
+                ApplyFilter();
+            }
+        }
+
+        /**
+         * \brief Gefilterte Liste der Kinder basierend auf dem Suchtext.
+         * Diese Collection wird an das DataGrid gebunden.
+         */
+        public ObservableCollection<Child> FilteredChildren
+        {
+            get { return _filteredChildren; }
+            set
+            {
+                _filteredChildren = value;
+                OnPropertyChanged("FilteredChildren");
+            }
+        }
+
+        /**
+         * \brief Suchtext für die Filterung der Kinderliste.
+         * Änderungen führen automatisch zur Neufilterung.
+         */
+        public string SearchText
+        {
+            get { return _searchText; }
+            set
+            {
+                _searchText = value;
+                OnPropertyChanged("SearchText");
+                ApplyFilter();
             }
         }
 
@@ -89,6 +126,32 @@ namespace PatternPixTrainerPanel.ViewModel
             {
                 System.Diagnostics.Debug.WriteLine($"Error loading children: {ex.Message}");
                 Children = new ObservableCollection<Child>();
+            }
+        }
+
+        /**
+         * \brief Wendet den aktuellen Suchfilter auf die Kinderliste an.
+         * Filtert nach Vor- und Nachname des Kindes.
+         */
+        private void ApplyFilter()
+        {
+            if (Children == null)
+            {
+                FilteredChildren?.Clear();
+                return;
+            }
+
+            FilteredChildren.Clear();
+
+            var filtered = string.IsNullOrWhiteSpace(SearchText)
+                ? Children
+                : Children.Where(child =>
+                    $"{child.FirstName} {child.LastName}"
+                    .Contains(SearchText, StringComparison.OrdinalIgnoreCase));
+
+            foreach (var child in filtered)
+            {
+                FilteredChildren.Add(child);
             }
         }
 
@@ -178,7 +241,7 @@ namespace PatternPixTrainerPanel.ViewModel
         }
 
         /**
-         * \brief Aktuell ausgewählter Repository-Modus (z. B. DB oder Datei).
+         * \brief Aktuell ausgewählter Repository-Modus (z. B. DB oder Datei).
          * 
          * Änderung führt zum Neuladen der Kinderliste mit dem neuen Modus.
          */
