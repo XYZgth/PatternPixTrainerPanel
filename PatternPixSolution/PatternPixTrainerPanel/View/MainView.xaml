@@ -290,7 +290,8 @@
                                 Maximum="1" 
                                 TickFrequency="1" 
                                 IsSnapToTickEnabled="True"
-                                Style="{StaticResource ModernSliderStyle}" Grid.ColumnSpan="2" Margin="37,5,0,5"/>
+                                Style="{StaticResource ModernSliderStyle}" Grid.ColumnSpan="2" Margin="37,5,0,5"
+                            ToolTip="Switch between SQL or JSON Database"/>
 
                         <TextBlock Grid.Column="2" 
                                    Text="JSON Database" 
@@ -320,7 +321,8 @@
                            FontSize="18" 
                            FontWeight="SemiBold" 
                            Foreground="{StaticResource TextPrimaryBrush}"
-                           Margin="0,0,0,15" Grid.ColumnSpan="2"/>
+                           Margin="0,0,0,15" Grid.ColumnSpan="2"
+                           ToolTip="Recent Child training records"/>
 
                 <!-- Enhanced DataGrid -->
                 <DataGrid Grid.Row="1"
@@ -440,24 +442,28 @@
                         Command="{Binding RefreshCommand}" 
                         Style="{StaticResource SecondaryButtonStyle}"
                         Margin="0,0,10,0" Cursor="Hand"
+                        ToolTip="Refresh training records DataGrid"
                         />
 
                 <Button Content="👁 View Details" 
                         Command="{Binding ViewDetailsCommand}"
                         IsEnabled="{Binding SelectedChild, Converter={StaticResource NullToBoolConverter}}"
                         Style="{StaticResource ModernButtonStyle}"
-                        Margin="0,0,10,0"/>
+                        Margin="0,0,10,0"
+                        ToolTip="Select Child and open Detail View"/>
 
                 <Button Content="➕ Add New" 
                         Command="{Binding ViewAddCommand}" 
                         Style="{StaticResource ModernButtonStyle}"
                         Background="{StaticResource AccentBrush}"
-                        Margin="0,0,10,0"/>
+                        Margin="0,0,10,0"
+                        ToolTip="Add a new Child"/>
 
                 <Button Content="📊 Analysis" 
                         Command="{Binding AnalysisViewCommand}" 
                         Style="{StaticResource ModernButtonStyle}"
-                        Background="{StaticResource SecondaryBrush}"/>
+                        Background="{StaticResource SecondaryBrush}"
+                        ToolTip="Open Analysis View"/>
             </StackPanel>
         </Border>
     </Grid>

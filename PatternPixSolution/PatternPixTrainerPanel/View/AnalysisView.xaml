@@ -166,12 +166,13 @@
 
                 <Button Grid.Column="0" 
                         Command="{Binding BackCommand}" 
-Content="← Back" 
-Style="{StaticResource BackButtonStyle}"
-HorizontalAlignment="Left"
- VerticalAlignment="Top"
-Padding="15,8,15,8"
-                        Height="30"/>
+                        Content="← Back" 
+                        Style="{StaticResource BackButtonStyle}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Padding="15,8,15,8"
+                        Height="30"
+                        ToolTip="Go back to Main View"/>
 
                 <TextBlock Grid.Column="1" 
                            Text="Training Analysis" 

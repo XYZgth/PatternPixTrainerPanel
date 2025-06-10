@@ -231,7 +231,8 @@
                             Content="← Back" 
                             Style="{StaticResource SecondaryButtonStyle}"
                             HorizontalAlignment="Left"
-                            Margin="0,0,20,0"/>
+                            Margin="0,0,20,0"
+                            ToolTip="Go back to Main View"/>
 
                     <!-- Title Section -->
                     <StackPanel Grid.Column="1" HorizontalAlignment="Center">
@@ -286,7 +287,8 @@
                                      Name="FirstNameTextBox" 
                                      Style="{StaticResource ModernTextBoxStyle}"
                                      MinWidth="300"
-                                     HorizontalAlignment="Left"/>
+                                     HorizontalAlignment="Left"
+                                     ToolTip="Enter child's first name"/>
                         </Grid>
 
                         <!-- Last Name -->
@@ -306,7 +308,8 @@
                                      Name="LastNameTextBox" 
                                      Style="{StaticResource ModernTextBoxStyle}"
                                      MinWidth="300"
-                                     HorizontalAlignment="Left"/>
+                                     HorizontalAlignment="Left"
+                                     ToolTip="Enter child's last name"/>
                         </Grid>
 
                         <!-- Date of Birth -->
@@ -341,12 +344,14 @@
                     <Button Content="❌ Cancel" 
                             Command="{Binding CancelCommand}" 
                             Style="{StaticResource SecondaryButtonStyle}"
-                            Margin="0,0,15,0"/>
+                            Margin="0,0,15,0"
+                            ToolTip="Clear Text"/>
 
                     <Button Content="💾 Save Child" 
                             Command="{Binding AddCommand}" 
                             Style="{StaticResource ModernButtonStyle}"
-                            Background="{StaticResource AccentBrush}"/>
+                            Background="{StaticResource AccentBrush}"
+                            ToolTip="Save child to Database"/>
                 </StackPanel>
             </Border>
         </Grid>

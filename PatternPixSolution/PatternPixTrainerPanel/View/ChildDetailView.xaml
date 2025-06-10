@@ -174,7 +174,8 @@
                         Content="← Back" 
                         Style="{StaticResource SecondaryButtonStyle}"
                         HorizontalAlignment="Left"
-                        Padding="15,8"/>
+                        Padding="15,8"
+                        ToolTip="Go back to Main View"/>
 
                 <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock Text="Child Details" 
@@ -282,7 +283,8 @@
                            FontSize="18" 
                            FontWeight="SemiBold" 
                            Foreground="{StaticResource TextPrimaryBrush}"
-                           Margin="0,0,0,15"/>
+                           Margin="0,0,0,15"
+                           ToolTip="Linechart Training History of a Child"/>
 
                 <!-- Enhanced Training List with Time Grouping -->
                 <ScrollViewer Grid.Row="1" 
