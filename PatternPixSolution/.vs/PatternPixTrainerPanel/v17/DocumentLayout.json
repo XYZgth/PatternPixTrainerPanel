@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\analysisview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childdetailview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childaddview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\childrenlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\childrenlistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|solutionrelative:patternpixtrainerpanel\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D8967EE7-E8A1-4ADD-AA9B-3ED4D55DF70C}|PatternPixTrainerPanel\\PatternPixTrainerPanel.csproj|c:\\users\\andre\\onedrive\\documents\\github\\patternpixtrainerpanel\\patternpixsolution\\patternpixtrainerpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -183,7 +183,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -191,29 +191,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\MainView.xaml",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\MainView.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\MainView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-15T11:34:11.728Z"
+              "WhenOpened": "2025-05-15T11:34:11.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AnalysisView.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\AnalysisView.xaml",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\AnalysisView.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\AnalysisView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-29T16:56:44.275Z"
+              "WhenOpened": "2025-05-29T16:56:44.275Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ChildrenListView.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildrenListView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildrenListView.xaml",
@@ -224,18 +226,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChildDetailView.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "ToolTip": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-15T12:24:08.685Z"
+              "WhenOpened": "2025-05-15T12:24:08.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ChildAddView.xaml",
               "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documents\\GitHub\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml",
               "RelativeDocumentMoniker": "PatternPixTrainerPanel\\View\\ChildAddView.xaml",

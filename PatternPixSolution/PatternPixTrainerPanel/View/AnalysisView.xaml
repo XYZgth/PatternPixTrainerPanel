@@ -366,13 +366,13 @@ Padding="15,8,15,8"
                                 XBindingPath="FormattedDateTime" 
                                 YBindingPath="{Binding PrimaryDataPath}"
                                 Label="{Binding PrimarySeriesLabel}"
-                                Interior="#3498DB"
+                                Interior="#2E86AB"
                                 StrokeThickness="3"
                                 ShowTooltip="True">
                                 <syncfusion:LineSeries.AdornmentsInfo>
                                     <syncfusion:ChartAdornmentInfo ShowMarker="True" 
                                                                  Symbol="Ellipse" 
-                                                                 SymbolInterior="#3498DB" 
+                                                                 SymbolInterior="#2E86AB" 
                                                                  SymbolHeight="8" 
                                                                  SymbolWidth="8"/>
                                 </syncfusion:LineSeries.AdornmentsInfo>
@@ -384,14 +384,14 @@ Padding="15,8,15,8"
                                 XBindingPath="FormattedDateTime" 
                                 YBindingPath="{Binding SecondaryDataPath}"
                                 Label="{Binding SecondarySeriesLabel}"
-                                Interior="#E74C3C"
+                                Interior="#A23B72"
                                 StrokeThickness="3"
                                 ShowTooltip="True"
                                 Visibility="{Binding ShowSecondarySeriesVisibility}">
                                 <syncfusion:LineSeries.AdornmentsInfo>
                                     <syncfusion:ChartAdornmentInfo ShowMarker="True" 
                                                                  Symbol="Diamond" 
-                                                                 SymbolInterior="#E74C3C" 
+                                                                 SymbolInterior="#A23B72"
                                                                  SymbolHeight="8" 
                                                                  SymbolWidth="8"/>
                                 </syncfusion:LineSeries.AdornmentsInfo>
@@ -439,7 +439,7 @@ Padding="15,8,15,8"
                                 XBindingPath="SessionNumber" 
                                 YBindingPath="AverageTime"
                                 Label="Avg Time (5-session)"
-                                Interior="#52C41A"
+                                Interior="#2E86AB"
                                 StrokeThickness="2"
                                 Opacity="0.6"
                                 ShowTooltip="True"/>
@@ -450,7 +450,7 @@ Padding="15,8,15,8"
                                 XBindingPath="SessionNumber" 
                                 YBindingPath="AverageErrors"
                                 Label="Avg Errors (5-session)"
-                                Interior="#FF7875"
+                                Interior="#A23B72"
                                 StrokeThickness="2"
                                 ShowTooltip="True">
                                 <syncfusion:SplineSeries.AdornmentsInfo>
@@ -520,7 +520,7 @@ Padding="15,8,15,8"
                                     <TextBlock Text="{Binding AverageTime, StringFormat='{}{0:F1}'}" 
                                                FontSize="24" 
                                                FontWeight="Bold" 
-                                               Foreground="#52C41A"/>
+                                               Foreground="#2E86AB"/>
                                     <TextBlock Text=" sec" 
                                                FontSize="14" 
                                                Foreground="#6C757D" 
@@ -544,7 +544,7 @@ Padding="15,8,15,8"
                                 <TextBlock Text="{Binding AverageErrors, StringFormat='{}{0:F1}'}" 
                                            FontSize="24" 
                                            FontWeight="Bold" 
-                                           Foreground="#FF7875"/>
+                                           Foreground="#2E86AB"/>
                             </StackPanel>
                         </Border>
 
@@ -563,7 +563,7 @@ Padding="15,8,15,8"
                                     <TextBlock Text="{Binding BestTime, StringFormat='{}{0:F1}'}" 
                                                FontSize="24" 
                                                FontWeight="Bold" 
-                                               Foreground="#1890FF"/>
+                                               Foreground="#2E86AB"/>
                                     <TextBlock Text=" sec" 
                                                FontSize="14" 
                                                Foreground="#6C757D" 
@@ -659,7 +659,7 @@ Margin="0,0,0,10"/>
                   XBindingPath="Metric" 
                   YBindingPath="ChildValue"
                   Label="Selected Child"
-                  Interior="LightBlue">
+                  Interior="#F18F01">
                                         <syncfusion:ColumnSeries.AdornmentsInfo>
                                             <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
                                         </syncfusion:ColumnSeries.AdornmentsInfo>
@@ -670,7 +670,7 @@ Margin="0,0,0,10"/>
                   XBindingPath="Metric" 
                   YBindingPath="PeerAverage"
                   Label="Peer Average"
-                  Interior="LightCoral">
+                  Interior="#A23B72">
                                         <syncfusion:ColumnSeries.AdornmentsInfo>
                                             <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
                                         </syncfusion:ColumnSeries.AdornmentsInfo>
