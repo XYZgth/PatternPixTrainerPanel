@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['addcommand_0',['AddCommand',['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_child_add_view_model.html#a3e972fd1b7c38d84f2bb0faaa4f28184',1,'PatternPixTrainerPanel::ViewModel::ChildAddViewModel']]],
+  ['age_1',['Age',['../class_pattern_pix_trainer_panel_1_1_model_1_1_child.html#a1173699196cdf234354ee06d04f435e9',1,'PatternPixTrainerPanel.Model.Child.Age'],['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_child_detail_view_model.html#a01d24afaa80058701b8e21f3721d9dc2',1,'PatternPixTrainerPanel.ViewModel.ChildDetailViewModel.Age']]],
+  ['analysisviewcommand_2',['AnalysisViewCommand',['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model.html#a8fd04ab1941c552eca8aa4324038648f',1,'PatternPixTrainerPanel::ViewModel::ChildrenListViewModel']]],
+  ['averageerrors_3',['AverageErrors',['../class_pattern_pix_trainer_panel_1_1_model_1_1_moving_average_point.html#a353f86c1d5681badce65a430065cf705',1,'PatternPixTrainerPanel.Model.MovingAveragePoint.AverageErrors'],['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model.html#a75904d89858d5fca5ecffe069f7b960e',1,'PatternPixTrainerPanel.ViewModel.AnalysisViewModel.AverageErrors']]],
+  ['averagesessionsperpeer_4',['AverageSessionsPerPeer',['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model.html#ae95048ab65fb3dca4a26ef942ae1626b',1,'PatternPixTrainerPanel::ViewModel::AnalysisViewModel']]],
+  ['averagetime_5',['AverageTime',['../class_pattern_pix_trainer_panel_1_1_model_1_1_moving_average_point.html#acf1ddfed5a626ea74bd4f1f6ae326f4c',1,'PatternPixTrainerPanel.Model.MovingAveragePoint.AverageTime'],['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model.html#a935e11bfde5cfbf301425556e8082860',1,'PatternPixTrainerPanel.ViewModel.AnalysisViewModel.AverageTime']]],
+  ['avgerrors_6',['AvgErrors',['../class_pattern_pix_trainer_panel_1_1_model_1_1_symmetry_stats.html#ae9d239de5537c6b46a0b0a2c44213d06',1,'PatternPixTrainerPanel::Model::SymmetryStats']]],
+  ['avgtime_7',['AvgTime',['../class_pattern_pix_trainer_panel_1_1_model_1_1_symmetry_stats.html#a54605673f6f4a47da81bc8a4e012703c',1,'PatternPixTrainerPanel::Model::SymmetryStats']]]
+];

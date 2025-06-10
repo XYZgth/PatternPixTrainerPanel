@@ -59,18 +59,31 @@ namespace PatternPixTrainerPanel.Model
         [ForeignKey("ChildId")]
         public virtual Child Child { get; set; }
 
-
+        /**
+         * \brief Gibt das kombinierte Datum und die Uhrzeit des Trainings formatiert zurück.
+         * 
+         * Format: "dd.MM.yy hh:mm"
+         */
         public string FormattedDateTime => $"{Date:dd.MM.yy} {TimeOfDay:hh\\:mm}";
+
+        /**
+         * \brief Skaliert die Fehleranzahl (z. B. für Auswertungszwecke).
+         * 
+         * \return Fehleranzahl multipliziert mit 10.
+         */
         public double ErrorsScaled => Errors * 10;
 
+        /**
+         * \brief Gibt das Datum als Zeichenkette im Format "dd.MM.yyyy" zurück.
+         */
         public string DateString => Date.ToString("dd.MM.yyyy");
 
+        /**
+         * \brief Gibt einen vollständigen Zeitstempel aus Datum und Tageszeit zurück.
+         */
         public DateTime Timestamp
         {
             get { return Date.Date + TimeOfDay; }
         }
-
-
-
     }
 }

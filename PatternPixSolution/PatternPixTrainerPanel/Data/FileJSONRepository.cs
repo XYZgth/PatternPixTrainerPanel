@@ -10,12 +10,22 @@ using System.IO;
 namespace PatternPixTrainerPanel.Data
 {
     /**
-     * \brief Verwaltet das Laden und Speichern von Child-Daten in einer JSON-Datei.
+     * \brief Verwaltet das Laden und Speichern von Daten im JSON-Format.
+     * 
+     * Diese Klasse unterstützt generisches Laden und Speichern von Datenobjekten
+     * aus bzw. in eine JSON-Datei, abhängig vom angegebenen Typ.
      */
     public class FileJSONRepository
     {
         private readonly string _filePath;
 
+        /**
+         * \brief Initialisiert eine neue Instanz der FileJSONRepository-Klasse.
+         * 
+         * Je nach angegebenem Typ (z. B. "children" oder "trainings") wird der Pfad zur JSON-Datei gesetzt.
+         * 
+         * \param type Der Datentyp, z. B. "children" oder "trainings", zur Auswahl des Dateipfads.
+         */
         public FileJSONRepository(string type)
         {
             // Dynamisch den Pfad festlegen
@@ -30,13 +40,14 @@ namespace PatternPixTrainerPanel.Data
         }
 
         /**
-         * \brief Lädt die Liste der Kinder aus der JSON-Datei.
+         * \brief Lädt eine Liste von Objekten aus der zugewiesenen JSON-Datei.
          * 
-         * Prüft zunächst, ob die Datei existiert. Falls nicht, wird eine leere Liste zurückgegeben.
+         * Wenn die Datei nicht existiert, wird eine leere Liste zurückgegeben.
+         * Die Methode ist generisch und unterstützt alle serialisierbaren Typen.
          * 
-         * \return Liste der geladenen Child-Objekte.
+         * \tparam T Der Typ der Objekte, die geladen werden sollen.
+         * \return Eine Liste von deserialisierten Objekten des Typs T.
          */
-        // Generische Load-Methode für beliebige Typen
         public List<T> Load<T>()
         {
             if (!File.Exists(_filePath))
@@ -46,7 +57,15 @@ namespace PatternPixTrainerPanel.Data
             return JsonSerializer.Deserialize<List<T>>(json) ?? new List<T>();
         }
 
-        // Generische Save-Methode für beliebige Typen
+        /**
+         * \brief Speichert eine Liste von Objekten in der zugewiesenen JSON-Datei.
+         * 
+         * Die Methode serialisiert die übergebenen Objekte im JSON-Format
+         * und schreibt die Ausgabe in die Zieldatei. Die Ausgabe ist eingerückt formatiert.
+         * 
+         * \tparam T Der Typ der Objekte, die gespeichert werden sollen.
+         * \param items Die Liste von Objekten, die gespeichert werden sollen.
+         */
         public void Save<T>(List<T> items)
         {
             var json = JsonSerializer.Serialize(items, new JsonSerializerOptions { WriteIndented = true });

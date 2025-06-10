@@ -1,0 +1,106 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Main\+Window\+View\+Model Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model}{}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model}\index{PatternPixTrainerPanel.ViewModel.MainWindowViewModel@{PatternPixTrainerPanel.ViewModel.MainWindowViewModel}}
+
+
+\doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} für das Hauptfenster.  
+
+
+Inheritance diagram for Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Main\+Window\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_a72742f7a19dfa2b2c567c3a990f80f2e}{Main\+Window\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Konstruktor initialisiert Event\+Aggregator und Abonnement auf Navigationsevents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_a2920d1339d2a3bc3adf0728ad4673c36}{Register\+View}} (string view\+Name, User\+Control view)
+\begin{DoxyCompactList}\small\item\em Registriert eine neue \doxylink{namespace_pattern_pix_trainer_panel_1_1_view}{View} mit zugehörigem Namen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model_a18f21e780133ffcaa707b3eb07dac2af}{Base\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Konstruktor für das \doxylink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Base\+View\+Model}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_common_1_1_notify_property_changed}{Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_common_1_1_notify_property_changed_a2911aeb125cef77e34b17ba83c56e943}{On\+Property\+Changed}} (string property)
+\begin{DoxyCompactList}\small\item\em Notifies listeners that a property value has changed. Name of the property used to notify listeners. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_ae92ed8ff125a87e368f7ec553b2c6b59}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_ae92ed8ff125a87e368f7ec553b2c6b59} 
+User\+Control {\bfseries Current\+View}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Aktuell angezeigte Benutzersteuerung (\doxylink{namespace_pattern_pix_trainer_panel_1_1_view}{View}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator {\bfseries Event\+Aggregator}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Instanz des Event\+Aggregators zur Eventkommunikation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \mbox{\hyperlink{class_common_1_1_notify_property_changed}{Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Multicast event for property change notifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} für das Hauptfenster. 
+
+Dieses \doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} verwaltet die Navigation zwischen verschiedenen Views und reagiert auf Navigationsevents über den Event\+Aggregator. 
+
+\label{doc-constructors}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_a72742f7a19dfa2b2c567c3a990f80f2e}\index{PatternPixTrainerPanel.ViewModel.MainWindowViewModel@{PatternPixTrainerPanel.ViewModel.MainWindowViewModel}!MainWindowViewModel@{MainWindowViewModel}}
+\index{MainWindowViewModel@{MainWindowViewModel}!PatternPixTrainerPanel.ViewModel.MainWindowViewModel@{PatternPixTrainerPanel.ViewModel.MainWindowViewModel}}
+\doxysubsubsection{\texorpdfstring{MainWindowViewModel()}{MainWindowViewModel()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_a72742f7a19dfa2b2c567c3a990f80f2e} 
+Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Main\+Window\+View\+Model.\+Main\+Window\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor initialisiert Event\+Aggregator und Abonnement auf Navigationsevents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Instanz des Event\+Aggregators zur Event-\/\+Kommunikation. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_a2920d1339d2a3bc3adf0728ad4673c36}\index{PatternPixTrainerPanel.ViewModel.MainWindowViewModel@{PatternPixTrainerPanel.ViewModel.MainWindowViewModel}!RegisterView@{RegisterView}}
+\index{RegisterView@{RegisterView}!PatternPixTrainerPanel.ViewModel.MainWindowViewModel@{PatternPixTrainerPanel.ViewModel.MainWindowViewModel}}
+\doxysubsubsection{\texorpdfstring{RegisterView()}{RegisterView()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_main_window_view_model_a2920d1339d2a3bc3adf0728ad4673c36} 
+void Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Main\+Window\+View\+Model.\+Register\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Name}{, }\item[{User\+Control}]{view}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Registriert eine neue \doxylink{namespace_pattern_pix_trainer_panel_1_1_view}{View} mit zugehörigem Namen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Name} & Name der \doxylink{namespace_pattern_pix_trainer_panel_1_1_view}{View} (als Schlüssel im Dictionary). \\
+\hline
+{\em view} & Die \doxylink{namespace_pattern_pix_trainer_panel_1_1_view}{View}, die registriert werden soll.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Wenn der Name leer oder null ist. \\
+\hline
+{\em Argument\+Null\+Exception} & Wenn die \doxylink{namespace_pattern_pix_trainer_panel_1_1_view}{View} null ist. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+View\+Model/Main\+Window\+View\+Model.\+cs\end{DoxyCompactItemize}

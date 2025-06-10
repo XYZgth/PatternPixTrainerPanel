@@ -39,6 +39,10 @@ namespace PatternPixTrainerPanel.ViewModel
         }
 
         private string _childName;
+
+        /**
+         * \brief Vorname des Kindes.
+         */
         public string ChildName
         {
             get => _childName;
@@ -49,6 +53,10 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
         private string _lastName;
+
+        /**
+         * \brief Nachname des Kindes.
+         */
         public string LastName
         {
             get => _lastName;
@@ -59,7 +67,10 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
         private DateTime _dateOfBirth;
-        
+
+        /**
+         * \brief Geburtsdatum des Kindes.
+         */
         public DateTime DateOfBirth
         {
             get => _dateOfBirth;
@@ -73,8 +84,10 @@ namespace PatternPixTrainerPanel.ViewModel
         /// \brief Befehl zum Zurücknavigieren zur Hauptansicht.
         private ICommand _backCommand;
 
+        /// \brief Befehl zum Hinzufügen eines neuen Kindes.
         private ICommand _addCommand;
 
+        /// \brief Befehl zum Abbrechen der Eingabe und Zurücksetzen der Felder.
         private ICommand _cancelCommand;
 
         /**
@@ -98,8 +111,14 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
-        
-
+        /**
+         * \brief Property für den AddCommand.
+         *
+         * Fügt ein neues Kind mit den eingegebenen Daten hinzu, sofern die Felder korrekt ausgefüllt sind.
+         * Zeigt bei fehlenden Eingaben eine Fehlermeldung an.
+         * 
+         * \return Ein ICommand zur Ausführung des Hinzufügens.
+         */
         public ICommand AddCommand
         {
             get
@@ -138,8 +157,14 @@ namespace PatternPixTrainerPanel.ViewModel
                 return _addCommand;
             }
         }
-        
 
+        /**
+         * \brief Property für den CancelCommand.
+         *
+         * Setzt alle Eingabefelder zurück.
+         * 
+         * \return Ein ICommand zur Ausführung der Zurücksetzung.
+         */
         public ICommand CancelCommand
         {
             get

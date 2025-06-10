@@ -10,10 +10,24 @@ using PatternPixTrainerPanel.Data;
 
 namespace PatternPixTrainerPanel.Repositories
 {
+    /**
+     * \brief Implementierung des IChildRepository zur Speicherung in JSON-Dateien.
+     * 
+     * Diese Klasse speichert und lädt Kinder- sowie Trainingsdaten mithilfe des
+     * \c FileJSONRepository als JSON-Dateien im Dateisystem.
+     */
     internal class FileChildRepository : IChildRepository
     {
         private readonly FileJSONRepository _childRepo = new FileJSONRepository("children");
         private readonly FileJSONRepository _trainingRepo = new FileJSONRepository("trainings");
+
+        /**
+         * \brief Speichert eine Liste neuer Kinder.
+         * 
+         * Neue Kinder erhalten fortlaufende IDs und werden an die bestehende Liste angehängt.
+         * 
+         * \param Children Die zu speichernden Kind-Objekte.
+         */
         public void SaveChildren(List<Child> Children)
         {
             // Vorhandene Kinder laden
@@ -38,6 +52,13 @@ namespace PatternPixTrainerPanel.Repositories
             _childRepo.Save(existingChildren);
         }
 
+        /**
+         * \brief Speichert eine Liste neuer Trainingsdaten.
+         * 
+         * Neue Trainings erhalten fortlaufende IDs und werden an die bestehende Liste angehängt.
+         * 
+         * \param trainings Die zu speichernden Training-Objekte.
+         */
         public void SaveTrainings(List<Training> trainings)
         {
             // Vorhandene Trainings laden
@@ -61,6 +82,14 @@ namespace PatternPixTrainerPanel.Repositories
             // Gesamte Trainings speichern
             _trainingRepo.Save(existingTraining);
         }
+
+        /**
+         * \brief Lädt alle gespeicherten Kinder und verknüpft ihre Trainingsdaten.
+         * 
+         * Trainingsdaten werden anhand der \c ChildId zugeordnet.
+         * 
+         * \return Eine Liste aller Kinder mit ihren zugehörigen Trainings.
+         */
         public List<Child> LoadChildren()
         {
             var children = _childRepo.Load<Child>();

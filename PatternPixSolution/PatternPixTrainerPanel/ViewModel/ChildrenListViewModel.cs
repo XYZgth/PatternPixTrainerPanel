@@ -157,6 +157,12 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
         private ICommand _analysisCommand;
+
+        /**
+         * \brief Befehl zum Öffnen der Analyseansicht.
+         * 
+         * \return Ein ICommand zur Navigation zur Analyseansicht.
+         */
         public ICommand AnalysisViewCommand
         {
             get
@@ -171,7 +177,11 @@ namespace PatternPixTrainerPanel.ViewModel
             }
         }
 
-        //
+        /**
+         * \brief Aktuell ausgewählter Repository-Modus (z. B. DB oder Datei).
+         * 
+         * Änderung führt zum Neuladen der Kinderliste mit dem neuen Modus.
+         */
         public int SelectedRepositoryMode
         {
             get => _selectedRepositoryMode;

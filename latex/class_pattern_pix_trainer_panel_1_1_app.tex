@@ -1,0 +1,95 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+App Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_app}{}\label{class_pattern_pix_trainer_panel_1_1_app}\index{PatternPixTrainerPanel.App@{PatternPixTrainerPanel.App}}
+
+
+Einstiegspunkt der Anwendung.  
+
+
+Inheritance diagram for Pattern\+Pix\+Trainer\+Panel.\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pattern_pix_trainer_panel_1_1_app}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_afc4dddd6575dfa2233944614ead003bc}\label{class_pattern_pix_trainer_panel_1_1_app_afc4dddd6575dfa2233944614ead003bc} 
+void {\bfseries Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\+Component. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_afc4dddd6575dfa2233944614ead003bc}\label{class_pattern_pix_trainer_panel_1_1_app_afc4dddd6575dfa2233944614ead003bc} 
+void {\bfseries Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Initialize\+Component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_app_a87778b5e30c29a9b71e200e9d7da8cd2}{Set\+Repository\+Mode}} (int mode)
+\begin{DoxyCompactList}\small\item\em Setzt den Repository-\/\+Modus (Datenbank oder Datei). \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_a25b679e00bd82396e7768b1fa82d0274}\label{class_pattern_pix_trainer_panel_1_1_app_a25b679e00bd82396e7768b1fa82d0274} 
+static void {\bfseries Main} ()
+\begin{DoxyCompactList}\small\item\em Application Entry Point. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_a25b679e00bd82396e7768b1fa82d0274}\label{class_pattern_pix_trainer_panel_1_1_app_a25b679e00bd82396e7768b1fa82d0274} 
+static void {\bfseries Main} ()
+\begin{DoxyCompactList}\small\item\em Application Entry Point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_app_af3844f2da43fd26f4ac729244116e8e1}{On\+Startup}} (Startup\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Wird beim Start der Anwendung aufgerufen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_ab9e4d69cb9c2b8dd45d0b68e20f70321}\label{class_pattern_pix_trainer_panel_1_1_app_ab9e4d69cb9c2b8dd45d0b68e20f70321} 
+static \mbox{\hyperlink{interface_pattern_pix_trainer_panel_1_1_repositories_1_1_i_child_repository}{IChild\+Repository}} {\bfseries Child\+Repository}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Statisches Repository für Kind-\/\+Daten, wird je nach Modus gesetzt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Einstiegspunkt der Anwendung. 
+
+\doxylink{class_pattern_pix_trainer_panel_1_1_app}{App}.
+
+Initialisiert das Repository und startet die Hauptansicht. 
+
+\label{doc-func-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_af3844f2da43fd26f4ac729244116e8e1}\index{PatternPixTrainerPanel.App@{PatternPixTrainerPanel.App}!OnStartup@{OnStartup}}
+\index{OnStartup@{OnStartup}!PatternPixTrainerPanel.App@{PatternPixTrainerPanel.App}}
+\doxysubsubsection{\texorpdfstring{OnStartup()}{OnStartup()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_app_af3844f2da43fd26f4ac729244116e8e1} 
+override void Pattern\+Pix\+Trainer\+Panel.\+App.\+On\+Startup (\begin{DoxyParamCaption}\item[{Startup\+Event\+Args}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Wird beim Start der Anwendung aufgerufen. 
+
+Initialisiert das Repository, lädt Testdaten und startet die Hauptansicht.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Startparameter der Anwendung. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_app_a87778b5e30c29a9b71e200e9d7da8cd2}\index{PatternPixTrainerPanel.App@{PatternPixTrainerPanel.App}!SetRepositoryMode@{SetRepositoryMode}}
+\index{SetRepositoryMode@{SetRepositoryMode}!PatternPixTrainerPanel.App@{PatternPixTrainerPanel.App}}
+\doxysubsubsection{\texorpdfstring{SetRepositoryMode()}{SetRepositoryMode()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_app_a87778b5e30c29a9b71e200e9d7da8cd2} 
+void Pattern\+Pix\+Trainer\+Panel.\+App.\+Set\+Repository\+Mode (\begin{DoxyParamCaption}\item[{int}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Setzt den Repository-\/\+Modus (Datenbank oder Datei). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 0 = Datenbank-\/\+Modus, 1 = Datei-\/\+Modus. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/App.\+xaml.\+cs\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/obj/\+Debug/net8.\+0-\/windows/App.\+g.\+cs\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/obj/\+Debug/net8.\+0-\/windows/App.\+g.\+i.\+cs\end{DoxyCompactItemize}

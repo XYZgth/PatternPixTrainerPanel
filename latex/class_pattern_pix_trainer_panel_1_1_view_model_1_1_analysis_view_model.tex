@@ -1,0 +1,708 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model}{}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+
+
+\doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} für die Analyse-\/\+Ansicht der Pattern\+Pix Trainer Anwendung.  
+
+
+Inheritance diagram for Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a4339e8ba86d597b7b47440a7f0ad665b}{Analysis\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Konstruktor der Analysis\+View\+Model-\/\+Klasse. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a691178f59a8e27abc01cde9fde768cbf}{Refresh\+Data\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Lädt die Daten manuell neu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model_a18f21e780133ffcaa707b3eb07dac2af}{Base\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Konstruktor für das \doxylink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Base\+View\+Model}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_common_1_1_notify_property_changed}{Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_common_1_1_notify_property_changed_a2911aeb125cef77e34b17ba83c56e943}{On\+Property\+Changed}} (string property)
+\begin{DoxyCompactList}\small\item\em Notifies listeners that a property value has changed. Name of the property used to notify listeners. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a94cb206fbdf1aa54e178e5c01412a78b}{Selected\+Child}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für das aktuell ausgewählte Kind. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae11fd81214dfb31cedaa8b8f17c04d96}{Selected\+Symmetry}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die aktuell ausgewählte Symmetrie-\/\+Option. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_abfab47d2f9d2f9db3012b696feb661ca}{Selected\+Chart\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den aktuell ausgewählten Chart-\/\+Typ. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6e359bf7db2c8a0ae598edd6b9f93f3c}{From\+Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für das Startdatum des Zeitfilters. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae61c25f400f4f8d966e239227c36758d}{To\+Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für das Enddatum des Zeitfilters. \end{DoxyCompactList}\item 
+Time\+Span \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9d32233f45c446f2d451bd3c9c5370b1}{From\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Startzeit des täglichen Zeitfilters. \end{DoxyCompactList}\item 
+Time\+Span \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a08be6932e33c38de066a8aa6bf5c7f7c}{To\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Endzeit des täglichen Zeitfilters. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ string $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a672339d043e87ffb7b1f2385664c485e}{Children}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection aller verfügbaren Kinder. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ string $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a55c4b7d67b28e3c1b8009304bd1978e4}{Symmetry\+Options}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection aller verfügbaren Symmetrie-\/\+Optionen. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ string $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_af0fa1e6421a9f6e87a74e5f1bd6245a9}{Chart\+Types}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection aller verfügbaren Chart-\/\+Typen. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_symmetry_stats}{Symmetry\+Stats}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_af498e4d2c50f70cd063d0f03e444162f}{Symmetry\+Stats\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection der Symmetrie-\/\+Statistiken. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_abe61a5a9cfb084c9e26db172c83244d9}{Trainings}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection aller gefilterten Trainingseinheiten. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_peer_comparison_data}{Peer\+Comparison\+Data}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a5b9f47d33e26c8737b6bad960bd65dd4}{Peer\+Comparison\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection der Peer-\/\+Vergleichsdaten. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_peer_symmetry_comparison}{Peer\+Symmetry\+Comparison}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a998353d1e935391e8337faa62a439d26}{Peer\+Symmetry\+Comparison}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection der Peer-\/\+Symmetrie-\/\+Vergleichsdaten. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ac9f548212d4ce41c80bd4ddd9184a97a}{Total\+Sessions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Gesamtanzahl der Trainingssitzungen. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a935e11bfde5cfbf301425556e8082860}{Average\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die durchschnittliche Trainingszeit. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a75904d89858d5fca5ecffe069f7b960e}{Average\+Errors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die durchschnittliche Fehleranzahl. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a7e6926f25d029b2206f7bd5f736378ee}{Best\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die beste (kürzeste) Trainingszeit. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a2426c1c36063cf7c7119f0001940dfba}{Peer\+Average\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die durchschnittliche Trainingszeit der Peer-\/\+Gruppe. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9abd82b38d7bd0b74777eacb91c3d449}{Peer\+Average\+Errors}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die durchschnittliche Fehleranzahl der Peer-\/\+Gruppe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9ef551118230ef349a94d28d00ef8221}{Peer\+Total\+Sessions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Gesamtanzahl der Peer-\/\+Trainingssitzungen. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae95048ab65fb3dca4a26ef942ae1626b}{Average\+Sessions\+Per\+Peer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die durchschnittliche Anzahl Sitzungen pro Peer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a5c383dbb74897e7b0e4daa3c52757031}{Peer\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Anzahl der Kinder in der Peer-\/\+Gruppe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a35fb027acd3f3f6ef11695bccdd07869}{Is\+Loading}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den Ladezustand der Daten. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a3ad94c2f43f62d0c6aa78a13d47d0d99}{Start\+Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Alias-\/\+Property für das Startdatum. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a339e7181b45446264f3dde30675c5a79}{End\+Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Alias-\/\+Property für das Enddatum. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ string $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6044850a544699f5c76b9fda2bedcd2f}{Time\+Ranges}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collection der verfügbaren Zeitraum-\/\+Optionen. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a2442b0f66ca3dbc0d3d5ab29126f8fb7}{Selected\+Time\+Range}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den ausgewählten Zeitraum. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ab60a2e46c02acee5df05b610de275902}{Filtered\+Trainings}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Alias-\/\+Property für die gefilterten Trainings. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a4fb7e108cf3c9f4077df11c4f3a8cb0d}{Primary\+Chart\+Title}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den Titel des primären Charts. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a1c835e51a6c5185ee3b469a8f2eebd80}{Primary\+YAxis\+Header}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Beschriftung der primären Y-\/\+Achse. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_afa0c311eb7869e4c5b40e4b0ef299148}{Primary\+Data\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den Datenpfad der primären Chart-\/\+Serie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a0a1d5213ddcb2312aad82977d77a8539}{Secondary\+Data\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den Datenpfad der sekundären Chart-\/\+Serie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_afbfcf08ac19fc92d0799a75e6a25afc4}{Primary\+Series\+Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Beschriftung der primären Chart-\/\+Serie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6857499f7f82034e4a333f674bc0bfb7}{Secondary\+Series\+Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Beschriftung der sekundären Chart-\/\+Serie. \end{DoxyCompactList}\item 
+Visibility \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_aeb847051513e244bbb904d349b6d7bbd}{Show\+Secondary\+Series\+Visibility}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Sichtbarkeit der sekundären Chart-\/\+Serie. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_symmetry_stats}{Symmetry\+Stats}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6a3d1c535fa2bbc4a4493b59f8e69853}{Symmetry\+Stats}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für die Symmetrie-\/\+Statistiken als neue Collection. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_moving_average_point}{Moving\+Average\+Point}} $>$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6b3c5d53d2e75ff3c868c00df53b5477}{Moving\+Average\+Data}} = new()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Observable\+Collection für die Datenpunkte des gleitenden Durchschnitts. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a70697185e59b4ff195e14c5fce1b8650}{Back\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property für den Back\+Command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator {\bfseries Event\+Aggregator}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Instanz des Event\+Aggregators zur Eventkommunikation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \mbox{\hyperlink{class_common_1_1_notify_property_changed}{Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Multicast event for property change notifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} für die Analyse-\/\+Ansicht der Pattern\+Pix Trainer Anwendung. 
+
+Diese Klasse verwaltet die Datenanalyse und Statistiken für Trainingseinheiten, einschließlich Filterung, Peer-\/\+Vergleiche und Chart-\/\+Darstellung. 
+
+\label{doc-constructors}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a4339e8ba86d597b7b47440a7f0ad665b}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!AnalysisViewModel@{AnalysisViewModel}}
+\index{AnalysisViewModel@{AnalysisViewModel}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{AnalysisViewModel()}{AnalysisViewModel()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a4339e8ba86d597b7b47440a7f0ad665b} 
+Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Analysis\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor der Analysis\+View\+Model-\/\+Klasse. 
+
+Initialisiert alle Collections, setzt Standardwerte für Filterparameter und startet die asynchrone Initialisierung.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Der Event-\/\+Aggregator für die Kommunikation zwischen View\+Models. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a691178f59a8e27abc01cde9fde768cbf}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!RefreshDataAsync@{RefreshDataAsync}}
+\index{RefreshDataAsync@{RefreshDataAsync}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{RefreshDataAsync()}{RefreshDataAsync()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a691178f59a8e27abc01cde9fde768cbf} 
+async Task Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Refresh\+Data\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lädt die Daten manuell neu. 
+
+Lädt sowohl die Kinderliste als auch alle gefilterten Daten neu. 
+
+\label{doc-property-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a75904d89858d5fca5ecffe069f7b960e}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!AverageErrors@{AverageErrors}}
+\index{AverageErrors@{AverageErrors}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{AverageErrors}{AverageErrors}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a75904d89858d5fca5ecffe069f7b960e} 
+double Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Average\+Errors\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die durchschnittliche Fehleranzahl. 
+
+\begin{DoxyReturn}{Returns}
+Die durchschnittliche Anzahl der Fehler über alle gefilterten Trainings. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae95048ab65fb3dca4a26ef942ae1626b}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!AverageSessionsPerPeer@{AverageSessionsPerPeer}}
+\index{AverageSessionsPerPeer@{AverageSessionsPerPeer}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{AverageSessionsPerPeer}{AverageSessionsPerPeer}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae95048ab65fb3dca4a26ef942ae1626b} 
+double Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Average\+Sessions\+Per\+Peer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die durchschnittliche Anzahl Sitzungen pro Peer. 
+
+\begin{DoxyReturn}{Returns}
+Die durchschnittliche Anzahl Trainings pro Kind in der Peer-\/\+Gruppe. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a935e11bfde5cfbf301425556e8082860}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!AverageTime@{AverageTime}}
+\index{AverageTime@{AverageTime}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{AverageTime}{AverageTime}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a935e11bfde5cfbf301425556e8082860} 
+double Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Average\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die durchschnittliche Trainingszeit. 
+
+\begin{DoxyReturn}{Returns}
+Die durchschnittliche Zeit in Sekunden über alle gefilterten Trainings. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a70697185e59b4ff195e14c5fce1b8650}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!BackCommand@{BackCommand}}
+\index{BackCommand@{BackCommand}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{BackCommand}{BackCommand}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a70697185e59b4ff195e14c5fce1b8650} 
+ICommand Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Back\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für den Back\+Command. 
+
+Dieser Befehl navigiert zur "{}\+Main\+View"{}, wenn er ausgeführt wird.
+
+\begin{DoxyReturn}{Returns}
+Ein ICommand, das bei Ausführung ein Navigationsevent publiziert. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a7e6926f25d029b2206f7bd5f736378ee}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!BestTime@{BestTime}}
+\index{BestTime@{BestTime}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{BestTime}{BestTime}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a7e6926f25d029b2206f7bd5f736378ee} 
+double Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Best\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die beste (kürzeste) Trainingszeit. 
+
+\begin{DoxyReturn}{Returns}
+Die beste Zeit in Sekunden aus allen gefilterten Trainings. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_af0fa1e6421a9f6e87a74e5f1bd6245a9}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!ChartTypes@{ChartTypes}}
+\index{ChartTypes@{ChartTypes}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{ChartTypes}{ChartTypes}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_af0fa1e6421a9f6e87a74e5f1bd6245a9} 
+Observable\+Collection$<$string$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Chart\+Types\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection aller verfügbaren Chart-\/\+Typen. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit den verfügbaren Chart-\/\+Darstellungsarten. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a672339d043e87ffb7b1f2385664c485e}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!Children@{Children}}
+\index{Children@{Children}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{Children}{Children}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a672339d043e87ffb7b1f2385664c485e} 
+Observable\+Collection$<$string$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Children\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection aller verfügbaren Kinder. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit den Namen aller Kinder. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a339e7181b45446264f3dde30675c5a79}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!EndDate@{EndDate}}
+\index{EndDate@{EndDate}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{EndDate}{EndDate}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a339e7181b45446264f3dde30675c5a79} 
+Date\+Time Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+End\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Alias-\/\+Property für das Enddatum. 
+
+\begin{DoxyReturn}{Returns}
+Das Enddatum für die Filterung. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ab60a2e46c02acee5df05b610de275902}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!FilteredTrainings@{FilteredTrainings}}
+\index{FilteredTrainings@{FilteredTrainings}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{FilteredTrainings}{FilteredTrainings}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ab60a2e46c02acee5df05b610de275902} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Filtered\+Trainings\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Alias-\/\+Property für die gefilterten Trainings. 
+
+\begin{DoxyReturn}{Returns}
+Die aktuell gefilterte Trainings-\/\+Collection. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6e359bf7db2c8a0ae598edd6b9f93f3c}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!FromDate@{FromDate}}
+\index{FromDate@{FromDate}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{FromDate}{FromDate}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6e359bf7db2c8a0ae598edd6b9f93f3c} 
+Date\+Time Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+From\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für das Startdatum des Zeitfilters. 
+
+Bestimmt den Beginn des Zeitraums für die Datenfilterung.
+
+\begin{DoxyReturn}{Returns}
+Das Startdatum als Date\+Time. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9d32233f45c446f2d451bd3c9c5370b1}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!FromTime@{FromTime}}
+\index{FromTime@{FromTime}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{FromTime}{FromTime}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9d32233f45c446f2d451bd3c9c5370b1} 
+Time\+Span Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+From\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die Startzeit des täglichen Zeitfilters. 
+
+Bestimmt die Startzeit innerhalb eines Tages für die Filterung.
+
+\begin{DoxyReturn}{Returns}
+Die Startzeit als Time\+Span. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a35fb027acd3f3f6ef11695bccdd07869}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!IsLoading@{IsLoading}}
+\index{IsLoading@{IsLoading}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{IsLoading}{IsLoading}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a35fb027acd3f3f6ef11695bccdd07869} 
+bool Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Is\+Loading\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für den Ladezustand der Daten. 
+
+Zeigt an, ob gerade Daten geladen werden.
+
+\begin{DoxyReturn}{Returns}
+True wenn Daten geladen werden, sonst false. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6b3c5d53d2e75ff3c868c00df53b5477}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!MovingAverageData@{MovingAverageData}}
+\index{MovingAverageData@{MovingAverageData}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{MovingAverageData}{MovingAverageData}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6b3c5d53d2e75ff3c868c00df53b5477} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_moving_average_point}{Moving\+Average\+Point}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Moving\+Average\+Data = new()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Observable\+Collection für die Datenpunkte des gleitenden Durchschnitts. 
+
+Diese Collection enthält die berechneten Trendpunkte für die Visualisierung des gleitenden Durchschnitts in der Chart-\/\+Ansicht. \Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9abd82b38d7bd0b74777eacb91c3d449}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PeerAverageErrors@{PeerAverageErrors}}
+\index{PeerAverageErrors@{PeerAverageErrors}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PeerAverageErrors}{PeerAverageErrors}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9abd82b38d7bd0b74777eacb91c3d449} 
+double Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Peer\+Average\+Errors\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die durchschnittliche Fehleranzahl der Peer-\/\+Gruppe. 
+
+\begin{DoxyReturn}{Returns}
+Die durchschnittliche Anzahl der Fehler der Peers. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a2426c1c36063cf7c7119f0001940dfba}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PeerAverageTime@{PeerAverageTime}}
+\index{PeerAverageTime@{PeerAverageTime}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PeerAverageTime}{PeerAverageTime}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a2426c1c36063cf7c7119f0001940dfba} 
+double Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Peer\+Average\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die durchschnittliche Trainingszeit der Peer-\/\+Gruppe. 
+
+\begin{DoxyReturn}{Returns}
+Die durchschnittliche Zeit der Peers in Sekunden. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a5b9f47d33e26c8737b6bad960bd65dd4}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PeerComparisonData@{PeerComparisonData}}
+\index{PeerComparisonData@{PeerComparisonData}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PeerComparisonData}{PeerComparisonData}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a5b9f47d33e26c8737b6bad960bd65dd4} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_peer_comparison_data}{Peer\+Comparison\+Data}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Peer\+Comparison\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection der Peer-\/\+Vergleichsdaten. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit Vergleichsdaten zwischen ausgewähltem Kind und Peers. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a5c383dbb74897e7b0e4daa3c52757031}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PeerCount@{PeerCount}}
+\index{PeerCount@{PeerCount}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PeerCount}{PeerCount}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a5c383dbb74897e7b0e4daa3c52757031} 
+int Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Peer\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die Anzahl der Kinder in der Peer-\/\+Gruppe. 
+
+\begin{DoxyReturn}{Returns}
+Die Anzahl der Peers (Kinder des gleichen Jahrgangs). 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a998353d1e935391e8337faa62a439d26}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PeerSymmetryComparison@{PeerSymmetryComparison}}
+\index{PeerSymmetryComparison@{PeerSymmetryComparison}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PeerSymmetryComparison}{PeerSymmetryComparison}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a998353d1e935391e8337faa62a439d26} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_peer_symmetry_comparison}{Peer\+Symmetry\+Comparison}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Peer\+Symmetry\+Comparison\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection der Peer-\/\+Symmetrie-\/\+Vergleichsdaten. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit symmetriespezifischen Peer-\/\+Vergleichen. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9ef551118230ef349a94d28d00ef8221}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PeerTotalSessions@{PeerTotalSessions}}
+\index{PeerTotalSessions@{PeerTotalSessions}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PeerTotalSessions}{PeerTotalSessions}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a9ef551118230ef349a94d28d00ef8221} 
+int Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Peer\+Total\+Sessions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die Gesamtanzahl der Peer-\/\+Trainingssitzungen. 
+
+\begin{DoxyReturn}{Returns}
+Die Gesamtanzahl aller Trainings der Peer-\/\+Gruppe. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a4fb7e108cf3c9f4077df11c4f3a8cb0d}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PrimaryChartTitle@{PrimaryChartTitle}}
+\index{PrimaryChartTitle@{PrimaryChartTitle}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PrimaryChartTitle}{PrimaryChartTitle}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a4fb7e108cf3c9f4077df11c4f3a8cb0d} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Primary\+Chart\+Title\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für den Titel des primären Charts. 
+
+Der Titel ändert sich basierend auf dem ausgewählten Chart-\/\+Typ.
+
+\begin{DoxyReturn}{Returns}
+Der Chart-\/\+Titel als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_afa0c311eb7869e4c5b40e4b0ef299148}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PrimaryDataPath@{PrimaryDataPath}}
+\index{PrimaryDataPath@{PrimaryDataPath}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PrimaryDataPath}{PrimaryDataPath}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_afa0c311eb7869e4c5b40e4b0ef299148} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Primary\+Data\+Path\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für den Datenpfad der primären Chart-\/\+Serie. 
+
+Bestimmt welche Eigenschaft der Training-\/\+Objekte für die primäre Serie verwendet wird.
+
+\begin{DoxyReturn}{Returns}
+Der Eigenschaftsname als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_afbfcf08ac19fc92d0799a75e6a25afc4}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PrimarySeriesLabel@{PrimarySeriesLabel}}
+\index{PrimarySeriesLabel@{PrimarySeriesLabel}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PrimarySeriesLabel}{PrimarySeriesLabel}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_afbfcf08ac19fc92d0799a75e6a25afc4} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Primary\+Series\+Label\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für die Beschriftung der primären Chart-\/\+Serie. 
+
+\begin{DoxyReturn}{Returns}
+Die Beschriftung der primären Serie als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a1c835e51a6c5185ee3b469a8f2eebd80}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!PrimaryYAxisHeader@{PrimaryYAxisHeader}}
+\index{PrimaryYAxisHeader@{PrimaryYAxisHeader}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{PrimaryYAxisHeader}{PrimaryYAxisHeader}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a1c835e51a6c5185ee3b469a8f2eebd80} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Primary\+YAxis\+Header\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für die Beschriftung der primären Y-\/\+Achse. 
+
+Die Beschriftung ändert sich basierend auf dem ausgewählten Chart-\/\+Typ.
+
+\begin{DoxyReturn}{Returns}
+Die Y-\/\+Achsen-\/\+Beschriftung als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a0a1d5213ddcb2312aad82977d77a8539}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SecondaryDataPath@{SecondaryDataPath}}
+\index{SecondaryDataPath@{SecondaryDataPath}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SecondaryDataPath}{SecondaryDataPath}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a0a1d5213ddcb2312aad82977d77a8539} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Secondary\+Data\+Path\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für den Datenpfad der sekundären Chart-\/\+Serie. 
+
+Bestimmt welche Eigenschaft für die sekundäre Serie verwendet wird (falls vorhanden).
+
+\begin{DoxyReturn}{Returns}
+Der Eigenschaftsname als String oder null. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6857499f7f82034e4a333f674bc0bfb7}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SecondarySeriesLabel@{SecondarySeriesLabel}}
+\index{SecondarySeriesLabel@{SecondarySeriesLabel}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SecondarySeriesLabel}{SecondarySeriesLabel}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6857499f7f82034e4a333f674bc0bfb7} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Secondary\+Series\+Label\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für die Beschriftung der sekundären Chart-\/\+Serie. 
+
+\begin{DoxyReturn}{Returns}
+Die Beschriftung der sekundären Serie als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_abfab47d2f9d2f9db3012b696feb661ca}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SelectedChartType@{SelectedChartType}}
+\index{SelectedChartType@{SelectedChartType}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedChartType}{SelectedChartType}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_abfab47d2f9d2f9db3012b696feb661ca} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Selected\+Chart\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für den aktuell ausgewählten Chart-\/\+Typ. 
+
+Bestimmt welche Art von Chart angezeigt wird (Fehler/\+Zeit, nur Fehler, nur Zeit). Aktualisiert automatisch alle chart-\/spezifischen Properties.
+
+\begin{DoxyReturn}{Returns}
+Der ausgewählte Chart-\/\+Typ als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a94cb206fbdf1aa54e178e5c01412a78b}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SelectedChild@{SelectedChild}}
+\index{SelectedChild@{SelectedChild}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedChild}{SelectedChild}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a94cb206fbdf1aa54e178e5c01412a78b} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Selected\+Child\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für das aktuell ausgewählte Kind. 
+
+Wenn ein neues Kind ausgewählt wird, werden automatisch die Filter angewendet und die Daten aktualisiert.
+
+\begin{DoxyReturn}{Returns}
+Der Name des ausgewählten Kindes als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae11fd81214dfb31cedaa8b8f17c04d96}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SelectedSymmetry@{SelectedSymmetry}}
+\index{SelectedSymmetry@{SelectedSymmetry}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedSymmetry}{SelectedSymmetry}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae11fd81214dfb31cedaa8b8f17c04d96} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Selected\+Symmetry\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die aktuell ausgewählte Symmetrie-\/\+Option. 
+
+Filtert die Trainingsdaten nach der gewählten Symmetrie-\/\+Art.
+
+\begin{DoxyReturn}{Returns}
+Die ausgewählte Symmetrie-\/\+Option als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a2442b0f66ca3dbc0d3d5ab29126f8fb7}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SelectedTimeRange@{SelectedTimeRange}}
+\index{SelectedTimeRange@{SelectedTimeRange}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedTimeRange}{SelectedTimeRange}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a2442b0f66ca3dbc0d3d5ab29126f8fb7} 
+string Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Selected\+Time\+Range\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für den ausgewählten Zeitraum. 
+
+Aktualisiert automatisch die From\+Time und To\+Time Properties basierend auf der Auswahl.
+
+\begin{DoxyReturn}{Returns}
+Der ausgewählte Zeitraum als String. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_aeb847051513e244bbb904d349b6d7bbd}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!ShowSecondarySeriesVisibility@{ShowSecondarySeriesVisibility}}
+\index{ShowSecondarySeriesVisibility@{ShowSecondarySeriesVisibility}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{ShowSecondarySeriesVisibility}{ShowSecondarySeriesVisibility}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_aeb847051513e244bbb904d349b6d7bbd} 
+Visibility Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Show\+Secondary\+Series\+Visibility\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für die Sichtbarkeit der sekundären Chart-\/\+Serie. 
+
+\begin{DoxyReturn}{Returns}
+Visibility.\+Visible wenn eine sekundäre Serie angezeigt werden soll, sonst Visibility.\+Collapsed. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a3ad94c2f43f62d0c6aa78a13d47d0d99}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!StartDate@{StartDate}}
+\index{StartDate@{StartDate}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{StartDate}{StartDate}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a3ad94c2f43f62d0c6aa78a13d47d0d99} 
+Date\+Time Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Start\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Alias-\/\+Property für das Startdatum. 
+
+\begin{DoxyReturn}{Returns}
+Das Startdatum für die Filterung. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a55c4b7d67b28e3c1b8009304bd1978e4}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SymmetryOptions@{SymmetryOptions}}
+\index{SymmetryOptions@{SymmetryOptions}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SymmetryOptions}{SymmetryOptions}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a55c4b7d67b28e3c1b8009304bd1978e4} 
+Observable\+Collection$<$string$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Symmetry\+Options\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection aller verfügbaren Symmetrie-\/\+Optionen. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit den verfügbaren Symmetrie-\/\+Filtern. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6a3d1c535fa2bbc4a4493b59f8e69853}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SymmetryStats@{SymmetryStats}}
+\index{SymmetryStats@{SymmetryStats}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SymmetryStats}{SymmetryStats}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6a3d1c535fa2bbc4a4493b59f8e69853} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_symmetry_stats}{Symmetry\+Stats}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Symmetry\+Stats\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property für die Symmetrie-\/\+Statistiken als neue Collection. 
+
+Erstellt eine neue Observable\+Collection basierend auf den aktuellen Symmetry\+Stats\+Data.
+
+\begin{DoxyReturn}{Returns}
+Eine neue Observable\+Collection mit Symmetrie-\/\+Statistiken. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_af498e4d2c50f70cd063d0f03e444162f}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!SymmetryStatsData@{SymmetryStatsData}}
+\index{SymmetryStatsData@{SymmetryStatsData}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{SymmetryStatsData}{SymmetryStatsData}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_af498e4d2c50f70cd063d0f03e444162f} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_symmetry_stats}{Symmetry\+Stats}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Symmetry\+Stats\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection der Symmetrie-\/\+Statistiken. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit aggregierten Statistiken pro Symmetrie-\/\+Typ. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6044850a544699f5c76b9fda2bedcd2f}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!TimeRanges@{TimeRanges}}
+\index{TimeRanges@{TimeRanges}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{TimeRanges}{TimeRanges}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a6044850a544699f5c76b9fda2bedcd2f} 
+Observable\+Collection$<$string$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Time\+Ranges\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection der verfügbaren Zeitraum-\/\+Optionen. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit vorgefertigten Zeitraum-\/\+Filtern. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae61c25f400f4f8d966e239227c36758d}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!ToDate@{ToDate}}
+\index{ToDate@{ToDate}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{ToDate}{ToDate}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ae61c25f400f4f8d966e239227c36758d} 
+Date\+Time Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+To\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für das Enddatum des Zeitfilters. 
+
+Bestimmt das Ende des Zeitraums für die Datenfilterung.
+
+\begin{DoxyReturn}{Returns}
+Das Enddatum als Date\+Time. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ac9f548212d4ce41c80bd4ddd9184a97a}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!TotalSessions@{TotalSessions}}
+\index{TotalSessions@{TotalSessions}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{TotalSessions}{TotalSessions}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_ac9f548212d4ce41c80bd4ddd9184a97a} 
+int Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Total\+Sessions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die Gesamtanzahl der Trainingssitzungen. 
+
+\begin{DoxyReturn}{Returns}
+Die Anzahl der gefilterten Trainingssitzungen. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a08be6932e33c38de066a8aa6bf5c7f7c}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!ToTime@{ToTime}}
+\index{ToTime@{ToTime}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{ToTime}{ToTime}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_a08be6932e33c38de066a8aa6bf5c7f7c} 
+Time\+Span Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+To\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property für die Endzeit des täglichen Zeitfilters. 
+
+Bestimmt die Endzeit innerhalb eines Tages für die Filterung.
+
+\begin{DoxyReturn}{Returns}
+Die Endzeit als Time\+Span. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_abe61a5a9cfb084c9e26db172c83244d9}\index{PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}!Trainings@{Trainings}}
+\index{Trainings@{Trainings}!PatternPixTrainerPanel.ViewModel.AnalysisViewModel@{PatternPixTrainerPanel.ViewModel.AnalysisViewModel}}
+\doxysubsubsection{\texorpdfstring{Trainings}{Trainings}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model_abe61a5a9cfb084c9e26db172c83244d9} 
+Observable\+Collection$<$\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_training}{Training}}$>$ Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Analysis\+View\+Model.\+Trainings\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Collection aller gefilterten Trainingseinheiten. 
+
+\begin{DoxyReturn}{Returns}
+Observable\+Collection mit den aktuell angezeigten Trainings. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+View\+Model/Analysis\+View\+Model.\+cs\end{DoxyCompactItemize}

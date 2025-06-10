@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['backcommand_0',['BackCommand',['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model.html#a70697185e59b4ff195e14c5fce1b8650',1,'PatternPixTrainerPanel.ViewModel.AnalysisViewModel.BackCommand'],['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_child_add_view_model.html#a9f6dc27fceeb16ca112f54bbb85c597d',1,'PatternPixTrainerPanel.ViewModel.ChildAddViewModel.BackCommand'],['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_child_detail_view_model.html#a379f149af501bf620b649fda448eef2f',1,'PatternPixTrainerPanel.ViewModel.ChildDetailViewModel.BackCommand']]],
+  ['baseviewmodel_1',['BaseViewModel',['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model.html',1,'PatternPixTrainerPanel.ViewModel.BaseViewModel'],['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model.html#a18f21e780133ffcaa707b3eb07dac2af',1,'PatternPixTrainerPanel.ViewModel.BaseViewModel.BaseViewModel()']]],
+  ['besttime_2',['BestTime',['../class_pattern_pix_trainer_panel_1_1_view_model_1_1_analysis_view_model.html#a7e6926f25d029b2206f7bd5f736378ee',1,'PatternPixTrainerPanel::ViewModel::AnalysisViewModel']]],
+  ['buildmodel_3',['BuildModel',['../class_pattern_pix_trainer_panel_1_1_migrations_1_1_pattern_pix_db_context_model_snapshot.html#abef364dd06308389fc3ce50b6389af88',1,'PatternPixTrainerPanel::Migrations::PatternPixDbContextModelSnapshot']]],
+  ['buildtargetmodel_4',['BuildTargetModel',['../class_pattern_pix_trainer_panel_1_1_migrations_1_1_initial_migration.html#ab9ae896bb873b821b58cc815fbd92ddd',1,'PatternPixTrainerPanel::Migrations::InitialMigration']]]
+];

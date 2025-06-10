@@ -1,0 +1,137 @@
+\doxysection{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model Class Reference}
+\hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model}{}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model}\index{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}}
+
+
+\doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} zur Anzeige und Verwaltung der Liste aller Kinder.  
+
+
+Inheritance diagram for Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_ac8f611d610821b5cc7a4aceb299fe13c}{Children\+List\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Konstruktor, lädt beim Start alle Kinder aus der Datenbank. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model_a18f21e780133ffcaa707b3eb07dac2af}{Base\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Konstruktor für das \doxylink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Base\+View\+Model}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_common_1_1_notify_property_changed}{Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_common_1_1_notify_property_changed_a2911aeb125cef77e34b17ba83c56e943}{On\+Property\+Changed}} (string property)
+\begin{DoxyCompactList}\small\item\em Notifies listeners that a property value has changed. Name of the property used to notify listeners. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a2d3e2b5ddc7dd42c059b060eb3254f28}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a2d3e2b5ddc7dd42c059b060eb3254f28} 
+Observable\+Collection$<$ \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} $>$ {\bfseries Children}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Liste aller Kinder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_afcc70ca46ebc3f8e6e8035c0c505f914}{Selected\+Child}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Das aktuell ausgewählte Kind. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a2661767abf1013c5af79bb78cd1e86c3}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a2661767abf1013c5af79bb78cd1e86c3} 
+ICommand {\bfseries Refresh\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Befehl zum manuellen Neuladen der Kinderliste. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a89f3aac59a4d72f3789763add24750f3}{View\+Details\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Navigiert zur Detailansicht des aktuell ausgewählten Kindes. \end{DoxyCompactList}\item 
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a1ce8e51b95f62b648b1ef86e1211d967}\label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a1ce8e51b95f62b648b1ef86e1211d967} 
+ICommand {\bfseries View\+Add\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Navigiert zur Ansicht zum Hinzufügen eines neuen Kindes. \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a8fd04ab1941c552eca8aa4324038648f}{Analysis\+View\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Befehl zum Öffnen der Analyseansicht. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a3694ac6b964e3f0566a9bf423d18aaa4}{Selected\+Repository\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Aktuell ausgewählter Repository-\/\+Modus (z.\+ B. DB oder Datei). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_view_model_1_1_base_view_model}{Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Base\+View\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator {\bfseries Event\+Aggregator}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Instanz des Event\+Aggregators zur Eventkommunikation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \mbox{\hyperlink{class_common_1_1_notify_property_changed}{Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed}
+\begin{DoxyCompactList}\small\item\em Multicast event for property change notifications. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_pattern_pix_trainer_panel_1_1_view_model}{View\+Model} zur Anzeige und Verwaltung der Liste aller Kinder. 
+
+Ermöglicht das Laden, Auswählen und Navigieren zu Details oder Hinzufügen eines Kindes. 
+
+\label{doc-constructors}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_ac8f611d610821b5cc7a4aceb299fe13c}\index{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}!ChildrenListViewModel@{ChildrenListViewModel}}
+\index{ChildrenListViewModel@{ChildrenListViewModel}!PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}}
+\doxysubsubsection{\texorpdfstring{ChildrenListViewModel()}{ChildrenListViewModel()}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_ac8f611d610821b5cc7a4aceb299fe13c} 
+Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model.\+Children\+List\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor, lädt beim Start alle Kinder aus der Datenbank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Event\+Aggregator zur Eventkommunikation. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-property-members}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a8fd04ab1941c552eca8aa4324038648f}\index{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}!AnalysisViewCommand@{AnalysisViewCommand}}
+\index{AnalysisViewCommand@{AnalysisViewCommand}!PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}}
+\doxysubsubsection{\texorpdfstring{AnalysisViewCommand}{AnalysisViewCommand}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a8fd04ab1941c552eca8aa4324038648f} 
+ICommand Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model.\+Analysis\+View\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Befehl zum Öffnen der Analyseansicht. 
+
+\begin{DoxyReturn}{Returns}
+Ein ICommand zur Navigation zur Analyseansicht. 
+\end{DoxyReturn}
+\Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_afcc70ca46ebc3f8e6e8035c0c505f914}\index{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}!SelectedChild@{SelectedChild}}
+\index{SelectedChild@{SelectedChild}!PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedChild}{SelectedChild}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_afcc70ca46ebc3f8e6e8035c0c505f914} 
+\mbox{\hyperlink{class_pattern_pix_trainer_panel_1_1_model_1_1_child}{Child}} Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model.\+Selected\+Child\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Das aktuell ausgewählte Kind. 
+
+Löst \doxylink{class_pattern_pix_trainer_panel_1_1_events_1_1_child_selected_event}{Child\+Selected\+Event} aus, wenn ein Kind ausgewählt wurde. \Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a3694ac6b964e3f0566a9bf423d18aaa4}\index{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}!SelectedRepositoryMode@{SelectedRepositoryMode}}
+\index{SelectedRepositoryMode@{SelectedRepositoryMode}!PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedRepositoryMode}{SelectedRepositoryMode}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a3694ac6b964e3f0566a9bf423d18aaa4} 
+int Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model.\+Selected\+Repository\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Aktuell ausgewählter Repository-\/\+Modus (z.\+ B. DB oder Datei). 
+
+Änderung führt zum Neuladen der Kinderliste mit dem neuen Modus. \Hypertarget{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a89f3aac59a4d72f3789763add24750f3}\index{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}!ViewDetailsCommand@{ViewDetailsCommand}}
+\index{ViewDetailsCommand@{ViewDetailsCommand}!PatternPixTrainerPanel.ViewModel.ChildrenListViewModel@{PatternPixTrainerPanel.ViewModel.ChildrenListViewModel}}
+\doxysubsubsection{\texorpdfstring{ViewDetailsCommand}{ViewDetailsCommand}}
+{\footnotesize\ttfamily \label{class_pattern_pix_trainer_panel_1_1_view_model_1_1_children_list_view_model_a89f3aac59a4d72f3789763add24750f3} 
+ICommand Pattern\+Pix\+Trainer\+Panel.\+View\+Model.\+Children\+List\+View\+Model.\+View\+Details\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Navigiert zur Detailansicht des aktuell ausgewählten Kindes. 
+
+Voraussetzung\+: Es wurde ein Kind ausgewählt. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pattern\+Pix\+Solution/\+Pattern\+Pix\+Trainer\+Panel/\+View\+Model/Children\+List\+View\+Model.\+cs\end{DoxyCompactItemize}
