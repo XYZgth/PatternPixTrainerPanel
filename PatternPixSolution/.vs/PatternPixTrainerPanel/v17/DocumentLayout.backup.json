@@ -183,7 +183,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -221,6 +221,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml",
+              "RelativeToolTip": "PatternPixTrainerPanel\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-14T08:07:19.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ChildAddView.xaml",
               "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\View\\ChildAddView.xaml",
@@ -240,18 +252,6 @@
               "RelativeToolTip": "PatternPixTrainerPanel\\View\\ChildDetailView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-15T12:24:08.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PatternPixTrainerPanel\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Domi\\Desktop\\GH_PatternPixTrainerPanel\\PatternPixTrainerPanel\\PatternPixSolution\\PatternPixTrainerPanel\\MainWindow.xaml",
-              "RelativeToolTip": "PatternPixTrainerPanel\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-14T08:07:19.408Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
