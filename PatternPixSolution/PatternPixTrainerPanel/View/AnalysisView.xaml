@@ -222,7 +222,8 @@
                               ItemsSource="{Binding Children}"
                               SelectedItem="{Binding SelectedChild}"
                              
-                             VerticalAlignment="Center"/>
+                             VerticalAlignment="Center"
+                              ToolTip="Select Child"/>
 
                     <!-- Symmetry Filter -->
                     <TextBlock Grid.Column="3" 
@@ -234,7 +235,8 @@
                     <ComboBox Grid.Column="4" 
                               ItemsSource="{Binding SymmetryOptions}"
                               SelectedItem="{Binding SelectedSymmetry}"
-                              VerticalAlignment="Center">
+                              VerticalAlignment="Center"
+                              ToolTip="Select Symmetry">
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <TextBlock Text="{Binding}" />
@@ -252,7 +254,8 @@
                     <ComboBox Grid.Column="7" 
                               ItemsSource="{Binding ChartTypes}"
                               SelectedItem="{Binding SelectedChartType}"
-                              VerticalAlignment="Center"/>
+                              VerticalAlignment="Center"
+                              ToolTip="Select chart type"/>
                 </Grid>
 
                 <!-- Second Row of Filters -->
@@ -280,7 +283,8 @@
 
                     <DatePicker Grid.Column="1" 
                                 SelectedDate="{Binding StartDate}"
-                                VerticalAlignment="Center"/>
+                                VerticalAlignment="Center"
+                                ToolTip="Select timespan start"/>
 
                     <TextBlock Grid.Column="3" 
                                Text="To:" 
@@ -290,7 +294,8 @@
 
                     <DatePicker Grid.Column="4" 
                                 SelectedDate="{Binding EndDate}"
-                                VerticalAlignment="Center"/>
+                                VerticalAlignment="Center"
+                                ToolTip="Select timespan end"/>
 
                     <!-- Time Range -->
                     <TextBlock Grid.Column="6" 
@@ -302,7 +307,8 @@
                     <ComboBox Grid.Column="7" 
                               ItemsSource="{Binding TimeRanges}"
                               SelectedItem="{Binding SelectedTimeRange}"
-                              VerticalAlignment="Center"/>
+                              VerticalAlignment="Center"
+                              ToolTip="Select timerange"/>
 
 
                 </Grid>
