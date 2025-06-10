@@ -48,6 +48,7 @@
                                 BorderBrush="{TemplateBinding BorderBrush}">
                             <ContentPresenter HorizontalAlignment="Center" 
                                             VerticalAlignment="Center"
+                                              Margin="10"
                                             TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -94,6 +95,7 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
             <Setter Property="BorderThickness" Value="2"/>
+           
             <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -105,6 +107,7 @@
                                 BorderBrush="{TemplateBinding BorderBrush}">
                             <ContentPresenter HorizontalAlignment="Center" 
                                             VerticalAlignment="Center"
+                                              Margin="10"
                                             TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -436,7 +439,8 @@
                 <Button Content="🔄 Refresh" 
                         Command="{Binding RefreshCommand}" 
                         Style="{StaticResource SecondaryButtonStyle}"
-                        Margin="0,0,10,0"/>
+                        Margin="0,0,10,0" Cursor="Hand"
+                        />
 
                 <Button Content="👁 View Details" 
                         Command="{Binding ViewDetailsCommand}"

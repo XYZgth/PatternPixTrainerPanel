@@ -8,7 +8,7 @@
         xmlns:converter="clr-namespace:PatternPixTrainerPanel.Converter"
         xmlns:prism="http://prismlibrary.com/"
         mc:Ignorable="d"
-        Title="Pattern Pix Trainer Panel" Height="450" Width="800">
+        Title="Pattern Pix Trainer Panel" Height="650" Width="1200">
 
     <Window.Resources>
         <converter:NullToBoolConverter x:Key="NullToBoolConverter"/>

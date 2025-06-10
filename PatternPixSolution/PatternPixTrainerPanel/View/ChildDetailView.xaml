@@ -103,6 +103,7 @@
                                 BorderBrush="{TemplateBinding BorderBrush}">
                             <ContentPresenter HorizontalAlignment="Center" 
                                             VerticalAlignment="Center"
+                                              Margin="10"
                                             TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
                         </Border>
                         <ControlTemplate.Triggers>
