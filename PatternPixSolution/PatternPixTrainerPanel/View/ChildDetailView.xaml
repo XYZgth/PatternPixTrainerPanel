@@ -6,20 +6,162 @@
              xmlns:local="clr-namespace:PatternPixTrainerPanel.View"
              xmlns:vm="clr-namespace:PatternPixTrainerPanel.ViewModel"
              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="800">
 
+    <UserControl.Resources>
+        <!-- Color Palette (matching MainView) -->
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#2E86AB"/>
+        <SolidColorBrush x:Key="SecondaryBrush" Color="#A23B72"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#F18F01"/>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#F8F9FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#212529"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6C757D"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#DEE2E6"/>
+        <SolidColorBrush x:Key="HoverBrush" Color="#E9ECEF"/>
+
+        <!-- Modern Button Style (matching MainView) -->
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1.0" ScaleY="1.0"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                CornerRadius="6"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                            TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1C5F7A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#144A5E"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource TextSecondaryBrush}"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" 
+                                           To="1.05" Duration="0:0:0.15"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" 
+                                           To="1.05" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" 
+                                           To="1.0" Duration="0:0:0.15"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" 
+                                           To="1.0" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Secondary Button Style (matching MainView) -->
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button" BasedOn="{StaticResource ModernButtonStyle}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                CornerRadius="6"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                            TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource PrimaryBrush}"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#144A5E"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Drop Shadow Effect -->
+        <DropShadowEffect x:Key="DropShadowEffect" 
+                          Color="Black" 
+                          Opacity="0.1" 
+                          BlurRadius="6" 
+                          ShadowDepth="2"/>
+
+        <!-- Card Style -->
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Effect" Value="{StaticResource DropShadowEffect}"/>
+            <Setter Property="Padding" Value="20"/>
+        </Style>
+
+        <!-- Grouped Collection View -->
+        <CollectionViewSource x:Key="GroupedTrainings"
+                          Source="{Binding Trainings}">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="DateString" />
+            </CollectionViewSource.GroupDescriptions>
+        </CollectionViewSource>
+    </UserControl.Resources>
+
+    <!-- Main Container with gradient background -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                <GradientStop Color="#F8F9FA" Offset="0"/>
+                <GradientStop Color="#C9ECEF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <!-- Header -->
-        <Border Grid.Row="0" Background="#4A76A8" Padding="20,15">
+        <!-- Modern Header Section -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}" Margin="20,20,20,10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -28,40 +170,37 @@
 
                 <Button Grid.Column="0" 
                         Command="{Binding BackCommand}" 
-                        Content="&lt; Back" 
-                        Foreground="White" 
-                        Background="Transparent"
-                        BorderThickness="0"
-                        FontSize="14" 
-                        HorizontalAlignment="Left"/>
+                        Content="← Back" 
+                        Style="{StaticResource SecondaryButtonStyle}"
+                        HorizontalAlignment="Left"
+                        Padding="15,8"/>
 
-                <TextBlock Grid.Column="1" 
-                           Text="Child Details" 
-                           Foreground="White" 
-                           FontSize="22" 
-                           FontWeight="SemiBold" 
-                           HorizontalAlignment="Center"/>
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Child Details" 
+                               FontSize="28" 
+                               FontWeight="Bold" 
+                               Foreground="{StaticResource TextPrimaryBrush}"
+                               HorizontalAlignment="Center"/>
+                   
+                </StackPanel>
             </Grid>
         </Border>
 
         <!-- Child Information Panel -->
-        <Border Grid.Row="1" 
-                Background="#F5F7FA" 
-                BorderBrush="#E0E5EB" 
-                BorderThickness="0,0,0,1" 
-                Padding="20">
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Margin="20,10">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
                 <!-- Child Information -->
-                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
                     <TextBlock Text="{Binding FullName}" 
                                FontSize="24" 
-                               FontWeight="SemiBold" 
-                               Margin="0,0,0,8"/>
+                               FontWeight="Bold" 
+                               Foreground="{StaticResource TextPrimaryBrush}"
+                               Margin="0,0,0,15"/>
 
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -69,69 +208,99 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
-                            
-                           
                         </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
 
-                        <TextBlock Grid.Row="0" Grid.Column="0" 
-                                   Text="Date of Birth:" 
-                                   FontWeight="SemiBold" 
-                                   Margin="0,0,5,5"/>
+                        <Border Grid.Column="0" 
+                                Background="{StaticResource SurfaceBrush}" 
+                                CornerRadius="6" 
+                                Padding="15,8" 
+                                Margin="0,0,15,0">
+                            <StackPanel>
+                                <TextBlock Text="Date of Birth" 
+                                           FontSize="12" 
+                                           FontWeight="Medium" 
+                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                           Margin="0,0,0,3"/>
+                                <TextBlock Text="{Binding DateOfBirth, StringFormat='{}{0:dd.MM.yyyy}'}" 
+                                           FontSize="16"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource TextPrimaryBrush}"/>
+                            </StackPanel>
+                        </Border>
 
-                        <TextBlock Grid.Row="0" Grid.Column="1" 
-                                   Text="{Binding DateOfBirth, StringFormat='{}{0:dd.MM.yyyy}'}" 
-                                   Margin="0,0,20,5"/>
+                        <Border Grid.Column="1" 
+                                Background="{StaticResource SurfaceBrush}" 
+                                CornerRadius="6" 
+                                Padding="15,8" 
+                                Margin="0,0,15,0">
+                            <StackPanel>
+                                <TextBlock Text="Current Age" 
+                                           FontSize="12" 
+                                           FontWeight="Medium" 
+                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                           Margin="0,0,0,3"/>
+                                <TextBlock Text="{Binding Age, StringFormat='{}{0} years'}" 
+                                           FontSize="16"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource AccentBrush}"/>
+                            </StackPanel>
+                        </Border>
 
-                        <TextBlock Grid.Row="0" Grid.Column="2" 
-                                   Text="Age:" 
-                                   FontWeight="SemiBold" 
-                                   Margin="0,0,5,5"/>
-
-                        <TextBlock Grid.Row="0" Grid.Column="3" 
-                                   Text="{Binding Age}" 
-                                   Margin="0,0,20,5"/>
-
-                       
+                        <Border Grid.Column="2" 
+                                Background="{StaticResource SurfaceBrush}" 
+                                CornerRadius="6" 
+                                Padding="15,8">
+                            <StackPanel>
+                                <TextBlock Text="Total Sessions" 
+                                           FontSize="12" 
+                                           FontWeight="Medium" 
+                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                           Margin="0,0,0,3"/>
+                                <TextBlock Text="{Binding Trainings.Count}" 
+                                           FontSize="16"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource SecondaryBrush}"/>
+                            </StackPanel>
+                        </Border>
                     </Grid>
                 </StackPanel>
             </Grid>
         </Border>
 
         <!-- Training History -->
-        <Border Grid.Row="2" Padding="20,15">
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}" Margin="20,10">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="250"/>
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Row="0" 
                            Text="Training History" 
                            FontSize="18" 
                            FontWeight="SemiBold" 
-                           Margin="0,0,0,10"/>
+                           Foreground="{StaticResource TextPrimaryBrush}"
+                           Margin="0,0,0,15"/>
 
                 <!-- Enhanced Training List with Time Grouping -->
                 <ScrollViewer Grid.Row="1" 
                               VerticalScrollBarVisibility="Auto"
-                              HorizontalScrollBarVisibility="Disabled">
+                              HorizontalScrollBarVisibility="Disabled"
+                              Margin="0,0,0,10">
                     <ItemsControl ItemsSource="{Binding GroupedTrainingsByTime}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <!-- Date Group -->
                                 <Expander IsExpanded="True" Margin="0,5,0,10">
                                     <Expander.Header>
-                                        <Border Background="#DCE6F1" 
-                                                Padding="10,8" 
-                                                CornerRadius="4">
+                                        <Border Background="{StaticResource PrimaryBrush}" 
+                                                Padding="15,10" 
+                                                CornerRadius="6">
                                             <TextBlock Text="{Binding DateDisplay}" 
                                                        FontWeight="Bold" 
-                                                       FontSize="16"/>
+                                                       FontSize="16"
+                                                       Foreground="White"/>
                                         </Border>
                                     </Expander.Header>
 
@@ -139,83 +308,97 @@
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
                                                 <!-- Time Group -->
-                                                <Border BorderBrush="#E0E5EB" 
+                                                <Border BorderBrush="{StaticResource BorderBrush}" 
                                                         BorderThickness="1" 
-                                                        CornerRadius="4" 
-                                                        Margin="0,5,0,10">
+                                                        CornerRadius="6" 
+                                                        Margin="0,5,0,10"
+                                                        Background="{StaticResource CardBrush}">
                                                     <StackPanel>
                                                         <!-- Time Range Header -->
-                                                        <Border Background="#F8F9FA" 
-                                                                Padding="10,5" 
-                                                                CornerRadius="4,4,0,0">
+                                                        <Border Background="{StaticResource SurfaceBrush}" 
+                                                                Padding="15,8" 
+                                                                CornerRadius="6,6,0,0">
                                                             <TextBlock Text="{Binding TimeRangeDisplay}" 
                                                                        FontStyle="Italic" 
                                                                        FontWeight="SemiBold"
-                                                                       Foreground="#6C757D"/>
+                                                                       Foreground="{StaticResource TextSecondaryBrush}"/>
                                                         </Border>
 
                                                         <!-- Training Items -->
                                                         <ItemsControl ItemsSource="{Binding Trainings}">
                                                             <ItemsControl.ItemTemplate>
                                                                 <DataTemplate>
-                                                                    <Border BorderBrush="#F1F3F4" 
+                                                                    <Border BorderBrush="{StaticResource BorderBrush}" 
                                                                             BorderThickness="0,1,0,0" 
-                                                                            Padding="15,8">
+                                                                            Padding="15,12">
                                                                         <Grid>
                                                                             <Grid.ColumnDefinitions>
+                                                                                <ColumnDefinition Width="120"/>
                                                                                 <ColumnDefinition Width="100"/>
-                                                                                <ColumnDefinition Width="100"/>
-                                                                                <ColumnDefinition Width="80"/>
-                                                                                <ColumnDefinition Width="80"/>
-                                                                                <ColumnDefinition Width="80"/>
+                                                                                <ColumnDefinition Width="*"/>
+                                                                                <ColumnDefinition Width="*"/>
+                                                                                <ColumnDefinition Width="*"/>
                                                                             </Grid.ColumnDefinitions>
 
-                                                                            <TextBlock Grid.Column="0" 
-                                                                                       Text="{Binding Date, StringFormat='{}{0:dd.MM.yyyy}'}" 
-                                                                                       FontSize="12"
-                                                                                       VerticalAlignment="Center"/>
-
-                                                                            <TextBlock Grid.Column="1" 
-                                                                                       Text="{Binding TimeOfDay, StringFormat='{}{0:hh\\:mm}'}" 
-                                                                                       FontSize="12"
-                                                                                       VerticalAlignment="Center"/>
-
-                                                                            <StackPanel Grid.Column="2" Orientation="Horizontal">
-                                                                                <TextBlock Text="Time: " 
-           FontSize="11" 
-           Foreground="Gray"
-           VerticalAlignment="Center"/>
-                                                                                <TextBlock Text="{Binding TimeNeeded}" 
-                                                                                           FontSize="12"
-                                                                                           VerticalAlignment="Center"/>
-                                                                                <TextBlock Text=" sec" 
-                                                                                           FontSize="10"
-                                                                                           Foreground="Gray"
-                                                                                           VerticalAlignment="Center"/>
+                                                                            <StackPanel Grid.Column="0">
+                                                                                <TextBlock Text="Date" 
+                                                                                           FontSize="10" 
+                                                                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                                                                           Margin="0,0,0,2"/>
+                                                                                <TextBlock Text="{Binding Date, StringFormat='{}{0:dd.MM.yyyy}'}" 
+                                                                                           FontSize="13"
+                                                                                           FontWeight="Medium"
+                                                                                           Foreground="{StaticResource TextPrimaryBrush}"/>
                                                                             </StackPanel>
 
-                                                                            <StackPanel Grid.Column="3" 
-            Orientation="Horizontal" 
-            HorizontalAlignment="Center">
-                                                                                <TextBlock Text="Errors: " 
-               FontSize="11" 
-               Foreground="Gray"
-               VerticalAlignment="Center"/>
+                                                                            <StackPanel Grid.Column="1">
+                                                                                <TextBlock Text="Time" 
+                                                                                           FontSize="10" 
+                                                                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                                                                           Margin="0,0,0,2"/>
+                                                                                <TextBlock Text="{Binding TimeOfDay, StringFormat='{}{0:hh\\:mm}'}" 
+                                                                                           FontSize="13"
+                                                                                           FontWeight="Medium"
+                                                                                           Foreground="{StaticResource TextPrimaryBrush}"/>
+                                                                            </StackPanel>
+
+                                                                            <StackPanel Grid.Column="2">
+                                                                                <TextBlock Text="Duration" 
+                                                                                           FontSize="10" 
+                                                                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                                                                           Margin="0,0,0,2"/>
+                                                                                <StackPanel Orientation="Horizontal">
+                                                                                    <TextBlock Text="{Binding TimeNeeded}" 
+                                                                                               FontSize="13"
+                                                                                               FontWeight="SemiBold"
+                                                                                               Foreground="{StaticResource AccentBrush}"/>
+                                                                                    <TextBlock Text=" sec" 
+                                                                                               FontSize="11"
+                                                                                               Foreground="{StaticResource TextSecondaryBrush}"
+                                                                                               Margin="2,0,0,0"/>
+                                                                                </StackPanel>
+                                                                            </StackPanel>
+
+                                                                            <StackPanel Grid.Column="3">
+                                                                                <TextBlock Text="Errors" 
+                                                                                           FontSize="10" 
+                                                                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                                                                           Margin="0,0,0,2"/>
                                                                                 <TextBlock Text="{Binding Errors}" 
-               FontSize="11"
-               VerticalAlignment="Center"/>
+                                                                                           FontSize="13"
+                                                                                           FontWeight="SemiBold"
+                                                                                           Foreground="#E74C3C"/>
                                                                             </StackPanel>
 
-                                                                            <StackPanel Grid.Column="4" 
-                                                                                        Orientation="Horizontal" 
-                                                                                        HorizontalAlignment="Right">
-                                                                                <TextBlock Text="Symmetry: " 
-                                                                                           FontSize="11" 
-                                                                                           Foreground="Gray"
-                                                                                           VerticalAlignment="Center"/>
+                                                                            <StackPanel Grid.Column="4">
+                                                                                <TextBlock Text="Symmetry" 
+                                                                                           FontSize="10" 
+                                                                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                                                                           Margin="0,0,0,2"/>
                                                                                 <TextBlock Text="{Binding Symmetry}" 
-                                                                                           FontSize="11"
-                                                                                           VerticalAlignment="Center"/>
+                                                                                           FontSize="13"
+                                                                                           FontWeight="SemiBold"
+                                                                                           Foreground="{StaticResource SecondaryBrush}"/>
                                                                             </StackPanel>
                                                                         </Grid>
                                                                     </Border>
@@ -233,164 +416,103 @@
                     </ItemsControl>
                 </ScrollViewer>
 
-                <!-- Chart remains the same -->
-                <syncfusion:SfChart Grid.Row="2" Margin="0,0,0,10">
-                    <!-- Chart Resources -->
-                    <syncfusion:SfChart.Resources>
-                        <DataTemplate x:Key="ErrorLabelTemplate">
-                            <TextBlock Text="{Binding Item.Errors}" 
-                       Foreground="#E74C3C" 
-                       FontSize="10" 
-                       FontWeight="Bold"/>
-                        </DataTemplate>
+                <!-- Chart with modern styling -->
+                <Border Grid.Row="2" 
+                        Background="{StaticResource CardBrush}" 
+                        CornerRadius="8" 
+                        BorderBrush="{StaticResource BorderBrush}" 
+                        BorderThickness="1" 
+                        Padding="10"
+                        Margin="0,10,0,0">
+                    <syncfusion:SfChart>
+                        <!-- Chart Resources -->
+                        <syncfusion:SfChart.Resources>
+                            <DataTemplate x:Key="ErrorLabelTemplate">
+                                <TextBlock Text="{Binding Item.Errors}" 
+                                           Foreground="#E74C3C" 
+                                           FontSize="10" 
+                                           FontWeight="Bold"/>
+                            </DataTemplate>
 
-                        <DataTemplate x:Key="ErrorTooltipTemplate">
-                            <Border Background="White" 
-                    BorderBrush="#E74C3C" 
-                    BorderThickness="1" 
-                    CornerRadius="3" 
-                    Padding="5">
-                                <TextBlock>
-                    <Run Text="Errors: "/>
-                    <Run Text="{Binding Item.Errors}" FontWeight="Bold"/>
-                                </TextBlock>
-                            </Border>
-                        </DataTemplate>
-                    </syncfusion:SfChart.Resources>
-                    <!-- Primary Axis (X-Axis: Date) -->
-                    <syncfusion:SfChart.PrimaryAxis>
-                        <syncfusion:CategoryAxis 
-            Header="Training Sessions"
-            LabelRotationAngle="45"
-            LabelPlacement="OnTicks"
-            ShowGridLines="True" />
-                    </syncfusion:SfChart.PrimaryAxis>
+                            <DataTemplate x:Key="ErrorTooltipTemplate">
+                                <Border Background="White" 
+                                        BorderBrush="#E74C3C" 
+                                        BorderThickness="1" 
+                                        CornerRadius="3" 
+                                        Padding="5">
+                                    <TextBlock>
+                                        <Run Text="Errors: "/>
+                                        <Run Text="{Binding Item.Errors}" FontWeight="Bold"/>
+                                    </TextBlock>
+                                </Border>
+                            </DataTemplate>
+                        </syncfusion:SfChart.Resources>
 
-                    <!-- Primary Y-Axis for Time -->
-                    <syncfusion:SfChart.SecondaryAxis>
-                        <syncfusion:NumericalAxis 
-            Header="Time (seconds)"
-            Minimum="0"
-            ShowGridLines="True" />
-                    </syncfusion:SfChart.SecondaryAxis>
+                        <!-- Primary Axis (X-Axis: Date) -->
+                        <syncfusion:SfChart.PrimaryAxis>
+                            <syncfusion:CategoryAxis 
+                                Header="Training Sessions"
+                                LabelRotationAngle="45"
+                                LabelPlacement="OnTicks"
+                                ShowGridLines="True" />
+                        </syncfusion:SfChart.PrimaryAxis>
 
-                    <!-- Line series for Time Needed -->
-                    <syncfusion:LineSeries 
-        ItemsSource="{Binding Trainings}" 
-        XBindingPath="FormattedDateTime" 
-        YBindingPath="TimeNeeded" 
-        Label="Time Needed (s)"
-        Interior="#3498DB"
-        StrokeThickness="2"
-        ShowTooltip="True">
-                        <syncfusion:LineSeries.AdornmentsInfo>
-                            <syncfusion:ChartAdornmentInfo ShowMarker="True" 
-                                         Symbol="Ellipse" 
-                                         SymbolInterior="#3498DB" 
-                                         SymbolHeight="6" 
-                                         SymbolWidth="6"/>
-                        </syncfusion:LineSeries.AdornmentsInfo>
-                    </syncfusion:LineSeries>
+                        <!-- Primary Y-Axis for Time -->
+                        <syncfusion:SfChart.SecondaryAxis>
+                            <syncfusion:NumericalAxis 
+                                Header="Time (seconds)"
+                                Minimum="0"
+                                ShowGridLines="True" />
+                        </syncfusion:SfChart.SecondaryAxis>
 
-                    <!-- Line series for Errors (scaled to fit with time values) -->
-                    <syncfusion:LineSeries 
-        ItemsSource="{Binding Trainings}" 
-        XBindingPath="FormattedDateTime" 
-        YBindingPath="ErrorsScaled" 
-        Label="Errors"
-        Interior="#E74C3C"
-        StrokeThickness="2"
-        ShowTooltip="True"
-        TooltipTemplate="{StaticResource ErrorTooltipTemplate}">
-                        <syncfusion:LineSeries.AdornmentsInfo>
-                            <syncfusion:ChartAdornmentInfo ShowMarker="True" 
-                                         Symbol="Diamond" 
-                                         SymbolInterior="#E74C3C" 
-                                         SymbolHeight="6" 
-                                         SymbolWidth="6"/>
-                        </syncfusion:LineSeries.AdornmentsInfo>
-                    </syncfusion:LineSeries>
+                        <!-- Line series for Time Needed -->
+                        <syncfusion:LineSeries 
+                            ItemsSource="{Binding Trainings}" 
+                            XBindingPath="FormattedDateTime" 
+                            YBindingPath="TimeNeeded" 
+                            Label="Time Needed (s)"
+                            Interior="#2E86AB"
+                            StrokeThickness="3"
+                            ShowTooltip="True">
+                            <syncfusion:LineSeries.AdornmentsInfo>
+                                <syncfusion:ChartAdornmentInfo ShowMarker="True" 
+                                                             Symbol="Ellipse" 
+                                                             SymbolInterior="#2E86AB" 
+                                                             SymbolHeight="8" 
+                                                             SymbolWidth="8"/>
+                            </syncfusion:LineSeries.AdornmentsInfo>
+                        </syncfusion:LineSeries>
 
-                    <!-- Legend -->
-                    <syncfusion:SfChart.Legend>
-                        <syncfusion:ChartLegend DockPosition="Bottom"
-                              Margin="0,10,0,0" />
-                    </syncfusion:SfChart.Legend>
-                </syncfusion:SfChart>
+                        <!-- Line series for Errors -->
+                        <syncfusion:LineSeries 
+                            ItemsSource="{Binding Trainings}" 
+                            XBindingPath="FormattedDateTime" 
+                            YBindingPath="ErrorsScaled" 
+                            Label="Errors Scaled"
+                            Interior="#E74C3C"
+                            StrokeThickness="3"
+                            ShowTooltip="True"
+                            TooltipTemplate="{StaticResource ErrorTooltipTemplate}">
+                            <syncfusion:LineSeries.AdornmentsInfo>
+                                <syncfusion:ChartAdornmentInfo ShowMarker="True" 
+                                                             Symbol="Diamond" 
+                                                             SymbolInterior="#E74C3C" 
+                                                             SymbolHeight="8" 
+                                                             SymbolWidth="8"/>
+                            </syncfusion:LineSeries.AdornmentsInfo>
+                        </syncfusion:LineSeries>
+
+                        <!-- Legend -->
+                        <syncfusion:SfChart.Legend>
+                            <syncfusion:ChartLegend DockPosition="Bottom"
+                                                    Margin="0,10,0,0" />
+                        </syncfusion:SfChart.Legend>
+                    </syncfusion:SfChart>
+                </Border>
             </Grid>
         </Border>
 
-        <!-- Actions Bar -->
-        <Border Grid.Row="3" 
-                Background="#F5F7FA" 
-                BorderBrush="#E0E5EB" 
-                BorderThickness="0,1,0,0" 
-                Padding="20,10">
-            <StackPanel Orientation="Horizontal" 
-                        HorizontalAlignment="Right">
-
-            </StackPanel>
-        </Border>
+       
     </Grid>
-
-    <!-- Resources -->
-    <UserControl.Resources>
-        <CollectionViewSource x:Key="GroupedTrainings"
-                          Source="{Binding Trainings}">
-            <CollectionViewSource.GroupDescriptions>
-                <PropertyGroupDescription PropertyName="DateString" />
-            </CollectionViewSource.GroupDescriptions>
-        </CollectionViewSource>
-
-        <Style x:Key="BackButtonStyle" TargetType="Button">
-            <Setter Property="Padding" Value="10,5" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Opacity" Value="0.8" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-
-        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#4A76A8" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Padding" Value="15,8" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="4">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#3A5F8A" />
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#2E4C70" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </UserControl.Resources>
+    </ScrollViewer>
 </UserControl>

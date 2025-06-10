@@ -7,68 +7,455 @@
              xmlns:viewmodel="clr-namespace:PatternPixTrainerPanel.ViewModel"
              xmlns:converter="clr-namespace:PatternPixTrainerPanel.Converter"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="600" d:DesignWidth="1000">
 
     <UserControl.Resources>
         <converter:NullToBoolConverter x:Key="NullToBoolConverter"/>
+
+        <!-- Color Palette -->
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#2E86AB"/>
+        <SolidColorBrush x:Key="SecondaryBrush" Color="#A23B72"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#F18F01"/>
+        <SolidColorBrush x:Key="SurfaceBrush" Color="#F8F9FA"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="TextPrimaryBrush" Color="#212529"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6C757D"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#DEE2E6"/>
+        <SolidColorBrush x:Key="HoverBrush" Color="#E9ECEF"/>
+
+        <!-- Modern Button Style -->
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1.0" ScaleY="1.0"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                CornerRadius="6"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                            TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1C5F7A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#144A5E"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource TextSecondaryBrush}"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" 
+                                           To="1.05" Duration="0:0:0.15"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" 
+                                           To="1.05" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" 
+                                           To="1.0" Duration="0:0:0.15"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" 
+                                           To="1.0" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Secondary Button Style -->
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button" BasedOn="{StaticResource ModernButtonStyle}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                CornerRadius="6"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"
+                                            TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource PrimaryBrush}"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#144A5E"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Modern Slider Style -->
+        <Style x:Key="ModernSliderStyle" TargetType="Slider">
+            <Setter Property="Height" Value="6"/>
+            <Setter Property="Background" Value="{StaticResource BorderBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Slider">
+                        <Grid>
+                            <Border Name="TrackBackground" 
+                                    Height="6" 
+                                    Background="{StaticResource BorderBrush}" 
+                                    CornerRadius="3"
+                                    VerticalAlignment="Center"/>
+                            <Border Name="PART_SelectionRange" 
+                                    Height="6" 
+                                    Background="{StaticResource AccentBrush}" 
+                                    CornerRadius="3"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"/>
+                            <Track Name="PART_Track">
+                                <Track.Thumb>
+                                    <Thumb Width="20" Height="20">
+                                        <Thumb.Template>
+                                            <ControlTemplate TargetType="Thumb">
+                                                <Ellipse Fill="{StaticResource AccentBrush}" 
+                                                        Stroke="White" 
+                                                        StrokeThickness="2"
+                                                        Effect="{DynamicResource DropShadowEffect}"/>
+                                            </ControlTemplate>
+                                        </Thumb.Template>
+                                    </Thumb>
+                                </Track.Thumb>
+                            </Track>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Drop Shadow Effect -->
+        <DropShadowEffect x:Key="DropShadowEffect" 
+                          Color="Black" 
+                          Opacity="0.1" 
+                          BlurRadius="6" 
+                          ShadowDepth="2"/>
+
+        <!-- Card Style -->
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Effect" Value="{StaticResource DropShadowEffect}"/>
+            <Setter Property="Padding" Value="20"/>
+        </Style>
+
+        <!-- Modern DataGrid Style -->
+        <Style x:Key="ModernDataGridStyle" TargetType="DataGrid">
+            <Setter Property="Background" Value="{StaticResource CardBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowBackground" Value="Transparent"/>
+            <Setter Property="AlternatingRowBackground" Value="#F8F9FA"/>
+            <Setter Property="GridLinesVisibility" Value="None"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="CanUserResizeRows" Value="False"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="RowHeight" Value="50"/>
+        </Style>
+
+        <!-- DataGrid Header Style -->
+        <Style x:Key="ModernDataGridColumnHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#C9ECEF"/>
+            <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="15,12"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+
+        <!-- DataGrid Cell Style -->
+        <Style x:Key="ModernDataGridCellStyle" TargetType="DataGridCell">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="15,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </UserControl.Resources>
 
+    <!-- Main Container with subtle gradient background -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                <GradientStop Color="#F8F9FA" Offset="0"/>
+                <GradientStop Color="#C9ECEF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Header -->
-        <StackPanel Grid.Row="0" Margin="10">
-            <TextBlock Text="Training Data" FontSize="20" FontWeight="Bold"/>
-            <TextBlock Text="Pattern Pix Concentration Training" FontStyle="Italic" Margin="0,5,0,0"/>
-            <TextBlock Text="Database - JSON:" Margin="0,0,0,5"/>
-            <Slider Value="{Binding SelectedRepositoryMode, Mode=TwoWay}" HorizontalAlignment="Left" Name="StorageSlider" Minimum="0" Maximum="1" TickFrequency="1" IsSnapToTickEnabled="True" Width="100" />
-        </StackPanel>
+        <!-- Modern Header Section -->
+        <Border Grid.Row="0" Style="{StaticResource CardStyle}" Margin="20,20,20,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
 
-        <!-- Children DataGrid -->
-        <DataGrid Grid.Row="1" 
-                  ItemsSource="{Binding Children}" 
-                  SelectedItem="{Binding SelectedChild, Mode=TwoWay}"
-                  AutoGenerateColumns="False"
-                  CanUserAddRows="False"
-                  CanUserDeleteRows="False"
-                  IsReadOnly="True"
-                  AlternatingRowBackground="AliceBlue"
-                  Margin="10" 
-                  BorderThickness="1"
-                  BorderBrush="Gray">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
-                <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="200"/>
-                <DataGridTextColumn Header="Age" Binding="{Binding Age}" Width="75"/>
-                <DataGridTextColumn Header="Last Training Date" Binding="{Binding LastTrainingDate, StringFormat=\{0:dd.MM.yyyy\}}" Width="150"/>
-            </DataGrid.Columns>
+                <!-- Title Section -->
+                <StackPanel Grid.Row="0" Grid.Column="0">
+                    <TextBlock Text="Training Data Management" 
+                               FontSize="28" 
+                               FontWeight="Bold" 
+                               Foreground="{StaticResource TextPrimaryBrush}"
+                               Margin="0,0,0,5"/>
+                    <TextBlock Text="Pattern Pix Concentration Training System" 
+                               FontSize="16" 
+                               FontStyle="Italic" 
+                               Foreground="{StaticResource TextSecondaryBrush}"/>
+                </StackPanel>
 
-            <DataGrid.RowDetailsTemplate>
-                <DataTemplate>
-                    <Border BorderBrush="Silver" BorderThickness="0,0,0,1" Margin="10">
-                        <StackPanel Margin="5">
-                            <TextBlock Text="{Binding FullName, StringFormat=Child: {0}}" FontWeight="Bold"/>
-                            <TextBlock Text="{Binding DateOfBirth, StringFormat=Birth Date: {0:dd.MM.yyyy}}"/>
-                            <TextBlock Text="{Binding LastTrainingDate, StringFormat=Last Training: {0:dd.MM.yyyy}}"/>
-                            <TextBlock Text="{Binding Trainings.Count, StringFormat=Total Trainings: {0}}"/>
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </DataGrid.RowDetailsTemplate>
-        </DataGrid>
+                <!-- Storage Mode Section -->
+                <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="0,20,0,0">
+                    <TextBlock Text="Storage Mode" 
+                               FontSize="14" 
+                               FontWeight="Medium" 
+                               Foreground="{StaticResource TextPrimaryBrush}"
+                               Margin="0,0,0,8"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
 
-        <!-- Actions Panel -->
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
-            <Button Content="Refresh" Command="{Binding RefreshCommand}" Width="80" Margin="5"/>
-            <Button Content="View Details" Width="80" Margin="5" 
-                    Command="{Binding ViewDetailsCommand}"
-                    IsEnabled="{Binding SelectedChild, Converter={StaticResource NullToBoolConverter}}"/>
-            <Button Content="Add New" Command="{Binding ViewAddCommand}" Width="80" Margin="5"/>
-            <Button Content="Analysis" Command="{Binding AnalysisViewCommand}" Width="80" Margin="5"/>
-        </StackPanel>
+                        <TextBlock Grid.Column="0" 
+                                   Text="Local" 
+                                   VerticalAlignment="Center" 
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="0,0,10,0"/>
+
+                        <Slider
+                                Value="{Binding SelectedRepositoryMode, Mode=TwoWay}" 
+                                Name="StorageSlider" 
+                            Height="20"
+                                Minimum="0" 
+                                Maximum="1" 
+                                TickFrequency="1" 
+                                IsSnapToTickEnabled="True"
+                                Style="{StaticResource ModernSliderStyle}" Grid.ColumnSpan="2" Margin="37,5,0,5"/>
+
+                        <TextBlock Grid.Column="2" 
+                                   Text="JSON Database" 
+                                   VerticalAlignment="Center" 
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Margin="10,0,0,0"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Modern DataGrid Section -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}" Margin="20,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="99*"/>
+                    <ColumnDefinition Width="361*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- DataGrid Header -->
+                <TextBlock Grid.Row="0" 
+                           Text="Children Training Records" 
+                           FontSize="18" 
+                           FontWeight="SemiBold" 
+                           Foreground="{StaticResource TextPrimaryBrush}"
+                           Margin="0,0,0,15" Grid.ColumnSpan="2"/>
+
+                <!-- Enhanced DataGrid -->
+                <DataGrid Grid.Row="1"
+                          ItemsSource="{Binding Children}" 
+                          SelectedItem="{Binding SelectedChild, Mode=TwoWay}"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          CanUserDeleteRows="False"
+                          IsReadOnly="True"
+                          Style="{StaticResource ModernDataGridStyle}"
+                          ColumnHeaderStyle="{StaticResource ModernDataGridColumnHeaderStyle}"
+                          CellStyle="{StaticResource ModernDataGridCellStyle}" Grid.ColumnSpan="2">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" 
+                                            Binding="{Binding Id}" 
+                                            Width="80"
+                                            HeaderStyle="{StaticResource ModernDataGridColumnHeaderStyle}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FontWeight" Value="Medium"/>
+                                    <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Full Name" 
+                                            Binding="{Binding FullName}" 
+                                            Width="*"
+                                            MinWidth="200"
+                                            HeaderStyle="{StaticResource ModernDataGridColumnHeaderStyle}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="FontWeight" Value="Medium"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Header="Age" 
+                                            Binding="{Binding Age}" 
+                                            Width="100"
+                                            HeaderStyle="{StaticResource ModernDataGridColumnHeaderStyle}"/>
+
+                        <DataGridTextColumn Header="Last Training Date" 
+                                            Binding="{Binding LastTrainingDate, StringFormat=\{0:dd.MM.yyyy\}}" 
+                                            Width="180"
+                                            HeaderStyle="{StaticResource ModernDataGridColumnHeaderStyle}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+
+                    <!-- Enhanced Row Details -->
+                    <DataGrid.RowDetailsTemplate>
+                        <DataTemplate>
+                            <Border Background="{StaticResource SurfaceBrush}" 
+                                    CornerRadius="6" 
+                                    Margin="15,10"
+                                    Padding="20">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                                               Text="{Binding FullName, StringFormat=Detailed Information - {0}}" 
+                                               FontWeight="Bold" 
+                                               FontSize="16"
+                                               Foreground="{StaticResource TextPrimaryBrush}"
+                                               Margin="0,0,0,15"/>
+
+                                    <StackPanel Grid.Row="1" Grid.Column="0">
+                                        <TextBlock Text="Personal Information" 
+                                                   FontWeight="SemiBold" 
+                                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                                   Margin="0,0,0,8"/>
+                                        <TextBlock Text="{Binding DateOfBirth, StringFormat=Birth Date: {0:dd.MM.yyyy}}"
+                                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                                   Margin="0,0,0,5"/>
+                                        <TextBlock Text="{Binding Age, StringFormat=Current Age: {0} years}"
+                                                   Foreground="{StaticResource TextSecondaryBrush}"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Row="1" Grid.Column="1">
+                                        <TextBlock Text="Training Statistics" 
+                                                   FontWeight="SemiBold" 
+                                                   Foreground="{StaticResource TextPrimaryBrush}"
+                                                   Margin="0,0,0,8"/>
+                                        <TextBlock Text="{Binding LastTrainingDate, StringFormat=Last Session: {0:dd.MM.yyyy}}"
+                                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                                   Margin="0,0,0,5"/>
+                                        <TextBlock Text="{Binding Trainings.Count, StringFormat=Total Sessions: {0}}"
+                                                   Foreground="{StaticResource AccentBrush}"
+                                                   FontWeight="Medium"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </DataGrid.RowDetailsTemplate>
+                </DataGrid>
+            </Grid>
+        </Border>
+
+        <!-- Modern Action Panel -->
+        <Border Grid.Row="1" Style="{StaticResource CardStyle}" Margin="20,10,20,20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="🔄 Refresh" 
+                        Command="{Binding RefreshCommand}" 
+                        Style="{StaticResource SecondaryButtonStyle}"
+                        Margin="0,0,10,0"/>
+
+                <Button Content="👁 View Details" 
+                        Command="{Binding ViewDetailsCommand}"
+                        IsEnabled="{Binding SelectedChild, Converter={StaticResource NullToBoolConverter}}"
+                        Style="{StaticResource ModernButtonStyle}"
+                        Margin="0,0,10,0"/>
+
+                <Button Content="➕ Add New" 
+                        Command="{Binding ViewAddCommand}" 
+                        Style="{StaticResource ModernButtonStyle}"
+                        Background="{StaticResource AccentBrush}"
+                        Margin="0,0,10,0"/>
+
+                <Button Content="📊 Analysis" 
+                        Command="{Binding AnalysisViewCommand}" 
+                        Style="{StaticResource ModernButtonStyle}"
+                        Background="{StaticResource SecondaryBrush}"/>
+            </StackPanel>
+        </Border>
     </Grid>
+    </ScrollViewer>
 </UserControl>

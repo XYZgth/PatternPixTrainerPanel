@@ -9,17 +9,154 @@
              
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="1200">
-
+    <!-- Resources -->
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="PrimaryBrush" Color="#2E86AB"/>
+        <SolidColorBrush x:Key="TextSecondaryBrush" Color="#6C757D"/>
+        <!-- Modern Button Style (matching MainView) -->
+        <Style x:Key="ModernButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1.0" ScaleY="1.0"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                     Background="{TemplateBinding Background}" 
+                     CornerRadius="6"
+                     BorderThickness="{TemplateBinding BorderThickness}"
+                     BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                 VerticalAlignment="Center"
+                                 TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1C5F7A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#144A5E"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource TextSecondaryBrush}"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" 
+                                To="1.05" Duration="0:0:0.15"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" 
+                                To="1.05" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" 
+                                To="1.0" Duration="0:0:0.15"/>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" 
+                                To="1.0" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+        <!-- Back Button Style (matching MainView) -->
+        <Style x:Key="BackButtonStyle" TargetType="Button" BasedOn="{StaticResource ModernButtonStyle}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                    Background="{TemplateBinding Background}" 
+                    CornerRadius="6"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"
+                                TextBlock.FontWeight="{TemplateBinding FontWeight}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="{StaticResource PrimaryBrush}"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#144A5E"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#4A76A8" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="15,8" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#3A5F8A" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#2E4C70" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                <GradientStop Color="#F8F9FA" Offset="0"/>
+                <GradientStop Color="#C9ECEF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="479*"/>
+
         </Grid.RowDefinitions>
 
         <!-- Header -->
-        <Border Grid.Row="0" Background="#4A76A8" Padding="20,15">
+        <Border Grid.Row="0" Background="#FFFFFF" Padding="20,15" CornerRadius="10" Margin="15,0,15,0">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -28,24 +165,30 @@
 
                 <Button Grid.Column="0" 
                         Command="{Binding BackCommand}" 
-                        Content="&lt; Back" 
-                        />
+Content="← Back" 
+Style="{StaticResource BackButtonStyle}"
+HorizontalAlignment="Left"
+ VerticalAlignment="Top"
+Padding="15,8,15,8"
+                        Height="30"/>
 
                 <TextBlock Grid.Column="1" 
                            Text="Training Analysis" 
-                           Foreground="White" 
-                           FontSize="22" 
-                           FontWeight="SemiBold" 
+                           Foreground="#000000" 
+                          FontSize="28" 
+                FontWeight="Bold" 
                            HorizontalAlignment="Center"/>
             </Grid>
         </Border>
 
         <!-- Filter Controls -->
-        <Border Grid.Row="1" 
-                Background="#F8F9FA" 
+        <Border 
+                Background="#FFFFFF" 
                 BorderBrush="#E0E5EB" 
                 BorderThickness="0,0,0,1" 
-                Padding="20,15">
+                Padding="20,15"
+                CornerRadius="10"
+                Margin="15,67,15,0" Grid.RowSpan="2">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -159,13 +302,13 @@
                               SelectedItem="{Binding SelectedTimeRange}"
                               VerticalAlignment="Center"/>
 
-                   
+
                 </Grid>
             </Grid>
         </Border>
 
         <!-- Main Content Area -->
-        <Grid Grid.Row="2" Margin="20">
+        <Grid Grid.Row="2" Margin="20,20,20,20" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="15"/>
@@ -175,7 +318,7 @@
             <!-- Charts Area -->
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="250"/>
                     <RowDefinition Height="15"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
@@ -255,7 +398,7 @@
 
                             <!-- Legend -->
                             <syncfusion:SfChart.Legend>
-                                <syncfusion:ChartLegend DockPosition="Bottom" Margin="0,10,0,0" />
+                                <syncfusion:ChartLegend DockPosition="Bottom" />
                             </syncfusion:SfChart.Legend>
                         </syncfusion:SfChart>
                     </Grid>
@@ -323,10 +466,10 @@
                         </syncfusion:SfChart>
                     </Grid>
                 </Border>
-                
+
 
             </Grid>
-            
+
 
             <!-- Statistics Panel -->
             <Border Grid.Column="2" 
@@ -429,8 +572,8 @@
                             </StackPanel>
                         </Border>
 
-                       
-                            
+
+
 
                         <!-- Symmetry Breakdown -->
                         <TextBlock Text="Performance by Symmetry" 
@@ -537,65 +680,20 @@ Margin="0,0,0,10"/>
                                     </syncfusion:SfChart.Legend>
                                 </syncfusion:SfChart>
 
-                               
-                                    
-                               
+
+
+
                             </Grid>
                         </StackPanel>
                     </StackPanel>
-                    
-                   
+
+
                 </ScrollViewer>
             </Border>
-            
+
         </Grid>
-        
+
     </Grid>
 
-    <!-- Resources -->
-    <UserControl.Resources>
-        <Style x:Key="BackButtonStyle" TargetType="Button">
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="Background" Value="Transparent" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="FontSize" Value="14" />
-            <Setter Property="Padding" Value="10,5" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Opacity" Value="0.8" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
 
-        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#4A76A8" />
-            <Setter Property="Foreground" Value="White" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Padding" Value="15,8" />
-            <Setter Property="Cursor" Value="Hand" />
-            <Setter Property="FontWeight" Value="SemiBold" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="4">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#3A5F8A" />
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#2E4C70" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </UserControl.Resources>
 </UserControl>
